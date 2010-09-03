@@ -1,0 +1,54 @@
+/*-----[ colors ]---------------------------------------------------------------
+| Variables defining the colors to be used throughout the application. Curious
+| about the color names? Check out <www.colblindor.com/color-name-hue/>.
+*/
+/*----------[ palette ]---------------------------------------------------------
+*/
+$old-rose: #cc365c;
+$cerulean: #0c68a3;
+$light-cyan: #daf3fe;
+$mango-tango: #ef6d05;
+$orange: #ffa500;
+$orange-mid: #ffc96e;
+$orange-highlight: #ffe2b3;
+$moon-glow: #f5ebcc;
+$turtle-green: #273017;
+$crusoe-green: #305f0d;
+
+/*----------[ backgrounds and borders ]-----------------------------------------
+*/
+$page-bg: white;
+$accent-bg: $moon-glow;
+
+$inverse-highlight: $turtle-green;
+
+/*----------[ text ]------------------------------------------------------------
+*/
+$body-text-color: black;
+$link: $crusoe-green;
+$visited-link: $turtle-green;
+$secondary-text-color: #808080;
+
+$highlighted-text-color: white;
+$subheading-text-color: $old-rose;
+
+$error-feedback: $mango-tango;
+$success-feedback: $mango-tango;
+
+/*----------[ forms ]-----------------------------------------------------------
+*/
+$button-border: black;
+$button-gradient-light: $orange-highlight;
+$button-gradient-mid: $orange-mid;
+$button-gradient-dark: $orange;
+$button-text-color: black;
+
+$disabled-button-border: #d0d0d0;
+$disabled-button-gradient-light: #fefefe;
+$disabled-button-gradient-mid: #ececec;
+$disabled-button-gradient-dark: #cdcdcd;
+$disabled-button-text-color: #959595;
+
+$text-input-inside-stroke: #eeece4;
+$text-input-outside-stroke: black;
+

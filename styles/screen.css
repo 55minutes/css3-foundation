@@ -1,0 +1,448 @@
+/*------------------------------------------------------------------------------
+| screen.css
+| application name v1.0
+| Author(s): Author Name
+| Created: yyyy-mm-dd
+|
+| This file rolls up the main styles for the entire application. You'll need to
+| include the IE-specific and print stylesheet separately in your markup.
+------------------------------------------------------------------------------*/
+/*-----[ reset ]----------------------------------------------------------------
+| Based on:
+|   html5doctor.com Reset Stylesheet
+|   v1.6 2010-08-18 | Authors: Eric Meyer & Richard Clark
+|   <http://html5doctor.com/html-5-reset-stylesheet/>
+*/
+/* line 19, src/_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 30, src/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 36, src/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 41, src/_reset.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 46, src/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 52, src/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 58, src/_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+/* line 68, src/_reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+/* line 76, src/_reset.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 84, src/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 89, src/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted inherit;
+  cursor: help;
+}
+
+/* line 95, src/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-style: none;
+}
+
+/* line 102, src/_reset.scss */
+th, td, tr {
+  border-style: none;
+}
+
+/* change border colour to suit your needs */
+/* line 108, src/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 118, src/_reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/*-----[ colors ]---------------------------------------------------------------
+| Variables defining the colors to be used throughout the application. Curious
+| about the color names? Check out <www.colblindor.com/color-name-hue/>.
+*/
+/*----------[ palette ]---------------------------------------------------------
+*/
+/*----------[ backgrounds and borders ]-----------------------------------------
+*/
+/*----------[ text ]------------------------------------------------------------
+*/
+/*----------[ forms ]-----------------------------------------------------------
+*/
+/*-----[ typography ]-----------------------------------------------------------
+*/
+/*-----[ dimensions ]-----------------------------------------------------------
+*/
+/*-----[ layout ]---------------------------------------------------------------
+| Basic page layout. Define the dimensions of the top-level boxes and their
+| relative positions on the page.
+*/
+/*-----[ common ]---------------------------------------------------------------
+| Reusable content styles. Define your application-wide styles, like links,
+| headers, body text, clearfix, etc. here
+*/
+/*----------[ tags ]------------------------------------------------------------
+*/
+/* line 8, src/_common.scss */
+a {
+  color: #305f0d;
+}
+
+/* line 15, src/_common.scss */
+a:hover,
+a:active,
+a:link:visited {
+  color: #273017;
+}
+
+/* line 20, src/_common.scss */
+blockquote, dl, ol, p, pre, table, ul {
+  margin: 20px 0;
+}
+
+/* line 25, src/_common.scss */
+body {
+  background-color: white;
+  color: black;
+  font-family: Calibri, "Myriad Pro", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* line 34, src/_common.scss */
+caption {
+  font-style: italic;
+}
+
+/* line 39, src/_common.scss */
+dt {
+  font-style: italic;
+}
+
+/* line 44, src/_common.scss */
+dd {
+  margin: 0 0 0;
+}
+
+/* line 49, src/_common.scss */
+h1 {
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* line 57, src/_common.scss */
+h2 {
+  margin-top: 0;
+  color: #cc365c;
+}
+
+/* line 63, src/_common.scss */
+hr {
+  margin: 5px auto;
+  border-style: none;
+  height: 1px;
+  background-color: #808080;
+}
+
+/* line 71, src/_common.scss */
+ol, ul {
+  margin-left: 18px;
+}
+
+/* line 76, src/_common.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 81, src/_common.scss */
+ol ol {
+  list-style-type: lower-alpha;
+}
+
+/* line 86, src/_common.scss */
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+/* line 91, src/_common.scss */
+pre {
+  padding: 5px 10px;
+  overflow: auto;
+  background-color: #fff8f0;
+}
+
+/* line 98, src/_common.scss */
+td, th {
+  padding: 5px;
+  padding-left: column-width6px;
+}
+
+/* line 104, src/_common.scss */
+th {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 110, src/_common.scss */
+ul {
+  list-style-type: disc;
+}
+
+/*----------[ general ]---------------------------------------------------------
+*/
+/* line 117, src/_common.scss */
+.alignCenter {
+  margin: 0px auto;
+}
+
+/* line 122, src/_common.scss */
+.alignLeft {
+  float: left;
+}
+
+/* line 127, src/_common.scss */
+.alignRight {
+  float: right;
+}
+
+/* line 133, src/_common.scss */
+.annotation,
+.finePrint {
+  color: gray;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* line 140, src/_common.scss */
+.finePrint {
+  font-size: 85%;
+}
+
+/* line 145, src/_common.scss */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 154, src/_common.scss */
+.reset {
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+  height: 1px;
+  font-size: 0px;
+}
+
+/* line 163, src/_common.scss */
+.spacer {
+  padding: 0px;
+  height: 10px;
+  font-size: 0px;
+}
+
+/* line 170, src/_common.scss */
+.subtitle {
+  font-weight: normal;
+}
+
+/* line 175, src/_common.scss */
+.subheading {
+  font-weight: bold;
+}
+
+/*-----[ forms ]----------------------------------------------------------------
+*/
+/*-----[ text and password fields, textareas ]----------------------------------
+*/
+/* line 9, src/_forms.scss */
+input[type=text],
+input[type=password],
+select,
+textarea {
+  margin: 0px;
+  padding: 0;
+  background-color: white;
+  font-family: Calibri, "Myriad Pro", Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+/* line 21, src/_forms.scss */
+input[type=text],
+input[type=password],
+textarea {
+  outline: 1px solid black;
+  border: 3px solid #eeece4;
+  padding: 0;
+}
+
+/* line 28, src/_forms.scss */
+select {
+  border: 1px solid black;
+  padding: 1px;
+}
+
+/* line 37, src/_forms.scss */
+input[type=text][disabled],
+input[type=password][disabled],
+select[disabled],
+textarea[disabled] {
+  border: 1px solid #c0c0c0 !important;
+  padding: 3px;
+  background-color: #e0e0e0 !important;
+  color: #808080 !important;
+  cursor: default !important;
+}
+
+/* line 46, src/_forms.scss */
+input[type=text].small {
+  width: 50px;
+  margin-right: 0.33em;
+}
+
+/*-----[ buttons and checkboxes]------------------------------------------------
+*/
+/* line 56, src/_forms.scss */
+input[type=checkbox] {
+  border: 1px solid #505050;
+  background-color: white;
+}
+
+/* line 64, src/_forms.scss */
+input[type=submit],
+input[type=button],
+button {
+  border: 2px solid black;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  padding: 2px 20px;
+  background: #ffc96e;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffe2b3), color-stop(100%, #ffa500));
+  background-image: -moz-linear-gradient(top, #ffe2b3 0%, #ffa500 100%);
+  background-image: linear-gradient(top, #ffe2b3 0%, #ffa500 100%);
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* line 79, src/_forms.scss */
+input[type=submit][disabled],
+input[type=button][disabled],
+button[disabled] {
+  border: 2px solid #d0d0d0;
+  background: #ececec;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fefefe), color-stop(100%, #cdcdcd));
+  background-image: -moz-linear-gradient(top, #fefefe 0%, #cdcdcd 100%);
+  background-image: linear-gradient(top, #fefefe 0%, #cdcdcd 100%);
+  color: #959595;
+  cursor: default !important;
+}
+
+/* line 88, src/_forms.scss */
+.button-bar {
+  margin: 20px 0;
+  padding: 0px;
+}
+
+/* line 94, src/_forms.scss */
+.button-bar > a {
+  display: inline-block;
+  padding: 5px;
+  line-height: 14px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+/* line 106, src/_forms.scss */
+.button-bar input[type=submit],
+.button-bar input[type=button],
+.button-bar button,
+.button-bar > a {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+/*-----[ page-specific ]--------------------------------------------------------
+| Styles for individual pages or sections of the application.
+*/

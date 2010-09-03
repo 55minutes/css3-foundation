@@ -1,0 +1,20 @@
+/*------------------------------------------------------------------------------
+| screen.css
+| application name v1.0
+| Author(s): Author Name
+| Created: yyyy-mm-dd
+|
+| This file rolls up the main styles for the entire application. You'll need to
+| include the IE-specific and print stylesheet separately in your markup.
+------------------------------------------------------------------------------*/
+
+
+@import "reset";
+@import "compass/css3";
+@import "colors";
+@import "typography";
+@import "dimensions";
+@import "layout";
+@import "common";
+@import "forms";
+@import "page-specific";

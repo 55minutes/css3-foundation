@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta tags -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" media="all" href="./styles/screen.css"/>
+
+  <!-- conditional comments -->
+  <!--[if IE]>
+    <link rel="stylesheet" type="text/css" media="all" href="./styles/ie.css" />
+  <![endif]-->
+
+  <!-- print stylesheet -->
+  <link rel="stylesheet" type="text/css" media="print" href="./styles/print.css"/>
+  
+  <!-- inline styles -->
+  <style type="text/css" media="screen">
+    #main
+    {
+      margin: 50px auto;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -o-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -khtml-border-radius: 15px;
+      border-radius: 15px;
+      border: 5px solid #c0c0c0;
+      padding: 30px;
+      width: 500px;
+    }
+  </style>
+
+  <!-- external javascript links -->
+  <!-- libraries -->
+  <script type="text/javascript" src="./scripts/lib/jquery-1.4.2/jquery-1.4.2.min.js">
+  </script>
+  <script type="text/javascript" src="./scripts/lib/jquery-ui-1.8.4/jquery-ui.min.js">
+  </script>
+
+  <!-- global utilities -->
+  <script type="text/javascript" src="./scripts/lib/fiftyfive-utils/55_utils.js">
+  </script>
+  <script type="text/javascript" src="./scripts/lib/fiftyfive-utils/jquery.55_utils.js">
+  </script>
+
+  <!-- page-specific utilities -->
+  <!-- <script type="text/javascript" src="./scripts/home.js">
+  </script> -->
+  
+  <script type="text/javascript" charset="utf-8">
+    (function($) {
+      $(function() {
+        /*
+        ** Add classes to the body tag if the browser is a version of Internet
+        ** Explorer. Inspired by
+        **  <paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/>.
+        ** 
+        ** It turns out that the method outlined there doesn't work well with
+        ** the Wicket framework <wicket.apache.org/>, so I'm going with an all-
+        ** JavaScript solution. Key off the classes assigned by this function
+        ** to write your IE-specific styles in ie.css, included above.
+        */
+        $("body").addClass(getIEClass());
+      });
+    })(jQuery);
+  </script>
+
+  <title>Markup/styling/behavior scaffolding</title>
+</head>
+<body>
+
+  <div id="main">
+    <h1>Compass-based HTML/CSS/JS scaffolding</h1>
+    <p>These files contain a <a href="http://compass-style.org/" title="Compass">Compass</a>-based markup, styling and behavior scaffolding. Read the comments throughout the source code to get started.</p>
+  </div> <!-- /#main -->
+
+</body>
+</html>
+
