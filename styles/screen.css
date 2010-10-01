@@ -331,6 +331,11 @@ input[type=text].small {
 
 /*-----[ buttons and checkboxes]------------------------------------------------
 */
+input[type=checkbox],
+input[type=radio] {
+  vertical-align: baseline;
+}
+
 input[type=checkbox] {
   border: 1px solid #505050;
   background-color: white;

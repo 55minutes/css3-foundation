@@ -52,6 +52,12 @@ input[type=text].small
 */
 $button-border-radius: 8px;
 
+input[type=checkbox],
+input[type=radio]
+{
+  vertical-align: baseline;
+}
+
 input[type=checkbox]
 {
   border: 1px solid #505050;
