@@ -113,3 +113,16 @@ button[disabled]
   float: left;
   margin: 0 $body-text-line-height / 2 0 0;
 }
+
+/*----------[ datepicker ]------------------------------------------------------
+*/
+input.date,
+img.ui-datepicker-trigger
+{
+  vertical-align: middle;
+}
+
+.ui-datepicker
+{
+  font-size: $secondary-text-size !important;
+}

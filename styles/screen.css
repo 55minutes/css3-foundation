@@ -395,6 +395,17 @@ button[disabled] {
   margin: 0 10px 0 0;
 }
 
+/*----------[ datepicker ]------------------------------------------------------
+*/
+input.date,
+img.ui-datepicker-trigger {
+  vertical-align: middle;
+}
+
+.ui-datepicker {
+  font-size: 14px !important;
+}
+
 /*-----[ page-specific ]--------------------------------------------------------
 | Styles for individual pages or sections of the application.
 */
