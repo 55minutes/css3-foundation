@@ -5,44 +5,45 @@
 */
 /*----------[ palette ]---------------------------------------------------------
 */
-$old-rose: #cc365c;
-$cerulean: #0c68a3;
-$light-cyan: #daf3fe;
-$mango-tango: #ef6d05;
-$orange: #ffa500;
-$orange-mid: #ffc96e;
-$orange-highlight: #ffe2b3;
-$moon-glow: #f5ebcc;
-$turtle-green: #273017;
-$crusoe-green: #305f0d;
+$old-copper: #6f452b;
+$tuscany: #c8653a;
+$hurricane: #94847c;
+$bone: #e5dbc7;
+$pattens-blue: #dde7f3;
+$rain-forest: #696f2b;
+$lochinvar: #46948d;
+$jacarta: #4b2b6f;
+$fire: #8a3528;
+$azure: #37649b;
+$wedgewood: #467894;
 
 /*----------[ backgrounds and borders ]-----------------------------------------
 */
 $page-bg: white;
-$accent-bg: $moon-glow;
+$accent-bg: $bone;
 
-$inverse-highlight: $turtle-green;
+$inverse-highlight: $old-copper;
 
 /*----------[ text ]------------------------------------------------------------
 */
 $body-text-color: black;
-$link: $crusoe-green;
-$visited-link: $turtle-green;
+$link: $wedgewood;
+$visited-link: $jacarta;
 $secondary-text-color: #808080;
 
 $highlighted-text-color: white;
-$subheading-text-color: $old-rose;
+$subheading-text-color: $tuscany;
 
-$error-feedback: $mango-tango;
-$success-feedback: $mango-tango;
+$error-feedback: $fire;
+$success-feedback: $azure;
 
 /*----------[ forms ]-----------------------------------------------------------
 */
 $button-border: black;
-$button-gradient-light: $orange-highlight;
-$button-gradient-mid: $orange-mid;
-$button-gradient-dark: $orange;
-$button-text-color: black;
+$button-gradient-light: #67b7b0;
+$button-gradient-mid: $lochinvar;
+$button-gradient-dark: #306661;
+$button-text-color: white;
 
 $disabled-button-border: #d0d0d0;
 $disabled-button-gradient-light: #fefefe;
@@ -50,6 +51,6 @@ $disabled-button-gradient-mid: #ececec;
 $disabled-button-gradient-dark: #cdcdcd;
 $disabled-button-text-color: #959595;
 
-$text-input-inside-stroke: #eeece4;
+$text-input-inside-stroke: #f0eade;
 $text-input-outside-stroke: black;
 
