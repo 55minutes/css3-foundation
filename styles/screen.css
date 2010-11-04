@@ -231,26 +231,26 @@ ul {
 
 /*----------[ general ]---------------------------------------------------------
 */
-.alignCenter {
+.align-center {
   margin: 0px auto;
 }
 
-.alignLeft {
+.align-left {
   float: left;
 }
 
-.alignRight {
+.align-right {
   float: right;
 }
 
 .annotation,
-.finePrint {
+.fine-print {
   color: gray;
   font-weight: normal;
   font-style: italic;
 }
 
-.finePrint {
+.fine-print {
   font-size: 85%;
 }
 
