@@ -53,7 +53,7 @@
     (function($) {
       $(function() {
         /*
-        ** Add classes to the body tag if the browser is a version of Internet
+        ** Add classes to the html tag if the browser is a version of Internet
         ** Explorer. Inspired by
         **  <paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/>.
         ** 
@@ -62,7 +62,7 @@
         ** JavaScript solution. Key off the classes assigned by this function
         ** to write your IE-specific styles in ie.css, included above.
         */
-        $("body").addClass(getIEClass());
+        $("html").addClass(getIEClass());
       });
     })(jQuery);
   </script>
