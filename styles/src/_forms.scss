@@ -72,7 +72,7 @@ button
   @include border-radius($button-border-radius);
   padding: 2px $body-text-line-height;
   background: $button-gradient-mid;
-  @include linear-gradient(color-stops($button-gradient-light, $button-gradient-dark));
+  @include background-image(linear-gradient($button-gradient-light, $button-gradient-dark));
   color: $button-text-color;
   font-size: 14px;
   font-weight: bold;
@@ -85,7 +85,7 @@ button[disabled]
 {
   border: 2px solid $disabled-button-border;
   background: $disabled-button-gradient-mid;
-  @include linear-gradient(color-stops($disabled-button-gradient-light, $disabled-button-gradient-dark));
+  @include background-image(linear-gradient($disabled-button-gradient-light, $disabled-button-gradient-dark));
   color: $disabled-button-text-color;
   cursor: default !important;
 }
