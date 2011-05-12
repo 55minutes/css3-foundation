@@ -141,13 +141,17 @@ ul
   font-size: 85%;
 }
 
+/* Clearfix style from <http://nicolasgallagher.com/micro-clearfix-hack/> */
+.group:before,
 .group:after
 {
-  content: ".";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
+}
+
+.group:after
+{
   clear: both;
-  visibility: hidden;
 }
 
 .reset

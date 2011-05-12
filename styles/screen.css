@@ -13,38 +13,105 @@
 |   v1.6 2010-08-18 | Authors: Eric Meyer & Richard Clark
 |   <http://html5doctor.com/html-5-reset-stylesheet/>
 */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
 
-body { line-height: 1; }
+body {
+  line-height: 1;
+}
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 
-nav ul { list-style: none; }
+nav ul {
+  list-style: none;
+}
 
-blockquote, q { quotes: none; }
+blockquote, q {
+  quotes: none;
+}
 
-blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
 
-a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
 
 /* change colours to suit your needs */
-ins { background-color: #ff9; color: #000; text-decoration: none; }
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
 
 /* change colours to suit your needs */
-mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
 
-del { text-decoration: line-through; }
+del {
+  text-decoration: line-through;
+}
 
-abbr[title], dfn[title] { border-bottom: 1px dotted inherit; cursor: help; }
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted inherit;
+  cursor: help;
+}
 
-table { border-collapse: collapse; border-spacing: 0; border-style: none; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-style: none;
+}
 
-th, td, tr { border-style: none; }
+th, td, tr {
+  border-style: none;
+}
 
 /* change border colour to suit your needs */
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0; }
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
 
-input, select { vertical-align: middle; }
+input, select {
+  vertical-align: middle;
+}
 
 /*-----[ colors ]---------------------------------------------------------------
 | Variables defining the colors to be used throughout the application. Curious
@@ -73,99 +140,278 @@ input, select { vertical-align: middle; }
 */
 /*----------[ tags ]------------------------------------------------------------
 */
-a { color: #467894; }
+a {
+  color: #467894;
+}
 
-a:hover, a:active, a:link:visited { color: #4b2b6f; }
+a:hover,
+a:active,
+a:link:visited {
+  color: #4b2b6f;
+}
 
-blockquote, dl, ol, p, pre, table, ul { margin: 20px 0; }
+blockquote, dl, ol, p, pre, table, ul {
+  margin: 20px 0;
+}
 
-body { background-color: white; color: black; font-family: Calibri, "Myriad Pro", Tahoma, sans-serif; font-size: 16px; line-height: 20px; }
+body {
+  background-color: white;
+  color: black;
+  font-family: Calibri, "Myriad Pro", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
 
-caption { font-style: italic; }
+caption {
+  font-style: italic;
+}
 
-dt { font-style: italic; }
+dt {
+  font-style: italic;
+}
 
-dd { margin: 0 0 0; }
+dd {
+  margin: 0 0 0;
+}
 
-h1 { margin-bottom: 30px; padding: 0; font-size: 24px; line-height: 24px; }
+h1 {
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+}
 
-h2 { margin-top: 0; color: #c8653a; }
+h2 {
+  margin-top: 0;
+  color: #c8653a;
+}
 
-hr { margin: 5px auto; border-style: none; height: 1px; background-color: #808080; }
+hr {
+  margin: 5px auto;
+  border-style: none;
+  height: 1px;
+  background-color: #808080;
+}
 
-ol, ul { margin-left: 18px; }
+ol, ul {
+  margin-left: 18px;
+}
 
-ol { list-style-type: decimal; }
+ol {
+  list-style-type: decimal;
+}
 
-ol ol { list-style-type: lower-alpha; }
+ol ol {
+  list-style-type: lower-alpha;
+}
 
-ol ol ol { list-style-type: lower-roman; }
+ol ol ol {
+  list-style-type: lower-roman;
+}
 
-pre { padding: 5px 10px; overflow: auto; background-color: #fff8f0; }
+pre {
+  padding: 5px 10px;
+  overflow: auto;
+  background-color: #fff8f0;
+}
 
-td, th { padding: 5px; padding-left: column-width6px; }
+td, th {
+  padding: 5px;
+  padding-left: column-width6px;
+}
 
-th { text-align: left; font-weight: normal; }
+th {
+  text-align: left;
+  font-weight: normal;
+}
 
-ul { list-style-type: disc; }
+ul {
+  list-style-type: disc;
+}
 
 /*----------[ general ]---------------------------------------------------------
 */
-.align-center { margin: 0px auto; }
+.align-center {
+  margin: 0px auto;
+}
 
-.align-left { float: left; }
+.align-left {
+  float: left;
+}
 
-.align-right { float: right; }
+.align-right {
+  float: right;
+}
 
-.annotation, .fine-print { color: gray; font-weight: normal; font-style: italic; }
+.annotation,
+.fine-print {
+  color: gray;
+  font-weight: normal;
+  font-style: italic;
+}
 
-.fine-print { font-size: 85%; }
+.fine-print {
+  font-size: 85%;
+}
 
-.group:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+/* Clearfix style from <http://nicolasgallagher.com/micro-clearfix-hack/> */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
 
-.reset { clear: both; margin: 0px; padding: 0px; height: 1px; font-size: 0px; }
+.group:after {
+  clear: both;
+}
 
-.spacer { padding: 0px; height: 10px; font-size: 0px; }
+.reset {
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+  height: 1px;
+  font-size: 0px;
+}
 
-.subtitle { font-weight: normal; }
+.spacer {
+  padding: 0px;
+  height: 10px;
+  font-size: 0px;
+}
 
-.subheading { font-weight: bold; }
+.subtitle {
+  font-weight: normal;
+}
+
+.subheading {
+  font-weight: bold;
+}
 
 /*-----[ forms ]----------------------------------------------------------------
 */
 /*-----[ text and password fields, textareas ]----------------------------------
 */
-input[type=text], input[type=password], select, textarea { margin: 0px; padding: 0; background-color: white; font-family: Calibri, "Myriad Pro", Tahoma, sans-serif; font-size: 14px; line-height: 14px; }
+input[type=text],
+input[type=password],
+select,
+textarea {
+  margin: 0px;
+  padding: 0;
+  background-color: white;
+  font-family: Calibri, "Myriad Pro", Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
 
-input[type=text], input[type=password], textarea { outline: 1px solid black; border: 3px solid #f0eade; padding: 0; }
+input[type=text],
+input[type=password],
+textarea {
+  outline: 1px solid black;
+  border: 3px solid #f0eade;
+  padding: 0;
+}
 
-select { border: 1px solid black; padding: 1px; }
+select {
+  border: 1px solid black;
+  padding: 1px;
+}
 
-input[type=text][disabled], input[type=password][disabled], select[disabled], textarea[disabled] { border: 1px solid #c0c0c0 !important; padding: 3px; background-color: #e0e0e0 !important; color: #808080 !important; cursor: default !important; }
+input[type=text][disabled],
+input[type=password][disabled],
+select[disabled],
+textarea[disabled] {
+  border: 1px solid #c0c0c0 !important;
+  padding: 3px;
+  background-color: #e0e0e0 !important;
+  color: #808080 !important;
+  cursor: default !important;
+}
 
-input[type=text].small { width: 50px; margin-right: 0.33em; }
+input[type=text].small {
+  width: 50px;
+  margin-right: 0.33em;
+}
 
 /*-----[ buttons and checkboxes]------------------------------------------------
 */
-input[type=checkbox], input[type=radio] { vertical-align: baseline; }
+input[type=checkbox],
+input[type=radio] {
+  vertical-align: baseline;
+}
 
-input[type=checkbox] { border: 1px solid #505050; background-color: white; }
+input[type=checkbox] {
+  border: 1px solid #505050;
+  background-color: white;
+}
 
-input[type=submit], input[type=button], button { border: 2px solid black; -moz-border-radius: 8px; -webkit-border-radius: 8px; -o-border-radius: 8px; -ms-border-radius: 8px; -khtml-border-radius: 8px; border-radius: 8px; padding: 2px 20px; background: #46948d; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #67b7b0), color-stop(100%, #306661)); background-image: -webkit-linear-gradient(#67b7b0, #306661); background-image: -moz-linear-gradient(#67b7b0, #306661); background-image: -o-linear-gradient(#67b7b0, #306661); background-image: linear-gradient(#67b7b0, #306661); color: white; font-size: 14px; font-weight: bold; cursor: pointer; }
+input[type=submit],
+input[type=button],
+button {
+  border: 2px solid black;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  padding: 2px 20px;
+  background: #46948d;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #67b7b0), color-stop(100%, #306661));
+  background-image: -webkit-linear-gradient(#67b7b0, #306661);
+  background-image: -moz-linear-gradient(#67b7b0, #306661);
+  background-image: -o-linear-gradient(#67b7b0, #306661);
+  background-image: linear-gradient(#67b7b0, #306661);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-input[type=submit][disabled], input[type=button][disabled], button[disabled] { border: 2px solid #d0d0d0; background: #ececec; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #cdcdcd)); background-image: -webkit-linear-gradient(#fefefe, #cdcdcd); background-image: -moz-linear-gradient(#fefefe, #cdcdcd); background-image: -o-linear-gradient(#fefefe, #cdcdcd); background-image: linear-gradient(#fefefe, #cdcdcd); color: #959595; cursor: default !important; }
+input[type=submit][disabled],
+input[type=button][disabled],
+button[disabled] {
+  border: 2px solid #d0d0d0;
+  background: #ececec;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #cdcdcd));
+  background-image: -webkit-linear-gradient(#fefefe, #cdcdcd);
+  background-image: -moz-linear-gradient(#fefefe, #cdcdcd);
+  background-image: -o-linear-gradient(#fefefe, #cdcdcd);
+  background-image: linear-gradient(#fefefe, #cdcdcd);
+  color: #959595;
+  cursor: default !important;
+}
 
-.button-bar { margin: 20px 0; padding: 0px; }
+.button-bar {
+  margin: 20px 0;
+  padding: 0px;
+}
 
-.button-bar > a { display: inline-block; padding: 5px; line-height: 14px; vertical-align: middle; font-size: 14px; }
+.button-bar > a {
+  display: inline-block;
+  padding: 5px;
+  line-height: 14px;
+  vertical-align: middle;
+  font-size: 14px;
+}
 
-.button-bar input[type=submit], .button-bar input[type=button], .button-bar button, .button-bar > a { float: left; margin: 0 10px 0 0; }
+.button-bar input[type=submit],
+.button-bar input[type=button],
+.button-bar button,
+.button-bar > a {
+  float: left;
+  margin: 0 10px 0 0;
+}
 
 /*----------[ datepicker ]------------------------------------------------------
 */
-input.date, img.ui-datepicker-trigger { vertical-align: middle; }
+input.date,
+img.ui-datepicker-trigger {
+  vertical-align: middle;
+}
 
-.ui-datepicker { font-size: 14px !important; }
+.ui-datepicker {
+  font-size: 14px !important;
+}
 
 /*-----[ page-specific ]--------------------------------------------------------
 | Styles for individual pages or sections of the application.
