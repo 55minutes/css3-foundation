@@ -2,41 +2,37 @@
 */
 /*-----[ text and password fields, textareas ]----------------------------------
 */
-input[type=text],
+input[type=email],
 input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
 select,
 textarea
 {
-  margin: 0px;
-  padding: 0;
+  margin: 0;
+  border: 1px solid $text-input-outside-stroke;
+  padding: ($body-text-line-height-fallback - $secondary-text-size-fallback - 2) / 2;
+  padding: ($body-text-line-height - $secondary-text-size - 0.2) / 2;
   background-color: white;
   font-family:  $body-text;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: $secondary-text-size-fallback;
+  font-size: $secondary-text-size;
+  line-height: $secondary-text-size-fallback;
+  line-height: $secondary-text-size;
 }
 
-input[type=text],
-input[type=password],
-textarea
-{
-  outline: 1px solid $text-input-outside-stroke;
-  border: 3px solid $text-input-inside-stroke;
-  padding: 0;
-}
-
-select
-{
-  border: 1px solid $text-input-outside-stroke;
-  padding: 1px;
-}
-
-input[type=text][disabled],
+input[type=email][disabled],
 input[type=password][disabled],
+input[type=search][disabled],
+input[type=tel][disabled],
+input[type=text][disabled],
+input[type=url][disabled],
 select[disabled],
 textarea[disabled]
 {
-  border: 1px solid #c0c0c0 !important;
-  padding: 3px;
+  border-color: #c0c0c0 !important;
   background-color: #e0e0e0 !important;
   color: #808080 !important;
   cursor: default !important;
@@ -64,21 +60,25 @@ input[type=checkbox]
   background-color: white;
 }
 
+button,
 input[type=submit],
 input[type=button],
 button
 {
   border: 2px solid $button-border;
   @include border-radius($button-border-radius);
-  padding: 2px $body-text-line-height;
+  padding: 2px $column-width-fallback;
+  padding: 2px $column-width;
   background: $button-gradient-mid;
   @include background-image(linear-gradient($button-gradient-light, $button-gradient-dark));
   color: $button-text-color;
-  font-size: 14px;
+  font-size: $secondary-text-size-fallback;
+  font-size: $secondary-text-size;
   font-weight: bold;
   cursor: pointer;
 }
 
+button,
 input[type=submit][disabled],
 input[type=button][disabled],
 button[disabled]
@@ -92,6 +92,7 @@ button[disabled]
 
 .button-bar
 {
+  margin: $body-text-line-height-fallback 0;
   margin: $body-text-line-height 0;
   padding: 0px;
 }
@@ -99,10 +100,11 @@ button[disabled]
 .button-bar > a
 {
   display: inline-block;
-  padding: 5px;
-  line-height: $secondary-text-size;
   vertical-align: middle;
+  font-size: $secondary-text-size-fallback;
   font-size: $secondary-text-size;
+  line-height: $body-text-line-height-fallback;
+  line-height: $body-text-line-height;
 }
 
 .button-bar input[type=submit],
@@ -111,7 +113,9 @@ button[disabled]
 .button-bar > a
 {
   float: left;
-  margin: 0 $body-text-line-height / 2 0 0;
+  margin: 0;
+  margin-right: $column-width-fallback / 2;
+  margin-right: $column-width / 2;
 }
 
 /*----------[ datepicker ]------------------------------------------------------

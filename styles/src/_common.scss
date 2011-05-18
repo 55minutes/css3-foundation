@@ -4,6 +4,11 @@
 */
 /*----------[ tags ]------------------------------------------------------------
 */
+html
+{
+  font-size: 62.5%;
+}
+
 a
 {
   color: $link;
@@ -18,6 +23,7 @@ a:link:visited
 
 blockquote, dl, ol, p, pre, table, ul
 {
+  margin: $body-text-line-height-fallback 0;
   margin: $body-text-line-height 0;
 }
 
@@ -26,7 +32,9 @@ body
   background-color: $page-bg;
   color: $body-text-color;
   font-family:  $body-text;
+  font-size: $body-text-size-fallback;
   font-size: $body-text-size;
+  line-height: $body-text-line-height-fallback;
   line-height: $body-text-line-height;
 }
 
@@ -42,14 +50,17 @@ dt
 
 dd
 {
-  margin: 0 0 0;
+  margin: 0;
 }
 
 h1
 {
-  margin-bottom: $body-text-line-height * 1.5;
+  margin-bottom: $body-text-line-height-fallback * 2 - $page-heading-text-size-fallback;
+  margin-bottom: $body-text-line-height * 2 - $page-heading-text-size;
   padding: 0;
+  font-size: $page-heading-text-size-fallback;
   font-size: $page-heading-text-size;
+  line-height: $page-heading-text-size-fallback;
   line-height: $page-heading-text-size;
 }
 
@@ -61,7 +72,8 @@ h2
 
 hr
 {
-  margin: 5px auto;
+  margin: ($body-text-line-height-fallback / 2 - 1) auto $body-text-line-height-fallback / 2;
+  margin: ($body-text-line-height / 2 - 0.1) auto $body-text-line-height / 2;
   border-style: none;
   height: 1px;
   background-color: #808080;
@@ -89,15 +101,18 @@ ol ol ol
 
 pre
 {
-  padding: 5px 10px;
+  padding: $body-text-line-height-fallback / 2 $column-width-fallback / 2;
+  padding: $body-text-line-height / 2 $column-width / 2;
   overflow: auto;
   background-color: #fff8f0;
 }
 
 td, th
 {
+  padding: $body-text-line-height-fallback / 4;
   padding: $body-text-line-height / 4;
-  padding-left: column-width + $horizontal-nudge;
+  padding-left: $column-width-fallback + $horizontal-nudge-fallback;
+  padding-left: $column-width + $horizontal-nudge;
 }
 
 th
@@ -166,6 +181,7 @@ ul
 .spacer
 {
   padding: 0px;
+  height: $body-text-line-height-fallback / 2;
   height: $body-text-line-height / 2;
   font-size: 0px;
 }

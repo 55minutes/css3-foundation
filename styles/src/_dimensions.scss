@@ -1,8 +1,13 @@
 /*-----[ dimensions ]-----------------------------------------------------------
 */
-$column-width: 18px;
-$horizontal-nudge: 6px;
-$gutter-width: 30px;
-$content-border-width: 3px;
+$column-width-fallback: 18px;
+$column-width: 1.8rem;
+$horizontal-nudge-fallback: 6px;
+$horizontal-nudge: 0.6rem;
+$gutter-width-fallback: 30px;
+$gutter-width: 3rem;
+$content-border-width-fallback: 3px;
+$content-border-width: 0.3rem;
 
+$vertical-nudge-fallback: $body-text-line-height-fallback / 4;
 $vertical-nudge: $body-text-line-height / 4;

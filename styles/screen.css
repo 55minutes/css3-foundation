@@ -140,6 +140,10 @@ input, select {
 */
 /*----------[ tags ]------------------------------------------------------------
 */
+html {
+  font-size: 62.5%;
+}
+
 a {
   color: #467894;
 }
@@ -151,7 +155,8 @@ a:link:visited {
 }
 
 blockquote, dl, ol, p, pre, table, ul {
-  margin: 20px 0;
+  margin: 22px 0;
+  margin: 2.2rem 0;
 }
 
 body {
@@ -159,7 +164,9 @@ body {
   color: black;
   font-family: Calibri, "Myriad Pro", Tahoma, sans-serif;
   font-size: 16px;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 22px;
+  line-height: 2.2rem;
 }
 
 caption {
@@ -171,14 +178,17 @@ dt {
 }
 
 dd {
-  margin: 0 0 0;
+  margin: 0;
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-bottom: 2.0rem;
   padding: 0;
   font-size: 24px;
+  font-size: 2.4rem;
   line-height: 24px;
+  line-height: 2.4rem;
 }
 
 h2 {
@@ -187,14 +197,15 @@ h2 {
 }
 
 hr {
-  margin: 5px auto;
+  margin: 10px auto 11px;
+  margin: 1rem auto 1.1rem;
   border-style: none;
   height: 1px;
   background-color: #808080;
 }
 
 ol, ul {
-  margin-left: 18px;
+  margin-left: 1.8rem;
 }
 
 ol {
@@ -210,14 +221,17 @@ ol ol ol {
 }
 
 pre {
-  padding: 5px 10px;
+  padding: 11px 9px;
+  padding: 1.1rem 0.9rem;
   overflow: auto;
   background-color: #fff8f0;
 }
 
 td, th {
-  padding: 5px;
-  padding-left: column-width6px;
+  padding: 5.5px;
+  padding: 0.55rem;
+  padding-left: 24px;
+  padding-left: 2.4rem;
 }
 
 th {
@@ -275,7 +289,8 @@ ul {
 
 .spacer {
   padding: 0px;
-  height: 10px;
+  height: 11px;
+  height: 1.1rem;
   font-size: 0px;
 }
 
@@ -291,37 +306,35 @@ ul {
 */
 /*-----[ text and password fields, textareas ]----------------------------------
 */
-input[type=text],
+input[type=email],
 input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
 select,
 textarea {
-  margin: 0px;
-  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  padding: 3px;
+  padding: 0.3rem;
   background-color: white;
   font-family: Calibri, "Myriad Pro", Tahoma, sans-serif;
   font-size: 14px;
+  font-size: 1.4rem;
   line-height: 14px;
+  line-height: 1.4rem;
 }
 
-input[type=text],
-input[type=password],
-textarea {
-  outline: 1px solid black;
-  border: 3px solid #f0eade;
-  padding: 0;
-}
-
-select {
-  border: 1px solid black;
-  padding: 1px;
-}
-
-input[type=text][disabled],
+input[type=email][disabled],
 input[type=password][disabled],
+input[type=search][disabled],
+input[type=tel][disabled],
+input[type=text][disabled],
+input[type=url][disabled],
 select[disabled],
 textarea[disabled] {
-  border: 1px solid #c0c0c0 !important;
-  padding: 3px;
+  border-color: #c0c0c0 !important;
   background-color: #e0e0e0 !important;
   color: #808080 !important;
   cursor: default !important;
@@ -344,6 +357,7 @@ input[type=checkbox] {
   background-color: white;
 }
 
+button,
 input[type=submit],
 input[type=button],
 button {
@@ -354,7 +368,8 @@ button {
   -ms-border-radius: 8px;
   -khtml-border-radius: 8px;
   border-radius: 8px;
-  padding: 2px 20px;
+  padding: 2px 18px;
+  padding: 2px 1.8rem;
   background: #46948d;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #67b7b0), color-stop(100%, #306661));
   background-image: -webkit-linear-gradient(#67b7b0, #306661);
@@ -363,10 +378,12 @@ button {
   background-image: linear-gradient(#67b7b0, #306661);
   color: white;
   font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
 }
 
+button,
 input[type=submit][disabled],
 input[type=button][disabled],
 button[disabled] {
@@ -382,16 +399,18 @@ button[disabled] {
 }
 
 .button-bar {
-  margin: 20px 0;
+  margin: 22px 0;
+  margin: 2.2rem 0;
   padding: 0px;
 }
 
 .button-bar > a {
   display: inline-block;
-  padding: 5px;
-  line-height: 14px;
   vertical-align: middle;
   font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 22px;
+  line-height: 2.2rem;
 }
 
 .button-bar input[type=submit],
@@ -399,7 +418,9 @@ button[disabled] {
 .button-bar button,
 .button-bar > a {
   float: left;
-  margin: 0 10px 0 0;
+  margin: 0;
+  margin-right: 9px;
+  margin-right: 0.9rem;
 }
 
 /*----------[ datepicker ]------------------------------------------------------
@@ -410,7 +431,7 @@ img.ui-datepicker-trigger {
 }
 
 .ui-datepicker {
-  font-size: 14px !important;
+  font-size: 1.4rem !important;
 }
 
 /*-----[ page-specific ]--------------------------------------------------------
