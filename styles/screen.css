@@ -357,7 +357,6 @@ input[type=checkbox] {
   background-color: white;
 }
 
-button,
 input[type=submit],
 input[type=button],
 button {
@@ -383,7 +382,6 @@ button {
   cursor: pointer;
 }
 
-button,
 input[type=submit][disabled],
 input[type=button][disabled],
 button[disabled] {
