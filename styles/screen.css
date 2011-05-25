@@ -167,6 +167,7 @@ body {
   font-size: 1.6rem;
   line-height: 22px;
   line-height: 2.2rem;
+  text-rendering: optimizeLegibility;
 }
 
 caption {

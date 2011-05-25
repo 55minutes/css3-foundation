@@ -36,6 +36,7 @@ body
   font-size: $body-text-size;
   line-height: $body-text-line-height-fallback;
   line-height: $body-text-line-height;
+  text-rendering: optimizeLegibility;
 }
 
 caption
