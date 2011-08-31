@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------------------
-| screen.css
+| application.css
 | application name v1.0
 | Author(s): Author Name
 | Created: yyyy-mm-dd
@@ -9,12 +9,14 @@
 ------------------------------------------------------------------------------*/
 
 
-@import "reset";
+@import "basics/reset";
 @import "compass/css3";
-@import "colors";
-@import "typography";
-@import "dimensions";
-@import "layout";
-@import "common";
-@import "forms";
-@import "page-specific";
+@import "basics/colors";
+@import "basics/typography";
+@import "basics/grid";
+@import "shared/foundation";
+@import "shared/forms";
+@import "shared/header";
+@import "shared/footer";
+@import "home";
+@import "feature-1";

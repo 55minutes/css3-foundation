@@ -5,77 +5,73 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
   <!-- stylesheets -->
-  <link rel="stylesheet" type="text/css" media="all" href="./styles/screen.css"/>
+  <!-- for all screen sizes -->
+  <link rel="stylesheet" type="text/css" media="all" href="styles/application.css"/>
 
   <!-- conditional comments -->
   <!--[if IE]>
-    <link rel="stylesheet" type="text/css" media="all" href="./styles/ie.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="styles/ie.css" />
   <![endif]-->
 
   <!-- print stylesheet -->
-  <link rel="stylesheet" type="text/css" media="print" href="./styles/print.css"/>
+  <link rel="stylesheet" type="text/css" media="print" href="styles/print.css"/>
   
-  <!-- inline styles -->
-  <style type="text/css" media="screen">
-    #main
-    {
-      margin: 50px auto;
-      -moz-border-radius: 15px;
-      -webkit-border-radius: 15px;
-      -o-border-radius: 15px;
-      -ms-border-radius: 15px;
-      -khtml-border-radius: 15px;
-      border-radius: 15px;
-      border: 5px solid #c0c0c0;
-      padding: 30px;
-      width: 500px;
-    }
-  </style>
-
-  <!-- external javascript links -->
-  <!-- libraries -->
-  <script type="text/javascript" src="./scripts/lib/jquery-1.6.2/jquery.min.js">
+  <!-- for progressively larger displays -->
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 480px)" href="styles/480.css"/>
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" href="styles/768.css"/>
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1024px)" href="styles/1024.css"/>
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1200px)" href="styles/1200.css"/>
+  
+  <!-- header javascript -->
+  <!-- stand-alone utilities -->
+  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/55_utils.js">
   </script>
-  <script type="text/javascript" src="./scripts/lib/jquery-ui-1.8.14/jquery-ui.min.js">
-  </script>
-
-  <!-- global utilities -->
-  <script type="text/javascript" src="./scripts/lib/fiftyfive-utils/55_utils.js">
-  </script>
-  <script type="text/javascript" src="./scripts/lib/fiftyfive-utils/jquery.55_utils.js">
-  </script>
-
-  <!-- page-specific utilities -->
-  <!-- <script type="text/javascript" src="./scripts/home.js">
-  </script> -->
   
   <script type="text/javascript" charset="utf-8">
-    (function($) {
-      $(function() {
-        /*
-        ** Add classes to the html tag if the browser is a version of Internet
-        ** Explorer. Inspired by
-        **  <paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/>.
-        ** 
-        ** It turns out that the method outlined there doesn't work well with
-        ** the Wicket framework <wicket.apache.org/>, so I'm going with an all-
-        ** JavaScript solution. Key off the classes assigned by this function
-        ** to write your IE-specific styles in ie.css, included above.
-        */
-        $("html").addClass(getIEClass());
-      });
-    })(jQuery);
+    document.getElementsByTagName("html")[0].className += getIEClass();
   </script>
 
-  <title>Markup/styling/behavior scaffolding</title>
+  <title>CSS3/HTML5 scaffolding</title>
 </head>
 <body>
 
   <div id="main">
-    <h1>Compass-based HTML/CSS/JS scaffolding</h1>
+    <h1>Compass-based CSS3/HTML5 scaffolding</h1>
     <p>These files contain a <a href="http://compass-style.org/" title="Compass">Compass</a>-based markup, styling and behavior scaffolding. Read the comments throughout the source code to get started.</p>
   </div> <!-- /#main -->
 
+  <!-- all other javascript goes at the end of the body -->
+  <!-- libraries -->
+  <!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js">
+  </script> -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+  </script>
+
+  <!-- global utilities -->
+  <!-- uncomment as necessary -->
+  <!-- <script type="text/javascript" src="scripts/lib/cookies/cookies.js">
+  </script>
+  <script type="text/javascript" src="scripts/lib/dump/dump.js">
+  </script>
+  <script type="text/javascript" src="scripts/lib/strftime/strftime-min.js">
+  </script> -->
+  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/jquery.55_utils.js">
+  </script>
+  <!-- <script type="text/javascript" src="scripts/lib/fiftyfive-utils/modernizr-extras.js">
+  </script> -->
+
+  <!-- page-specific utilities -->
+  <!-- <script type="text/javascript" src="scripts/home.js">
+  </script> -->
+  
+  <!-- onload javascript -->
+  <script type="text/javascript" charset="utf-8">
+    (function($) {
+      $(function() {
+        // Stuff to do as soon as the DOM is ready;
+      });
+    })(jQuery);
+  </script>
 </body>
 </html>
 
