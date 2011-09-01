@@ -4,7 +4,17 @@
 */
 #main
 {
-  margin: 50px auto;
-  width: 500px;
+  padding: $body-text-line-height $column-width;
+}
+
+@media (min-width: 768px)
+{
+  #main
+  {
+    margin: 5rem auto;
+    border: 0.2rem solid $silver;
+    @include border-radius(1.5rem);
+    max-width: 65rem;
+  }
 }
 

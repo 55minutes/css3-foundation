@@ -1,17 +1,12 @@
 /*-----[ typography ]-----------------------------------------------------------
 */
-$body-text: Calibri, "Myriad Pro", Tahoma, sans-serif;
-$body-text-size-fallback: 16px;
+$body-text-family: Calibri, "Myriad Pro", Tahoma, sans-serif;
 $body-text-size: 1.6rem;
-$body-text-line-height-fallback: 22px;
 $body-text-line-height: 2.2rem;
 
-$monospace-text: Consolas, Monaco, "Lucida Console", monospace;
-$monospace-text-size-fallback: $body-text-size-fallback;
+$monospace-text-family: Consolas, Monaco, "Lucida Console", monospace;
 $monospace-text-size: $body-text-size;
 
-$secondary-text-size-fallback: 14px;
 $secondary-text-size: 1.4rem;
 
-$page-heading-text-size-fallback: 24px;
 $page-heading-text-size: 2.4rem;

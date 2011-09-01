@@ -2,13 +2,9 @@
 | Style specifying the dimensions of the basic page grid and other common
 | measures.
 */
-$column-width-fallback: 20px;
 $column-width: 2rem;
-$horizontal-nudge-fallback: $column-width-fallback / 4;
 $horizontal-nudge: $column-width / 4;
 
-$gutter-width-fallback: 1.5 * $column-width-fallback;
 $gutter-width: 1.5 * $column-width;
 
-$vertical-nudge-fallback: $body-text-line-height-fallback / 4;
 $vertical-nudge: $body-text-line-height / 4;

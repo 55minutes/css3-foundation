@@ -1,4 +1,6 @@
 # Require any additional compass plugins here.
+require 'compass-colors'
+
 # Set this to the root of your project when deployed:
 http_path = "/"
 
@@ -13,4 +15,4 @@ javascripts_dir = "../scripts"
 relative_assets = true
 
 output_style = :expanded
-# line_comments = false
+line_comments = false

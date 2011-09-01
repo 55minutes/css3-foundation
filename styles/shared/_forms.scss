@@ -14,14 +14,11 @@ select,
 textarea
 {
   margin: 0;
-  border: 1px solid $text-input-outside-stroke;
-  padding: ($body-text-line-height-fallback - $secondary-text-size-fallback - 2) / 2;
+  border: 0.1rem solid $stroke;
   padding: ($body-text-line-height - $secondary-text-size - 0.2) / 2;
   background-color: white;
-  font-family:  $body-text;
-  font-size: $secondary-text-size-fallback;
+  font-family:  $body-text-family;
   font-size: $secondary-text-size;
-  line-height: $secondary-text-size-fallback;
   line-height: $secondary-text-size;
 }
 
@@ -34,21 +31,20 @@ input[type=url][disabled],
 select[disabled],
 textarea[disabled]
 {
-  border-color: #c0c0c0 !important;
-  background-color: #e0e0e0 !important;
-  color: #808080 !important;
+  border-color: $disabled-stroke !important;
+  color: $disabled-text !important;
   cursor: default !important;
 }
 
 input[type=text].small
 {
-  width: 50px;
+  width: 5rem;
   margin-right: 0.33em;
 }
 
 /*-----[ buttons and checkboxes]------------------------------------------------
 */
-$button-border-radius: 8px;
+$button-border-radius: 0.8rem;
 
 input[type=checkbox],
 input[type=radio]
@@ -58,7 +54,7 @@ input[type=radio]
 
 input[type=checkbox]
 {
-  border: 1px solid #505050;
+  border: 0.1rem solid $grey;
   background-color: white;
 }
 
@@ -66,14 +62,12 @@ input[type=submit],
 input[type=button],
 button
 {
-  border: 2px solid $button-border;
+  border: 0.1rem solid $button-border;
   @include border-radius($button-border-radius);
-  padding: 2px $column-width-fallback;
-  padding: 2px $column-width;
+  padding: 0.2rem $column-width;
   background: $button-gradient-mid;
   @include background-image(linear-gradient($button-gradient-light, $button-gradient-dark));
   color: $button-text-color;
-  font-size: $secondary-text-size-fallback;
   font-size: $secondary-text-size;
   font-weight: bold;
   cursor: pointer;
@@ -83,7 +77,7 @@ input[type=submit][disabled],
 input[type=button][disabled],
 button[disabled]
 {
-  border: 2px solid $disabled-button-border;
+  border: 0.1rem solid $disabled-button-border;
   background: $disabled-button-gradient-mid;
   @include background-image(linear-gradient($disabled-button-gradient-light, $disabled-button-gradient-dark));
   color: $disabled-button-text-color;
@@ -92,18 +86,15 @@ button[disabled]
 
 .button-bar
 {
-  margin: $body-text-line-height-fallback 0;
   margin: $body-text-line-height 0;
-  padding: 0px;
+  padding: 0;
 }
 
 .button-bar > a
 {
   display: inline-block;
   vertical-align: middle;
-  font-size: $secondary-text-size-fallback;
   font-size: $secondary-text-size;
-  line-height: $body-text-line-height-fallback;
   line-height: $body-text-line-height;
 }
 
@@ -114,7 +105,6 @@ button[disabled]
 {
   float: left;
   margin: 0;
-  margin-right: $column-width-fallback / 2;
   margin-right: $column-width / 2;
 }
 

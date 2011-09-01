@@ -5,52 +5,56 @@
 */
 /*----------[ palette ]---------------------------------------------------------
 */
-$old-copper: #6f452b;
-$tuscany: #c8653a;
-$hurricane: #94847c;
-$bone: #e5dbc7;
-$pattens-blue: #dde7f3;
-$rain-forest: #696f2b;
-$lochinvar: #46948d;
-$jacarta: #4b2b6f;
-$fire: #8a3528;
-$azure: #37649b;
-$wedgewood: #467894;
+// Main palette
+$blackberry   : #4a1a2b;  /* purple */
+$eucalyptus   : #207861;  /* teal */
+$citrus       : #9fad00;  /* green */
+$supernova    : #ffcc00;  /* yellow */
+$flush-orange : #ff8400;  /* orange */
+$matisse      : #1673a1;  /* blue */
+$cinnabar     : #e53b19;  /* red */
+
+// Greys
+$charcoal    : #444444;
+$grey        : #808080;
+$silver      : #c0c0c0;
+$white-smoke : #f0f0f0;
 
 /*----------[ backgrounds and borders ]-----------------------------------------
 */
-$page-bg: white;
-$accent-bg: $bone;
+$page-bg   : white;
+$accent-bg : $white-smoke;
 
-$inverse-highlight: $old-copper;
+$stroke          : black;
+$disabled-stroke : $silver;
 
 /*----------[ text ]------------------------------------------------------------
 */
-$body-text-color: black;
-$link: $wedgewood;
-$visited-link: $jacarta;
-$secondary-text-color: #808080;
+$body-text      : $charcoal;
+$secondary-text : $grey;
+$disabled-text  : $silver;
 
-$highlighted-text-color: white;
-$subheading-text-color: $tuscany;
+$link         : $matisse;
+$visited-link : $blackberry;
 
-$error-feedback: $fire;
-$success-feedback: $azure;
+$highlighted-text : white;
+$subheading-text  : $eucalyptus;
+
+$error-feedback   : darken($cinnabar, 10);
+$success-feedback : darken($citrus, 10);
 
 /*----------[ forms ]-----------------------------------------------------------
 */
-$button-border: black;
-$button-gradient-light: #67b7b0;
-$button-gradient-mid: $lochinvar;
-$button-gradient-dark: #306661;
-$button-text-color: white;
+$button-border         : darken($flush-orange, 20);
+$button-gradient-light : $flush-orange;
+$button-gradient-mid   : darken($flush-orange, 5);
+$button-gradient-dark  : darken($flush-orange, 10);
+$button-text-color     : white;
 
-$disabled-button-border: #d0d0d0;
-$disabled-button-gradient-light: #fefefe;
-$disabled-button-gradient-mid: #ececec;
-$disabled-button-gradient-dark: #cdcdcd;
-$disabled-button-text-color: #959595;
+$disabled-button-border         : darken($silver, 10);
+$disabled-button-gradient-light : lighten($silver, 10);
+$disabled-button-gradient-mid   : lighten($silver, 5);
+$disabled-button-gradient-dark  : $silver;
+$disabled-button-text-color     : $grey;
 
-$text-input-inside-stroke: #f0eade;
-$text-input-outside-stroke: black;
 
