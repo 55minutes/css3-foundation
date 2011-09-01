@@ -471,6 +471,12 @@ img.ui-datepicker-trigger {
 #home #main {
   padding: 2.2rem 2rem;
 }
+#home #main p:last-of-type,
+#home #main dl:last-of-type,
+#home #main ol:last-of-type,
+#home #main ul:last-of-type {
+  margin-bottom: 0;
+}
 
 @media (min-width: 768px) {
   #home #main {

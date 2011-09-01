@@ -5,6 +5,14 @@
 #home #main
 {
   padding: $body-text-line-height $column-width;
+  
+  p:last-of-type,
+  dl:last-of-type,
+  ol:last-of-type,
+  ul:last-of-type,
+  {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 768px)
