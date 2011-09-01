@@ -169,6 +169,11 @@ ul
   clear: both;
 }
 
+span.keep-together
+{
+  white-space: nowrap;
+}
+
 .reset
 {
   clear: both;
@@ -194,4 +199,45 @@ ul
 {
   font-weight: bold;
 }
+
+/*----------[ unsupported browser warning ]-------------------------------------
+*/
+#unsupported-browser-warning
+{
+  display: none;
+  margin: $body-text-line-height auto;
+  border: 0.5rem solid darken($error-feedback, 5);
+  padding: $body-text-line-height $column-width;
+  background-color: white;
+  
+  .unsupported-browser &
+  {
+    display: block;
+  }
+  
+  h1
+  {
+    color: $error-feedback;
+  }
+  
+  a.dismiss
+  {
+    float: right;
+    line-height: $page-heading-text-size;
+  }
+  
+  p
+  {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px)
+{
+  #unsupported-browser-warning
+  {
+    max-width: 65rem;
+  }
+}
+
 

@@ -280,6 +280,10 @@ ul {
   clear: both;
 }
 
+span.keep-together {
+  white-space: nowrap;
+}
+
 .reset {
   clear: both;
   margin: 0px;
@@ -302,6 +306,34 @@ ul {
   font-weight: bold;
 }
 
+/*----------[ unsupported browser warning ]-------------------------------------
+*/
+#unsupported-browser-warning {
+  display: none;
+  margin: 2.2rem auto;
+  border: 0.5rem solid #a02911;
+  padding: 2.2rem 2rem;
+  background-color: white;
+}
+.unsupported-browser #unsupported-browser-warning {
+  display: block;
+}
+#unsupported-browser-warning h1 {
+  color: #b72f14;
+}
+#unsupported-browser-warning a.dismiss {
+  float: right;
+  line-height: 2.4rem;
+}
+#unsupported-browser-warning p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  #unsupported-browser-warning {
+    max-width: 65rem;
+  }
+}
 /*-----[ forms ]----------------------------------------------------------------
 | Global form and form element styles. Feature-specific form styles should be
 | co-located with other feature-specific styles.
@@ -436,12 +468,12 @@ img.ui-datepicker-trigger {
 | Styles for the home page. See _feature-1.scss for more details on how feature-
 | specific styles should be organized.
 */
-#main {
+#home #main {
   padding: 2.2rem 2rem;
 }
 
 @media (min-width: 768px) {
-  #main {
+  #home #main {
     margin: 5rem auto;
     border: 0.2rem solid silver;
     -moz-border-radius: 1.5rem;
