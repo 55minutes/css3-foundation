@@ -28,7 +28,7 @@
   </script>
   
   <script type="text/javascript" charset="utf-8">
-    document.getElementsByTagName("html")[0].className += getIEClass();
+    document.getElementsByTagName("html")[0].className += fiftyfive.util.getIEClass();
   </script>
 
   <title>CSS3/HTML5 scaffolding</title>
@@ -47,20 +47,22 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
   </script>
 
-  <!-- global utilities -->
+  <!-- utilities and library extensions -->
   <!-- uncomment as necessary -->
   <!-- <script type="text/javascript" src="scripts/lib/cookies/cookies.js">
   </script>
   <script type="text/javascript" src="scripts/lib/dump/dump.js">
   </script>
   <script type="text/javascript" src="scripts/lib/strftime/strftime-min.js">
+  </script>
+  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/modernizr-extras.js">
   </script> -->
   <script type="text/javascript" src="scripts/lib/fiftyfive-utils/jquery.55_utils.js">
   </script>
-  <!-- <script type="text/javascript" src="scripts/lib/fiftyfive-utils/modernizr-extras.js">
-  </script> -->
+  <script type="text/javascript" src="scripts/common.js">
+  </script>
 
-  <!-- page-specific utilities -->
+  <!-- page- or feature-specific javascript -->
   <!-- <script type="text/javascript" src="scripts/home.js">
   </script> -->
   
@@ -68,7 +70,11 @@
   <script type="text/javascript" charset="utf-8">
     (function($) {
       $(function() {
-        // Stuff to do as soon as the DOM is ready;
+        if(!FiftyfiveExample.util.isSupportedBrowser())
+        {
+          $("html").addClass("unsupported-browser");
+        }
+        // Other stuff to do as soon as the DOM is ready;
       });
     })(jQuery);
   </script>
