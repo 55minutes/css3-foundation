@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta tags -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <!-- stylesheets -->
+  <!-- for all screen sizes -->
+  <link rel="stylesheet" type="text/css" media="all" href="styles/application.css"/>
+
+  <!-- conditional comments -->
+  <!--[if IE]>
+    <link rel="stylesheet" type="text/css" media="all" href="styles/ie.css" />
+  <![endif]-->
+
+  <!-- print stylesheet -->
+  <link rel="stylesheet" type="text/css" media="print" href="styles/print.css"/>
+  
+  <!-- for progressively larger displays -->
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 480px)" href="styles/480.css"/>
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" href="styles/768.css"/>
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1024px)" href="styles/1024.css"/>
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1200px)" href="styles/1200.css"/>
+  
+  <!-- header javascript -->
+  <!-- stand-alone utilities -->
+  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/55_utils.js">
+  </script>
+  
+  <script type="text/javascript" charset="utf-8">
+    document.getElementsByTagName("html")[0].className += fiftyfive.util.getIEClass();
+  </script>
+
+  <title>CSS3/HTML5 scaffolding style guide</title>
+</head>
+<body id="style-guide">
+  <section id="unsupported-browser-warning">
+    <!-- Use this if you want to allow the user to hide the warning after it's been shown. -->
+    <!-- <a class="dismiss" href="javascript://">Dismiss</a> -->
+    <h1>Your browser is not supported.</h1>
+    <p>&laquo;Your application name here&raquo; works best with modern browsers like <span class="keep-together">Safari/MobileSafari 3</span>, <span class="keep-together">Chrome 10</span>, <span class="keep-together">Firefox 4</span>, <span class="keep-together">Internet Explorer 8</span> and newer. If you use another browser, please note that you may encounter visual glitches or other problems.
+  </section> <!-- /#unsupported-browser-warning -->
+
+  <div id="page">
+    <section id="intro">
+      <h1>CSS3/HTML5 scaffolding style guide</h1>
+      <p>This page contains the style guide for your application: the colors, typography, and common widget styles. The guide's structure and organization borrows heavily from the <a href="http://twitter.github.com/bootstrap/" title="Bootstrap, from Twitter">Twitter bootstrap</a>.</p>
+    </section> <!-- /#intro -->
+    
+    <section id="examples">
+      <section class="typography group">
+        <h1>Typography</h1>
+        <div class="explanation">
+          <h2>Headings and copy</h2>
+          <p>Styles for textual content: headings, paragraphs, lists, etc.</p>
+        </div> <!-- /.explanation -->
+        <div class="example">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie, erat quis posuere vestibulum, ipsum erat hendrerit enim, id hendrerit eros orci quis augue. Maecenas vehicula molestie lectus. Aliquam a nisi tellus. Suspendisse pharetra pharetra mauris, vel accumsan orci consectetur non.</p>
+          <blockquote>
+            <p>Curabitur at urna mauris. Donec varius, est sit amet vulputate tristique, orci lectus pulvinar libero, vel venenatis ligula est at arcu. Sed in dui vitae mauris ultrices iaculis.</p>
+
+            <p>Curabitur bibendum eros sit amet elit lacinia imperdiet. Sed venenatis dictum interdum. Praesent sit amet vehicula ligula. Aliquam erat volutpat. Suspendisse velit dolor, ullamcorper at gravida at, congue tincidunt mi.</p>
+          </blockquote>
+          
+          <p>Suspendisse potenti. Aliquam ante libero, pretium ac cursus malesuada, auctor a leo. Maecenas vestibulum nisl non ligula mattis gravida.</p>
+
+        </div> <!-- /.example -->
+      </section> <!-- /.typography -->
+    </section> <!-- /#examples -->
+  </div> <!-- /#page -->
+
+  <!-- all other javascript goes at the end of the body -->
+  <!-- libraries -->
+  <!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js">
+  </script> -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+  </script>
+
+  <!-- utilities and library extensions -->
+  <!-- uncomment as necessary -->
+  <!-- <script type="text/javascript" src="scripts/lib/cookies/cookies.js">
+  </script>
+  <script type="text/javascript" src="scripts/lib/dump/dump.js">
+  </script>
+  <script type="text/javascript" src="scripts/lib/strftime/strftime-min.js">
+  </script>
+  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/modernizr-extras.js">
+  </script> -->
+  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/jquery.55_utils.js">
+  </script>
+  <script type="text/javascript" src="scripts/common.js">
+  </script>
+
+  <!-- page- or feature-specific javascript -->
+  <!-- <script type="text/javascript" src="scripts/home.js">
+  </script> -->
+  
+  <!-- onload javascript -->
+  <script type="text/javascript" charset="utf-8">
+    (function($) {
+      $(function() {
+        if(!FiftyfiveExample.util.isSupportedBrowser())
+        {
+          $("html").addClass("unsupported-browser");
+        }
+        // Other stuff to do as soon as the DOM is ready;
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>
+

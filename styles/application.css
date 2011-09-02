@@ -197,8 +197,19 @@ h1 {
 }
 
 h2 {
-  margin-top: 0;
+  margin: 3.3rem 0 1.1rem;
   color: #207861;
+  font-size: 1.8rem;
+}
+
+h3 {
+  margin: 2.2rem 0 0;
+  font-weight: normal;
+  font-style: italic;
+}
+
+h1 + blockquote, h1 + dl, h1 + ol, h1 + ul, h1 + p, h2 + blockquote, h2 + dl, h2 + ol, h2 + ul, h2 + p, h3 + blockquote, h3 + dl, h3 + ol, h3 + ul, h3 + p {
+  margin-top: 0;
 }
 
 hr {
@@ -489,6 +500,46 @@ img.ui-datepicker-trigger {
     -khtml-border-radius: 1.5rem;
     border-radius: 1.5rem;
     max-width: 65rem;
+  }
+}
+/*-----[ style guide ]----------------------------------------------------------
+*/
+#style-guide #page {
+  padding: 2.2rem 2rem;
+}
+#style-guide #examples > section > h1 {
+  margin-bottom: 1.35rem;
+  border-bottom: 0.1rem solid #f0f0f0;
+  padding-bottom: 0.55rem;
+  color: #e67700;
+}
+#style-guide #examples .explanation h2 {
+  margin: 0;
+  color: #cca300;
+}
+
+@media (min-width: 480px) {
+  #intro, .explanation, .example {
+    max-width: 60rem;
+  }
+}
+@media (min-width: 1024px) {
+  #style-guide #examples .explanation, #style-guide #examples .example {
+    float: left;
+    margin-bottom: 2.2rem;
+  }
+  #style-guide #examples .explanation {
+    margin-right: 3%;
+    width: 32%;
+  }
+  #style-guide #examples .example {
+    width: 65%;
+    max-width: 60rem;
+  }
+}
+@media (min-width: 1200px) {
+  #style-guide #page {
+    max-width: 120rem;
   }
 }
 /*-----[ feature 1 ]------------------------------------------------------------

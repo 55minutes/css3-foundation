@@ -1,0 +1,67 @@
+/*-----[ style guide ]----------------------------------------------------------
+*/
+#style-guide
+{
+  #page
+  {
+    padding: $body-text-line-height $column-width;
+  }
+  
+  #examples
+  {
+    & > section > h1
+    {
+      margin-bottom: 2 * $body-text-line-height - ($page-heading-text-size + $vertical-nudge + 0.1);
+      border-bottom: 0.1rem solid $white-smoke;
+      padding-bottom: $vertical-nudge;
+      color: darken($flush-orange, 5);
+    }
+    
+    .explanation h2
+    {
+      margin: 0;
+      color: darken($supernova, 10);
+    }
+  }
+}
+
+@media (min-width: 480px)
+{
+  #intro, .explanation, .example
+  {
+    max-width: 60rem;
+  }
+}
+
+@media (min-width: 1024px)
+{
+  #style-guide #examples
+  {
+    .explanation, .example
+    {
+      float: left;
+      margin-bottom: $body-text-line-height;
+    }
+    
+    .explanation
+    {
+      margin-right: 3%;
+      width: 32%;
+    }
+
+    .example
+    {
+      width: 65%;
+      max-width: 60rem;
+    }
+  }
+}
+
+@media (min-width: 1200px)
+{
+  #style-guide #page
+  {
+    max-width: 120rem;
+  }
+}
+

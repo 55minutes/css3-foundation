@@ -67,8 +67,28 @@ h1
 
 h2
 {
-  margin-top: 0;
+  margin: 1.5 * $body-text-line-height 0 $body-text-line-height / 2;
   color: $subheading-text;
+  font-size: $subheading-text-size;
+}
+
+h3
+{
+  margin: $body-text-line-height 0 0;
+  font-weight: normal;
+  font-style: italic;
+}
+
+h1, h2, h3
+{
+  & + blockquote,
+  & + dl,
+  & + ol,
+  & + ul,
+  & + p
+  {
+    margin-top: 0;
+  }
 }
 
 hr
