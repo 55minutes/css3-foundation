@@ -153,10 +153,13 @@ a {
   color: #1673a1;
 }
 
-a:hover,
-a:active,
 a:link:visited {
   color: #4a1a2b;
+}
+
+a:hover,
+a:active {
+  color: #105374;
 }
 
 blockquote, dl, ol, p, pre, table, ul {

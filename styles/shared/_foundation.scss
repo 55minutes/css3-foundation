@@ -14,11 +14,15 @@ a
   color: $link;
 }
 
-a:hover,
-a:active,
 a:link:visited
 {
   color: $visited-link;
+}
+
+a:hover,
+a:active
+{
+  color: darken($link, 10);
 }
 
 blockquote, dl, ol, p, pre, table, ul
