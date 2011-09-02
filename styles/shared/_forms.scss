@@ -108,6 +108,84 @@ button[disabled]
   margin-right: $column-width / 2;
 }
 
+/*----------[ form layout ]-----------------------------------------------------
+*/
+table.form
+{
+  margin-top: 0;
+  
+  &, th, td
+  {
+    border-style: none;
+  }
+  
+  .section-heading th
+  {
+    color: $subheading-text;
+  }
+  
+  .field-label
+  {
+    vertical-align: top;
+    font-weight: normal;
+  }
+  
+  .field
+  {
+    padding-left: 0;
+  }
+}
+
+.stacked,
+.radio-group,
+.checkbox-group
+{
+  label
+  {
+    display: block;
+  }
+}
+
+/*----------[ validation ]------------------------------------------------------
+*/
+.error
+{
+  &, td, th
+  {
+    background-color: lighten($error-feedback, 55);
+  }
+  
+  label, .form-help
+  {
+    color: $error-feedback;
+  }
+  
+  label
+  {
+    font-weight: bold;
+  }
+  
+  input[type=email],
+  input[type=password],
+  input[type=search],
+  input[type=tel],
+  input[type=text],
+  input[type=url],
+  select,
+  textarea
+  {
+    border-color: darken($error-feedback, 5);
+  }
+  
+  ul.error-explanation
+  {
+    margin: 0;
+    margin-left: $column-width;
+    font-size: $secondary-text-size;
+    color: $error-feedback;
+  }
+}
+
 /*----------[ datepicker ]------------------------------------------------------
 */
 input.date,

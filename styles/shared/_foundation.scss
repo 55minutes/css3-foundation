@@ -165,7 +165,7 @@ th
   text-align: left;
 }
 
-td
+body th, td
 {
   border-bottom: 0.1rem solid $light-stroke;
 }
@@ -193,16 +193,19 @@ ul
 }
 
 .annotation,
-.fine-print
+.fine-print,
+.form-help
 {
   color: $secondary-text;
   font-weight: normal;
   font-style: italic;
 }
 
-.fine-print
+.fine-print, .form-help
 {
-  font-size: 85%;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }
 
 /* Clearfix style from <http://nicolasgallagher.com/micro-clearfix-hack/> */

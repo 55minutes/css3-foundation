@@ -41,6 +41,25 @@
       font-weight: bold;
     }
   }
+  
+  .forms
+  {
+    input[type=email],
+    input[type=password],
+    input[type=search],
+    input[type=tel],
+    input[type=text],
+    input[type=url],
+    select
+    {
+      width: 20rem;
+      
+      &.large
+      {
+        width: 25rem;
+      }
+    }
+  }
 }
 
 @media (min-width: 480px)

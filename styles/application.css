@@ -269,7 +269,7 @@ th {
   text-align: left;
 }
 
-td {
+body th, td {
   border-bottom: 0.1rem solid #d6d6d6;
 }
 
@@ -292,14 +292,17 @@ ul {
 }
 
 .annotation,
-.fine-print {
+.fine-print,
+.form-help {
   color: gray;
   font-weight: normal;
   font-style: italic;
 }
 
-.fine-print {
-  font-size: 85%;
+.fine-print, .form-help {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }
 
 /* Clearfix style from <http://nicolasgallagher.com/micro-clearfix-hack/> */
@@ -480,6 +483,59 @@ button[disabled] {
   margin-right: 1rem;
 }
 
+/*----------[ form layout ]-----------------------------------------------------
+*/
+table.form {
+  margin-top: 0;
+}
+table.form, table.form th, table.form td {
+  border-style: none;
+}
+table.form .section-heading th {
+  color: #207861;
+}
+table.form .field-label {
+  vertical-align: top;
+  font-weight: normal;
+}
+table.form .field {
+  padding-left: 0;
+}
+
+.stacked label,
+.radio-group label,
+.checkbox-group label {
+  display: block;
+}
+
+/*----------[ validation ]------------------------------------------------------
+*/
+.error, .error td, .error th {
+  background-color: #fcebe7;
+}
+.error label, .error .form-help {
+  color: #b72f14;
+}
+.error label {
+  font-weight: bold;
+}
+.error input[type=email],
+.error input[type=password],
+.error input[type=search],
+.error input[type=tel],
+.error input[type=text],
+.error input[type=url],
+.error select,
+.error textarea {
+  border-color: #a02911;
+}
+.error ul.error-explanation {
+  margin: 0;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  color: #b72f14;
+}
+
 /*----------[ datepicker ]------------------------------------------------------
 */
 input.date,
@@ -547,6 +603,24 @@ img.ui-datepicker-trigger {
 }
 #style-guide .tables tr.total {
   font-weight: bold;
+}
+#style-guide .forms input[type=email],
+#style-guide .forms input[type=password],
+#style-guide .forms input[type=search],
+#style-guide .forms input[type=tel],
+#style-guide .forms input[type=text],
+#style-guide .forms input[type=url],
+#style-guide .forms select {
+  width: 20rem;
+}
+#style-guide .forms input[type=email].large,
+#style-guide .forms input[type=password].large,
+#style-guide .forms input[type=search].large,
+#style-guide .forms input[type=tel].large,
+#style-guide .forms input[type=text].large,
+#style-guide .forms input[type=url].large,
+#style-guide .forms select.large {
+  width: 25rem;
 }
 
 @media (min-width: 480px) {
