@@ -58,17 +58,106 @@
           <h1>Heading 1</h1>
           <h2>Heading 2</h2>
           <h3>Heading 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie, erat quis posuere vestibulum, ipsum erat hendrerit enim, id hendrerit eros orci quis augue. Maecenas vehicula molestie lectus. Aliquam a nisi tellus. Suspendisse pharetra pharetra mauris, vel accumsan orci consectetur non.</p>
+          <p>Lorem ipsum dolor sit amet, <a href="http://google.com/">consectetur adipiscing</a> elit. Nam molestie, erat quis posuere vestibulum, ipsum erat hendrerit enim, id hendrerit eros orci quis augue. Maecenas <strong>vehicula</strong> molestie lectus. <em>Aliquam a nisi</em> tellus. Suspendisse pharetra pharetra mauris, vel accumsan orci consectetur non.</p>
           <blockquote>
-            <p>Curabitur at urna mauris. Donec varius, est sit amet vulputate tristique, orci lectus pulvinar libero, vel venenatis ligula est at arcu. Sed in dui vitae mauris ultrices iaculis.</p>
+            <p>Curabitur at urna mauris. Donec <em>varius</em>, est sit amet vulputate tristique, orci lectus pulvinar libero, vel venenatis ligula est at arcu. Sed in dui vitae mauris ultrices iaculis.</p>
 
-            <p>Curabitur bibendum eros sit amet elit lacinia imperdiet. Sed venenatis dictum interdum. Praesent sit amet vehicula ligula. Aliquam erat volutpat. Suspendisse velit dolor, ullamcorper at gravida at, congue tincidunt mi.</p>
+            <p>Curabitur bibendum eros sit amet <a href="http://google.com/">elit lacinia</a> imperdiet. Sed venenatis dictum <strong>interdum</strong>. Praesent sit amet vehicula ligula. Aliquam erat volutpat. Suspendisse velit dolor, ullamcorper at gravida at, congue tincidunt mi.</p>
           </blockquote>
           
-          <p>Suspendisse potenti. Aliquam ante libero, pretium ac cursus malesuada, auctor a leo. Maecenas vestibulum nisl non ligula mattis gravida.</p>
-
+          <div class="columns group">
+            <div class="column">
+              <h2>Ordered list</h2>
+              <ol>
+                <li>Suspendisse potenti.</li>
+                <li>Maecenas vestibulum
+                  <ol>
+                    <li>Aliquam ante libero,</li>
+                    <li>pretium ac cursus malesuada</li>
+                  </ol>
+                </li>
+                <li>auctor a leo</li>
+              </ol>
+            </div> <!-- /.column -->
+            <div class="column">
+              <h2>Unordered list</h2>
+              <ul>
+                <li>Suspendisse potenti.</li>
+                <li>Maecenas vestibulum
+                  <ul>
+                    <li>Aliquam ante libero,</li>
+                    <li>pretium ac cursus malesuada</li>
+                  </ul>
+                </li>
+                <li>auctor a leo</li>
+              </ul>
+            </div> <!-- /.column -->
+            <div class="column">
+              <h2>Definition list</h2>
+              <dl>
+                <dt>Maecenas vestibulum</dt>
+                <dd>Nisl non ligula mattis gravida. Nulla id ipsum ante.</dd>
+                <dt>Ut tempus mi</dt>
+                <dd>Sed molestie tincidunt ornare.</dd>
+              </dl>
+            </div> <!-- /.column -->
+          </div> <!-- /.columns -->
         </div> <!-- /.example -->
       </section> <!-- /.typography -->
+
+      <section class="tables group">
+        <h1>Tables</h1>
+        <div class="explanation">
+          Check out the source for our recommendation on marking up tables in a readable, semantic manner.
+        </div> <!-- /.explanation -->
+        <div class="example">
+          <table summary="Describe the data in this table.">
+            <caption>Your order placed on 09/02/2011</caption>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th class="quantity">Quantity</th>
+                <th class="price">Price</th>
+              </tr>
+            </thead>
+            <!-- Remember that tfoot comes before tbody! -->
+            <tfoot>
+              <tr class="total">
+                <th colspan="2">Total</th>
+                <th class="price">$47.02</th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>Widget</td>
+                <td class="quantity">1</td>
+                <td class="price">$15.02</td>
+              </tr>
+              <tr>
+                <td>Thingamabob</td>
+                <td class="quantity">5</td>
+                <td class="price">$3.00</td>
+              </tr>
+              <tr>
+                <td>Whatchamacallit</td>
+                <td class="quantity">2</td>
+                <td class="price">$8.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- /.example -->
+      </section> <!-- /.tables -->
+
+      <section class="forms group">
+        <h1>Forms</h1>
+        <div class="explanation">
+          
+        </div> <!-- /.explanation -->
+        <div class="example">
+          
+        </div> <!-- /.example -->
+      </section> <!-- /.forms -->
+
     </section> <!-- /#examples -->
   </div> <!-- /#page -->
 

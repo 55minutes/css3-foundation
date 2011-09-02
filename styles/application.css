@@ -186,7 +186,7 @@ dt {
 }
 
 dd {
-  margin: 0;
+  margin: 0 0 2.2rem;
 }
 
 h1 {
@@ -231,6 +231,11 @@ ol ol {
   list-style-type: lower-alpha;
 }
 
+dl dl, ol ol, ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ol ol ol {
   list-style-type: lower-roman;
 }
@@ -241,14 +246,31 @@ pre {
   background-color: #fff8f0;
 }
 
+table {
+  width: 100%;
+}
+
+table, thead th {
+  border-bottom: 0.2rem solid #d6d6d6;
+}
+
 td, th {
-  padding: 0.55rem;
-  padding-left: 2.5rem;
+  padding: 0.55rem 0;
+  padding-right: 2rem;
+}
+td:first-of-type, th:first-of-type {
+  padding-left: 0.5rem;
+}
+td:last-of-type, th:last-of-type {
+  padding-right: 0.5rem;
 }
 
 th {
   text-align: left;
-  font-weight: normal;
+}
+
+td {
+  border-bottom: 0.1rem solid #d6d6d6;
 }
 
 ul {
@@ -509,13 +531,22 @@ img.ui-datepicker-trigger {
 }
 #style-guide #examples > section > h1 {
   margin-bottom: 1.35rem;
-  border-bottom: 0.1rem solid #f0f0f0;
+  border-bottom: 0.1rem solid #d6d6d6;
   padding-bottom: 0.55rem;
   color: #e67700;
 }
 #style-guide #examples .explanation h2 {
   margin: 0;
   color: #cca300;
+}
+#style-guide .tables .quantity, #style-guide .tables .price {
+  text-align: right;
+}
+#style-guide .tables table {
+  margin-top: 0;
+}
+#style-guide .tables tr.total {
+  font-weight: bold;
 }
 
 @media (min-width: 480px) {
@@ -535,6 +566,14 @@ img.ui-datepicker-trigger {
   #style-guide #examples .example {
     width: 65%;
     max-width: 60rem;
+  }
+  #style-guide #examples .columns .column {
+    float: left;
+    margin-right: 2%;
+    width: 32%;
+  }
+  #style-guide #examples .columns .column:last-of-type {
+    margin-right: 0;
   }
 }
 @media (min-width: 1200px) {

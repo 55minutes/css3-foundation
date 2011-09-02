@@ -12,7 +12,7 @@
     & > section > h1
     {
       margin-bottom: 2 * $body-text-line-height - ($page-heading-text-size + $vertical-nudge + 0.1);
-      border-bottom: 0.1rem solid $white-smoke;
+      border-bottom: 0.1rem solid $light-stroke;
       padding-bottom: $vertical-nudge;
       color: darken($flush-orange, 5);
     }
@@ -21,6 +21,24 @@
     {
       margin: 0;
       color: darken($supernova, 10);
+    }
+  }
+  
+  .tables
+  {
+    .quantity, .price
+    {
+      text-align: right;
+    }
+
+    table
+    {
+      margin-top: 0;
+    }
+
+    tr.total
+    {
+      font-weight: bold;
     }
   }
 }
@@ -53,6 +71,18 @@
     {
       width: 65%;
       max-width: 60rem;
+    }
+    
+    .columns .column
+    {
+      float: left;
+      margin-right: 2%;
+      width: 32%;
+      
+      &:last-of-type
+      {
+        margin-right: 0;
+      }
     }
   }
 }
