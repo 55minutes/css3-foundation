@@ -373,6 +373,29 @@ span.keep-together {
     max-width: 65rem;
   }
 }
+/*----------[ alerts ]----------------------------------------------------------
+*/
+.alerts {
+  margin: 0;
+  list-style-type: none;
+}
+.alerts .message {
+  margin-bottom: 0.55rem;
+  padding: 0.55rem 1rem;
+}
+.alerts .message.success {
+  background-color: #f3f8be;
+  color: #919e00;
+}
+.alerts .message.warning {
+  background-color: #fff3c2;
+  color: #cca300;
+}
+.alerts .message.error {
+  background-color: #fcebe7;
+  color: #b72f14;
+}
+
 /*----------[ pagination ]------------------------------------------------------
 */
 .pagination {

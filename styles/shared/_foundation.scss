@@ -296,6 +296,39 @@ span.keep-together
   }
 }
 
+/*----------[ alerts ]----------------------------------------------------------
+*/
+.alerts
+{
+  margin: 0;
+  list-style-type: none;
+  
+  .message
+  {
+    margin-bottom: $vertical-nudge;
+    padding: $vertical-nudge $column-width / 2;
+    
+    &.success
+    {
+      background-color: desaturate(lighten($success-feedback, 55), 20);
+      color: $success-feedback;
+    }
+    
+    &.warning
+    {
+      background-color: lighten($warning-feedback, 48);
+      color: $warning-feedback;
+    }
+    
+    &.error
+    {
+      background-color: lighten($error-feedback, 55);
+      color: $error-feedback;
+    }
+  }
+}
+
+
 /*----------[ pagination ]------------------------------------------------------
 */
 .pagination
