@@ -643,8 +643,54 @@ img.ui-datepicker-trigger {
   margin: 0;
   color: #cca300;
 }
+#style-guide #examples .explanation p {
+  margin-top: 0;
+}
 #style-guide #examples .columns h2 {
   margin-top: 1.1rem;
+}
+#style-guide .colors table {
+  margin-top: 0;
+}
+#style-guide .colors .swatch {
+  padding: 0;
+  width: 4rem;
+}
+#style-guide .colors .swatch.blackberry {
+  background-color: #4a1a2b;
+}
+#style-guide .colors .swatch.eucalyptus {
+  background-color: #207861;
+}
+#style-guide .colors .swatch.citrus {
+  background-color: #9fad00;
+}
+#style-guide .colors .swatch.supernova {
+  background-color: #ffcc00;
+}
+#style-guide .colors .swatch.flush-orange {
+  background-color: #ff8400;
+}
+#style-guide .colors .swatch.matisse {
+  background-color: #1673a1;
+}
+#style-guide .colors .swatch.cinnabar {
+  background-color: #e53b19;
+}
+#style-guide .colors .swatch.charcoal {
+  background-color: #444444;
+}
+#style-guide .colors .swatch.grey {
+  background-color: gray;
+}
+#style-guide .colors .swatch.silver {
+  background-color: silver;
+}
+#style-guide .colors .swatch.white-smoke {
+  background-color: #f0f0f0;
+}
+#style-guide .colors .hex-code {
+  padding-left: 1rem;
 }
 #style-guide .tables .quantity, #style-guide .tables .price {
   text-align: right;

@@ -28,9 +28,88 @@
       color: darken($supernova, 10);
     }
     
+    .explanation p
+    {
+      margin-top: 0;
+    }
+    
     .columns h2
     {
       margin-top: $body-text-line-height / 2;
+    }
+  }
+  
+  .colors
+  {
+    table
+    {
+      margin-top: 0;
+    }
+    
+    .swatch
+    {
+      padding: 0;
+      width: 2 * $column-width;
+      
+      &.blackberry
+      {
+        background-color: $blackberry;
+      }
+      
+      &.eucalyptus
+      {
+        background-color: $eucalyptus;
+      }
+      
+      &.citrus
+      {
+        background-color: $citrus;
+      }
+      
+      &.supernova
+      {
+        background-color: $supernova;
+      }
+      
+      &.flush-orange
+      {
+        background-color: $flush-orange;
+      }
+      
+      &.matisse
+      {
+        background-color: $matisse;
+      }
+      
+      &.cinnabar
+      {
+        background-color: $cinnabar;
+      }
+      
+      &.charcoal
+      {
+        background-color: $charcoal;
+      }
+      
+      &.grey
+      {
+        background-color: $grey;
+      }
+      
+      &.silver
+      {
+        background-color: $silver;
+      }
+      
+      &.white-smoke
+      {
+        background-color: $white-smoke;
+      }
+    }
+    
+    .hex-code
+    {
+      padding-left: $column-width / 2;
     }
   }
   
