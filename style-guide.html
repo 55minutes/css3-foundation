@@ -262,6 +262,7 @@
         <div class="explanation">
           <h2>Forms in tables</h2>
           <p>We commonly use tables to lay out forms with left- or right-aligned labels. This is the recommended method for desktop applications.</p>
+          <p>Note how destructive actions like deletion are marked with a class of <code>"destructive"</code> and highlighted visually.</p>
         </div> <!-- /.explanation -->
         <div class="example">
           <form action="" method="get" accept-charset="utf-8">
@@ -463,6 +464,50 @@
         </div> <!-- /.example -->
       </section> <!-- /.forms -->
 
+      <section class="pagination-styles group">
+        <h1>Pagination</h1>
+        <div class="explanation">
+          <p>Pagination styles should ensure that individual links are well spaced and large enough to be suitable touch targets.</p>
+        </div> <!-- /.explanation -->
+        <div class="example">
+          <nav class="pagination">
+            <span class="first">
+              <a href="javascript://">&laquo; First</a>
+            </span>
+
+            <span class="prev">
+              <a href="javascript://" rel="prev">&lsaquo; Prev</a>
+            </span>
+
+            <span class="page">
+              <a href="javascript://" rel="prev">1</a>
+            </span>
+
+            <span class="page current">
+              2
+            </span>
+
+            <span class="page">
+              <a href="javascript://" rel="next">3</a>
+            </span>
+
+            <span class="page">
+              <a href="javascript://">4</a>
+            </span>
+
+            <span class="page gap">...</span>
+
+            <span class="next">
+              <a href="javascript://" rel="next">Next &rsaquo;</a>
+            </span>
+
+            <span class="last">
+              <a href="javascript://">Last &raquo;</a>
+            </span>
+
+          </nav>
+        </div> <!-- /.example -->
+      </section> <!-- /.pagination -->
     </section> <!-- /#examples -->
   </div> <!-- /#page -->
 

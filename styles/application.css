@@ -373,6 +373,31 @@ span.keep-together {
     max-width: 65rem;
   }
 }
+/*----------[ pagination ]------------------------------------------------------
+*/
+.pagination {
+  white-space-collapse: discard;
+}
+.pagination .first, .pagination .prev, .pagination .page, .pagination .next, .pagination .last {
+  display: inline-block;
+  margin-right: 1rem;
+  -moz-border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -khtml-border-radius: 0.6rem;
+  border-radius: 0.6rem;
+  background-color: #e8e8e8;
+}
+.pagination .first a, .pagination .prev a, .pagination .page a, .pagination .next a, .pagination .last a {
+  display: block;
+  text-decoration: none;
+}
+.pagination .first a, .pagination .first.current, .pagination .first.gap, .pagination .prev a, .pagination .prev.current, .pagination .prev.gap, .pagination .page a, .pagination .page.current, .pagination .page.gap, .pagination .next a, .pagination .next.current, .pagination .next.gap, .pagination .last a, .pagination .last.current, .pagination .last.gap {
+  padding: 0 1rem;
+  background-color: transparent;
+}
+
 /*-----[ forms ]----------------------------------------------------------------
 | Global form and form element styles. Feature-specific form styles should be
 | co-located with other feature-specific styles.

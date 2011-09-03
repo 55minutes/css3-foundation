@@ -296,4 +296,29 @@ span.keep-together
   }
 }
 
-
+/*----------[ pagination ]------------------------------------------------------
+*/
+.pagination
+{
+  white-space-collapse: discard;
+  
+  .first, .prev, .page, .next, .last
+  {
+    display: inline-block;
+    margin-right: $column-width / 2;
+    @include border-radius(0.6rem);
+    background-color: darken($white-smoke, 3);
+    
+    a
+    {
+      display: block;
+      text-decoration: none;
+    }
+    
+    a, &.current, &.gap
+    {
+      padding: 0 $column-width / 2;
+      background-color: transparent;
+    }
+  }
+}
