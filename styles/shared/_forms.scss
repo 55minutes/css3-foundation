@@ -44,7 +44,7 @@ input[type=text].small
 
 /*-----[ buttons and checkboxes]------------------------------------------------
 */
-$button-border-radius: 0.8rem;
+$button-border-radius: 0.6rem;
 
 input[type=checkbox],
 input[type=radio]
@@ -63,25 +63,39 @@ input[type=button],
 button
 {
   border: 0.1rem solid $button-border;
+  border-top-color: lighten($button-border, 6);
   @include border-radius($button-border-radius);
+  @include box-shadow($button-shadow, 0, 0, 0.1rem);
   padding: 0.2rem $column-width;
   background: $button-gradient-mid;
   @include background-image(linear-gradient($button-gradient-light, $button-gradient-dark));
   color: $button-text-color;
   font-size: $secondary-text-size;
+  line-height: $body-text-line-height - 0.4rem;
   font-weight: bold;
   cursor: pointer;
-}
+  
+  &.destructive
+  {
+    border-color: $destructive-button-border;
+    border-top-color: lighten($destructive-button-border, 6);
+    @include box-shadow($destructive-button-shadow, 0, 0, 0.1rem);
+    padding: 0.2rem $column-width;
+    background: $destructive-button-gradient-mid;
+    @include background-image(linear-gradient($destructive-button-gradient-light, $destructive-button-gradient-dark));
+    color: $destructive-button-text-color;
+  }
 
-input[type=submit][disabled],
-input[type=button][disabled],
-button[disabled]
-{
-  border: 0.1rem solid $disabled-button-border;
-  background: $disabled-button-gradient-mid;
-  @include background-image(linear-gradient($disabled-button-gradient-light, $disabled-button-gradient-dark));
-  color: $disabled-button-text-color;
-  cursor: default !important;
+  &[disabled]
+  {
+    border: 0.1rem solid $disabled-button-border;
+    border-top-color: lighten($disabled-button-border, 6);
+    @include box-shadow($disabled-button-shadow, 0, 0, 0.1rem);
+    background: $disabled-button-gradient-mid;
+    @include background-image(linear-gradient($disabled-button-gradient-light, $disabled-button-gradient-dark));
+    color: $disabled-button-text-color;
+    cursor: default !important;
+  }
 }
 
 .button-bar
@@ -126,11 +140,13 @@ table.form
   
   .field-label
   {
+    padding-right: $column-width;
     vertical-align: top;
+    text-align: right;
     font-weight: normal;
   }
   
-  .field
+  .field, .button-bar
   {
     padding-left: 0;
   }
@@ -143,6 +159,25 @@ table.form
   label
   {
     display: block;
+  }
+}
+
+.stacked
+{
+  .section-heading
+  {
+    font-weight: bold;
+    color: $subheading-text;
+  }
+
+  .field > label:first-of-type
+  {
+    margin-top: $body-text-line-height / 2;
+  }
+  
+  .field, .section-heading, .button-bar
+  {
+    padding-left: $horizontal-nudge;
   }
 }
 

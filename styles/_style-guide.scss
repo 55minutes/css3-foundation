@@ -9,6 +9,11 @@
   
   #examples
   {
+    & > section
+    {
+      margin-top: 2 * $body-text-line-height;
+    }
+
     & > section > h1
     {
       margin-bottom: 2 * $body-text-line-height - ($page-heading-text-size + $vertical-nudge + 0.1);
@@ -21,6 +26,11 @@
     {
       margin: 0;
       color: darken($supernova, 10);
+    }
+    
+    .columns h2
+    {
+      margin-top: $body-text-line-height / 2;
     }
   }
   
@@ -70,6 +80,21 @@
   }
 }
 
+@media (min-width: 768px)
+{
+  #examples .columns .column
+  {
+    float: left;
+    margin-right: 2%;
+    width: 32%;
+    
+    &:last-of-type
+    {
+      margin-right: 0;
+    }
+  }
+}
+
 @media (min-width: 1024px)
 {
   #style-guide #examples
@@ -82,6 +107,7 @@
     
     .explanation
     {
+      clear: left;
       margin-right: 3%;
       width: 32%;
     }
@@ -89,19 +115,7 @@
     .example
     {
       width: 65%;
-      max-width: 60rem;
-    }
-    
-    .columns .column
-    {
-      float: left;
-      margin-right: 2%;
-      width: 32%;
-      
-      &:last-of-type
-      {
-        margin-right: 0;
-      }
+      max-width: 65rem;
     }
   }
 }

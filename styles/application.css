@@ -429,39 +429,68 @@ input[type=checkbox] {
 input[type=submit],
 input[type=button],
 button {
-  border: 0.1rem solid #994f00;
-  -moz-border-radius: 0.8rem;
-  -webkit-border-radius: 0.8rem;
-  -o-border-radius: 0.8rem;
-  -ms-border-radius: 0.8rem;
-  -khtml-border-radius: 0.8rem;
-  border-radius: 0.8rem;
+  border: 0.1rem solid #e07400;
+  border-top-color: #ff8400;
+  -moz-border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -khtml-border-radius: 0.6rem;
+  border-radius: 0.6rem;
+  -moz-box-shadow: 0 0 0.1rem #d16c00;
+  -webkit-box-shadow: 0 0 0.1rem #d16c00;
+  -o-box-shadow: 0 0 0.1rem #d16c00;
+  box-shadow: 0 0 0.1rem #d16c00;
   padding: 0.2rem 2rem;
-  background: #e67700;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8400), color-stop(100%, #cc6a00));
-  background-image: -webkit-linear-gradient(#ff8400, #cc6a00);
-  background-image: -moz-linear-gradient(#ff8400, #cc6a00);
-  background-image: -o-linear-gradient(#ff8400, #cc6a00);
-  background-image: -ms-linear-gradient(#ff8400, #cc6a00);
-  background-image: linear-gradient(#ff8400, #cc6a00);
+  background: #f07c00;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8400), color-stop(100%, #e07400));
+  background-image: -webkit-linear-gradient(#ff8400, #e07400);
+  background-image: -moz-linear-gradient(#ff8400, #e07400);
+  background-image: -o-linear-gradient(#ff8400, #e07400);
+  background-image: -ms-linear-gradient(#ff8400, #e07400);
+  background-image: linear-gradient(#ff8400, #e07400);
   color: white;
   font-size: 1.4rem;
+  line-height: 1.8rem;
   font-weight: bold;
   cursor: pointer;
 }
-
+input[type=submit].destructive,
+input[type=button].destructive,
+button.destructive {
+  border-color: #c93416;
+  border-top-color: #e53b19;
+  -moz-box-shadow: 0 0 0.1rem #bc3014;
+  -webkit-box-shadow: 0 0 0.1rem #bc3014;
+  -o-box-shadow: 0 0 0.1rem #bc3014;
+  box-shadow: 0 0 0.1rem #bc3014;
+  padding: 0.2rem 2rem;
+  background: #d73717;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e53b19), color-stop(100%, #c93416));
+  background-image: -webkit-linear-gradient(#e53b19, #c93416);
+  background-image: -moz-linear-gradient(#e53b19, #c93416);
+  background-image: -o-linear-gradient(#e53b19, #c93416);
+  background-image: -ms-linear-gradient(#e53b19, #c93416);
+  background-image: linear-gradient(#e53b19, #c93416);
+  color: white;
+}
 input[type=submit][disabled],
 input[type=button][disabled],
 button[disabled] {
-  border: 0.1rem solid #a7a7a7;
-  background: #cdcdcd;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dadada), color-stop(100%, #c0c0c0));
-  background-image: -webkit-linear-gradient(#dadada, #c0c0c0);
-  background-image: -moz-linear-gradient(#dadada, #c0c0c0);
-  background-image: -o-linear-gradient(#dadada, #c0c0c0);
-  background-image: -ms-linear-gradient(#dadada, #c0c0c0);
-  background-image: linear-gradient(#dadada, #c0c0c0);
-  color: gray;
+  border: 0.1rem solid #c8c8c8;
+  border-top-color: #d7d7d7;
+  -moz-box-shadow: 0 0 0.1rem #b8b8b8;
+  -webkit-box-shadow: 0 0 0.1rem #b8b8b8;
+  -o-box-shadow: 0 0 0.1rem #b8b8b8;
+  box-shadow: 0 0 0.1rem #b8b8b8;
+  background: #c8c8c8;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cfcfcf), color-stop(100%, #c0c0c0));
+  background-image: -webkit-linear-gradient(#cfcfcf, #c0c0c0);
+  background-image: -moz-linear-gradient(#cfcfcf, #c0c0c0);
+  background-image: -o-linear-gradient(#cfcfcf, #c0c0c0);
+  background-image: -ms-linear-gradient(#cfcfcf, #c0c0c0);
+  background-image: linear-gradient(#cfcfcf, #c0c0c0);
+  color: #8d8d8d;
   cursor: default !important;
 }
 
@@ -498,10 +527,12 @@ table.form .section-heading th {
   color: #207861;
 }
 table.form .field-label {
+  padding-right: 2rem;
   vertical-align: top;
+  text-align: right;
   font-weight: normal;
 }
-table.form .field {
+table.form .field, table.form .button-bar {
   padding-left: 0;
 }
 
@@ -509,6 +540,17 @@ table.form .field {
 .radio-group label,
 .checkbox-group label {
   display: block;
+}
+
+.stacked .section-heading {
+  font-weight: bold;
+  color: #207861;
+}
+.stacked .field > label:first-of-type {
+  margin-top: 1.1rem;
+}
+.stacked .field, .stacked .section-heading, .stacked .button-bar {
+  padding-left: 0.5rem;
 }
 
 /*----------[ validation ]------------------------------------------------------
@@ -588,6 +630,9 @@ img.ui-datepicker-trigger {
 #style-guide #page {
   padding: 2.2rem 2rem;
 }
+#style-guide #examples > section {
+  margin-top: 4.4rem;
+}
 #style-guide #examples > section > h1 {
   margin-bottom: 1.35rem;
   border-bottom: 0.1rem solid #d6d6d6;
@@ -597,6 +642,9 @@ img.ui-datepicker-trigger {
 #style-guide #examples .explanation h2 {
   margin: 0;
   color: #cca300;
+}
+#style-guide #examples .columns h2 {
+  margin-top: 1.1rem;
 }
 #style-guide .tables .quantity, #style-guide .tables .price {
   text-align: right;
@@ -631,26 +679,29 @@ img.ui-datepicker-trigger {
     max-width: 60rem;
   }
 }
+@media (min-width: 768px) {
+  #examples .columns .column {
+    float: left;
+    margin-right: 2%;
+    width: 32%;
+  }
+  #examples .columns .column:last-of-type {
+    margin-right: 0;
+  }
+}
 @media (min-width: 1024px) {
   #style-guide #examples .explanation, #style-guide #examples .example {
     float: left;
     margin-bottom: 2.2rem;
   }
   #style-guide #examples .explanation {
+    clear: left;
     margin-right: 3%;
     width: 32%;
   }
   #style-guide #examples .example {
     width: 65%;
-    max-width: 60rem;
-  }
-  #style-guide #examples .columns .column {
-    float: left;
-    margin-right: 2%;
-    width: 32%;
-  }
-  #style-guide #examples .columns .column:last-of-type {
-    margin-right: 0;
+    max-width: 65rem;
   }
 }
 @media (min-width: 1200px) {

@@ -155,106 +155,202 @@
           <p>We commonly use tables to lay out forms with left- or right-aligned labels. This is the recommended method for desktop applications.</p>
         </div> <!-- /.explanation -->
         <div class="example">
-          <table class="form">
-            <tbody>
-              <tr class="section-heading">
-                <th>&nbsp;</th>
-                <th>Form section heading</th>
-              </tr>
-              <tr>
-                <th class="field-label">
-                  <label for="text-input-example">Text input</label>
-                </th>
-                <td class="field">
-                  <input type="text" name="text-input-example" value="" id="text-input-example" class="large"/>
-                  <p class="form-help">
-                    Field help text
-                  </p> <!-- /.form-help -->
-                </td>
-              </tr>
-              <tr>
-                <th class="field-label">
-                  <label for="disabled-text-input-example">Disabled text input</label>
-                </th>
-                <td class="field">
-                  <input type="text" disabled="disabled" name="disabled-text-input-example" value="Johannes Brahms" id="disabled-text-input-example"/>
-                </td>
-              </tr>
-              <tr>
-                <th class="field-label">
-                  <label for="select-example">Select</label>
-                </th>
-                <td class="field">
-                  <select name="select-example" id="select-example">
-                    <option value="">Choose one</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </td>
-              </tr>
-              <tr class="error">
-                <th class="field-label">
-                  <label for="invalid-text-input-example">Invalid input</label>
-                </th>
-                <td class="field">
-                  <input type="text" name="invalid-text-input-example" value="" id="invalid-text-input-example"/>
-                  <span class="form-help">inline help text</span>
-                  <ul class="error-explanation">
-                    <li>Please enter an email address</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr class="radio-group">
-                <th class="field-label">
-                  <label>Radio group</label>
-                </th>
-                <td class="field">
-                  <label>
-                    <input type="radio" name="radio-group-example" value="choice-1"/>
-                    Choice 1
-                  </label>
-                  <label>
-                    <input type="radio" name="radio-group-example" value="choice-2"/>
-                    Choice 2
-                  </label>
-                  <label>
-                    <input type="radio" name="radio-group-example" value="choice-3"/>
-                    Choice 3
-                  </label>
-                </td>
-              </tr>
-              <tr class="checkbox-group">
-                <th class="field-label">
-                  <label>Checkbox group</label>
-                </th>
-                <td class="field">
-                  <label>
-                    <input type="checkbox" name="checkbox-group-example" value="choice-1"/>
-                    Longer choice 1
-                  </label>
-                  <label>
-                    <input type="checkbox" name="checkbox-group-example" value="choice-2"/>
-                    Longer choice 2
-                  </label>
-                  <label>
-                    <input type="checkbox" name="checkbox-group-example" value="choice-3"/>
-                    Longer choice 3
-                  </label>
-                </td>
-              </tr>
-              <tr>
-                <th class="field-label">
-                  <label for="textarea-example">Textarea</label>
-                </th>
-                <td class="field">
-                  <textarea name="textarea-example" rows="5" cols="40"></textarea>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <form action="" method="get" accept-charset="utf-8">
+            <table class="form">
+              <tfoot>
+                <tr>
+                  <th class="field-label">&nbsp;</th>
+                  <td class="button-bar">
+                    <input type="submit" class="save" value="Save"/>
+                    <input type="submit" disabled="disabled" class="save-and-new" value="Save + new"/>
+                    <input type="submit" class="destructive delete" value="Delete"/>
+                    <a class="cancel" href="javascript://">Cancel</a>
+                  </td>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr class="section-heading">
+                  <th>&nbsp;</th>
+                  <th>Form section heading</th>
+                </tr>
+                <tr>
+                  <th class="field-label">
+                    <label for="text-input-example">Text input</label>
+                  </th>
+                  <td class="field">
+                    <input type="text" name="text-input-example" value="" id="text-input-example" class="large"/>
+                    <p class="form-help">
+                      Field help text
+                    </p> <!-- /.form-help -->
+                  </td>
+                </tr>
+                <tr>
+                  <th class="field-label">
+                    <label for="disabled-text-input-example">Disabled text input</label>
+                  </th>
+                  <td class="field">
+                    <input type="text" disabled="disabled" name="disabled-text-input-example" value="Johannes Brahms" id="disabled-text-input-example"/>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="field-label">
+                    <label for="select-example">Select</label>
+                  </th>
+                  <td class="field">
+                    <select name="select-example" id="select-example">
+                      <option value="">Choose one</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="error">
+                  <th class="field-label">
+                    <label for="invalid-text-input-example">Invalid input</label>
+                  </th>
+                  <td class="field">
+                    <input type="text" name="invalid-text-input-example" value="" id="invalid-text-input-example"/>
+                    <span class="form-help">inline help text</span>
+                    <ul class="error-explanation">
+                      <li>Please enter an email address</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="radio-group">
+                  <th class="field-label">
+                    <label>Radio group</label>
+                  </th>
+                  <td class="field">
+                    <label>
+                      <input type="radio" name="radio-group-example" value="choice-1"/>
+                      Choice 1
+                    </label>
+                    <label>
+                      <input type="radio" name="radio-group-example" value="choice-2"/>
+                      Choice 2
+                    </label>
+                    <label>
+                      <input type="radio" name="radio-group-example" value="choice-3"/>
+                      Choice 3
+                    </label>
+                  </td>
+                </tr>
+                <tr class="checkbox-group">
+                  <th class="field-label">
+                    <label>Checkbox group</label>
+                  </th>
+                  <td class="field">
+                    <label>
+                      <input type="checkbox" name="checkbox-group-example" value="choice-1"/>
+                      Longer choice 1
+                    </label>
+                    <label>
+                      <input type="checkbox" name="checkbox-group-example" value="choice-2"/>
+                      Longer choice 2
+                    </label>
+                    <label>
+                      <input type="checkbox" name="checkbox-group-example" value="choice-3"/>
+                      Longer choice 3
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="field-label">
+                    <label for="textarea-example">Textarea</label>
+                  </th>
+                  <td class="field">
+                    <textarea name="textarea-example" rows="5" cols="40"></textarea>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div> <!-- /.example -->
+        <div class="explanation">
+          <h2>Stacked forms</h2>
+          <p>Top-aligned form labels tend to reduce form-completion times the most and are best used when the data being requested is well-known to the user and requires minimum thought. Top-aligned labels should also be used for mobile applications.</p>
+        </div> <!-- /.explanation -->
+        <div class="example">
+          <form action="" method="get" accept-charset="utf-8">
+            <fieldset class="stacked">
+              <legend class="section-heading">
+                Form section heading
+              </legend>
+              <div class="field">
+                <label for="text-input-example">Text input</label>
+                <input type="text" name="text-input-example" value="" id="text-input-example" class="large"/>
+                <p class="form-help">
+                  Field help text
+                </p> <!-- /.form-help -->
+              </div> <!-- /.field -->
+              <div class="field">
+                <label for="disabled-text-input-example">Disabled text input</label>
+                <input type="text" disabled="disabled" name="disabled-text-input-example" value="Johannes Brahms" id="disabled-text-input-example"/>
+              </div> <!-- /.field -->
+              <div class="field">
+                <label for="select-example">Select</label>
+                <select name="select-example" id="select-example">
+                  <option value="">Choose one</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div> <!-- /.field -->
+              <div class="field error">
+                <label for="invalid-text-input-example">Invalid input</label>
+                <input type="text" name="invalid-text-input-example" value="" id="invalid-text-input-example"/>
+                <span class="form-help">inline help text</span>
+                <ul class="error-explanation">
+                  <li>Please enter an email address</li>
+                </ul>
+              </div> <!-- /.field -->
+              <div class="field radio-group">
+                <label>Radio group</label>
+                <label>
+                  <input type="radio" name="radio-group-example" value="choice-1"/>
+                  Choice 1
+                </label>
+                <label>
+                  <input type="radio" name="radio-group-example" value="choice-2"/>
+                  Choice 2
+                </label>
+                <label>
+                  <input type="radio" name="radio-group-example" value="choice-3"/>
+                  Choice 3
+                </label>
+              </div> <!-- /.field -->
+              <div class="field checkbox-group">
+                <label>Checkbox group</label>
+                <label>
+                  <input type="checkbox" name="checkbox-group-example" value="choice-1"/>
+                  Longer choice 1
+                </label>
+                <label>
+                  <input type="checkbox" name="checkbox-group-example" value="choice-2"/>
+                  Longer choice 2
+                </label>
+                <label>
+                  <input type="checkbox" name="checkbox-group-example" value="choice-3"/>
+                  Longer choice 3
+                </label>
+              </div> <!-- /.field -->
+              <div class="field">
+                <label for="textarea-example">Textarea</label>
+                <textarea name="textarea-example" rows="5" cols="40"></textarea>
+              </div> <!-- /.field -->
+              <div class="button-bar">
+                <input type="submit" class="save" value="Save"/>
+                <input type="submit" disabled="disabled" class="save-and-new" value="Save + new"/>
+                <input type="submit" class="destructive delete" value="Delete"/>
+                <a class="cancel" href="javascript://">Cancel</a>
+              </div>
+            </fieldset>
+          </form>
         </div> <!-- /.example -->
       </section> <!-- /.forms -->
 
