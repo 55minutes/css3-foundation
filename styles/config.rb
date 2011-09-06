@@ -4,7 +4,7 @@ require 'compass-colors'
 # Set this to the root of your project when deployed:
 http_path = "/"
 
-css_dir = "."
+css_dir = "../styles-compiled"
 sass_dir = "."
 additional_import_paths = ["./basics", "./shared"]
 
