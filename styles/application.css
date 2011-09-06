@@ -767,6 +767,11 @@ img.ui-datepicker-trigger {
 #style-guide .forms select.large {
   width: 25rem;
 }
+#style-guide footer {
+  margin-top: 2.2rem;
+  font-style: italic;
+  color: gray;
+}
 
 @media (min-width: 480px) {
   #intro, .explanation, .example {

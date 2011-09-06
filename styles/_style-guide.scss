@@ -149,6 +149,13 @@
       }
     }
   }
+  
+  footer
+  {
+    margin-top: $body-text-line-height;
+    font-style: italic;
+    color: $secondary-text;
+  }
 }
 
 @media (min-width: 480px)
