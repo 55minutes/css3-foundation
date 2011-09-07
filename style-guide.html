@@ -564,15 +564,11 @@
   
   <!-- onload javascript -->
   <script type="text/javascript" charset="utf-8">
-    (function($) {
-      $(function() {
-        if(!FiftyfiveExample.util.isSupportedBrowser())
-        {
-          $("html").addClass("unsupported-browser");
-        }
-        // Other stuff to do as soon as the DOM is ready;
-      });
-    })(jQuery);
+  (function($) {
+    $(function() {
+      FiftyfiveExample.commonInit();
+    });
+  })(jQuery);
   </script>
 </body>
 </html>

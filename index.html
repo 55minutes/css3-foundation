@@ -3,6 +3,7 @@
 <head>
   <!-- meta tags -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <!-- stylesheets -->
   <!-- for all screen sizes -->
@@ -81,11 +82,7 @@
   <script type="text/javascript" charset="utf-8">
     (function($) {
       $(function() {
-        if(!FiftyfiveExample.util.isSupportedBrowser())
-        {
-          $("html").addClass("unsupported-browser");
-        }
-        // Other stuff to do as soon as the DOM is ready;
+        FiftyfiveExample.commonInit();
       });
     })(jQuery);
   </script>
