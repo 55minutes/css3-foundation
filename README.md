@@ -2,7 +2,7 @@
 
 The 55 Minutes foundation is a [Compass](http://compass-style.org/ "Compass Home | Compass Documentation")-based CSS3/HTML5 project template for crafting modern web applications in Rails, Django and Wicket.
 
-The project requires [Ruby](http://www.ruby-lang.org/en/) and [RubyGems](http://rubygems.org/), as well as the <code>[compass](https://github.com/chriseppstein/compass)</code> and <code>[compass-colors](https://github.com/chriseppstein/compass-colors)</code> gems.
+The project requires [Ruby](http://www.ruby-lang.org/en/) and [RubyGems](http://rubygems.org/), as well as the [compass](https://github.com/chriseppstein/compass) and [compass-colors](https://github.com/chriseppstein/compass-colors) gems.
 
 ## Feature Highlights ##
 
@@ -31,7 +31,7 @@ Please refer to individual source files for details on what should be included t
 * **styles/** contains the Sass source files. We use the SCSS syntax for this project.
     * **styles/basics/** contains the building blocks of our styles: the colors, the typography, the grid, and the reset stylesheet.
     * **styles/shared/** contains application-wide styles like header, footer and form styles. Default styles for the basic HTML tags should also be included here.
-* **styles/compiled/** contains the compiled stylesheets, the CSS files that we will include in our markup.
+* **styles-compiled/** contains the compiled stylesheets, the CSS files that we will include in our markup.
 * **scripts/** contains all of the project's JavaScript files. Put custom JavaScript at the top level of this directory.
     * **scripts/lib/** contains libraries like jQuery and Modernizr.
 
