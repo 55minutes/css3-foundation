@@ -9,10 +9,11 @@ The project requires [Ruby](http://www.ruby-lang.org/en/) and [RubyGems](http://
 * A fluid, responsive layout following the principles of [Responsive Web Design](http://www.abookapart.com/products/responsive-web-design "A Book Apart, Responsive Web Design").
 * Best practices recommended by the [320 and Up](http://stuffandnonsense.co.uk/projects/320andup/ "320 and up") boilerplate project, as well as our own experience developing web applications.
 * Integration with the [jQuery](http://jquery.com/ "jQuery: The Write Less, Do More, JavaScript Library"), [jQuery UI](http://jqueryui.com/ "jQuery UI - Home") and [Modernizr](http://www.modernizr.com/ "Modernizr") JavaScript libraries, as well as 55 Minutes' own set of JS utilities and conveniences.
+* A style guide similar to the [Twitter bootstrap](http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter") containing examples of the default styles defined in the project.
 
 ## Getting Started ##
 
-Once you've got Ruby, RubyGems, compass and compass-colors installed, all you need to do is change into the <code>css3-foundation/styles/</code> directory and type <code>compass watch</code>. This will monitor changes to your source files and recompile the output on demand. To compile the code one time only, type <code>compass compile</code>. More details can be found in the [Compass documentation](http://compass-style.org/reference/compass/ "Compass Core Framework | Compass Documentation").
+Once you've got Ruby, RubyGems, compass and compass-colors installed, all you need to do is change into the <code>css3-foundation/styles/</code> directory in your favorite terminal application and type <code>compass watch</code>. This will monitor changes to your source files and recompile the output on demand. To compile the code one time only, type <code>compass compile</code>. More details can be found in the [Compass documentation](http://compass-style.org/reference/compass/ "Compass Core Framework | Compass Documentation").
 
 ## File organization ##
 
