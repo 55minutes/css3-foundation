@@ -67,42 +67,63 @@ input[type=checkbox]
   background-color: white;
 }
 
+/*
+** Use the sassy-buttons gem to generate matte rounded-rectangle buttons with
+** gradients and hover styles, in the following colors:
+**    main buttons: orange,
+**    disabled buttons: grey,
+**    buttons for destructive actions: red
+** 
+** See
+**    http://jaredhardy.com/sassy-buttons/ and
+**    https://github.com/jhardy/Sassy-Buttons
+** for more details.
+*/
 input[type=submit],
 input[type=button],
 button
 {
-  border: 0.1rem solid $button-border;
-  border-top-color: lighten($button-border, 6);
-  @include border-radius($button-border-radius);
-  @include box-shadow($button-shadow, 0, 0, 0.1rem);
-  padding: 0.2rem $column-width;
-  background: $button-gradient-mid;
-  @include background-image(linear-gradient($button-gradient-light, $button-gradient-dark));
-  color: $button-text-color;
-  font-size: $secondary-text-size;
-  line-height: $body-text-line-height - 0.4rem;
+  $sb-base-color: $button-base-bg;
+  $sb-second-color: false;
+  $sb-border-radius: $button-border-radius;
+  $sb-border-width: 0.1rem;
+  $sb-padding: 0.2rem $column-width;
+  $sb-font-size: $secondary-text-size;
+  $sb-line-height: $body-text-line-height - 0.4rem;
+  $sb-text-color: $button-text;
+  $sb-text-style: false;
+  $sb-gradient-style: "matte";
+  $sb-hover: true;
+  
+  @include sassy-button();
+  
+  // For some reason, the color I set above gets ignored. Set it manually.
+  color: $button-text;
+  font-family:  $body-text-family;
   font-weight: bold;
-  cursor: pointer;
+//  cursor: pointer;
   
   &.destructive
   {
-    border-color: $destructive-button-border;
-    border-top-color: lighten($destructive-button-border, 6);
-    @include box-shadow($destructive-button-shadow, 0, 0, 0.1rem);
-    padding: 0.2rem $column-width;
-    background: $destructive-button-gradient-mid;
-    @include background-image(linear-gradient($destructive-button-gradient-light, $destructive-button-gradient-dark));
-    color: $destructive-button-text-color;
+    $sb-base-color: $destructive-button-base-bg;
+    $sb-text-color: $destructive-button-text;
+    
+    @include sassy-button();
+
+    // For some reason, the color I set above gets ignored. Set it manually.
+    color: $destructive-button-text;
   }
 
   &[disabled]
   {
-    border: 0.1rem solid $disabled-button-border;
-    border-top-color: lighten($disabled-button-border, 6);
-    @include box-shadow($disabled-button-shadow, 0, 0, 0.1rem);
-    background: $disabled-button-gradient-mid;
-    @include background-image(linear-gradient($disabled-button-gradient-light, $disabled-button-gradient-dark));
-    color: $disabled-button-text-color;
+    $sb-base-color: $disabled-button-base-bg;
+    $sb-text-color: $disabled-button-text;
+    $sb-hover: false;
+    
+    @include sassy-button();
+
+    // For some reason, the color I set above gets ignored. Set it manually.
+    color: $disabled-button-text;
     cursor: default !important;
   }
 }

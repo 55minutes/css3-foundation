@@ -5,7 +5,8 @@
 | Created: yyyy-mm-dd
 |
 | This file rolls up the main styles for the entire application. You'll need to
-| include the IE-specific and print stylesheet separately in your markup.
+| include the IE-specific and print stylesheet separately in your markup. See
+| the readme for an explanation of the directory organization.
 ------------------------------------------------------------------------------*/
 /*-----[ reset ]----------------------------------------------------------------
 | Based on:
@@ -118,6 +119,12 @@ input, select {
 | about the color names? Check out <www.colblindor.com/color-name-hue/> and 
 | <http://chir.ag/projects/name-that-color/>.
 */
+/*----------[ table of contents ]-----------------------------------------------
+| palette
+| backgrounds and borders
+| text
+| forms
+*/
 /*----------[ palette ]---------------------------------------------------------
 */
 /* purple */
@@ -141,7 +148,15 @@ input, select {
 */
 /*-----[ foundation ]-----------------------------------------------------------
 | Reusable content styles. Define your application-wide styles, like links,
-| headers, body text, clearfix, etc. here
+| headers, body text, clearfix, etc. here. See the readme for information on
+| recommended rule order.
+*/
+/*----------[ table of contents ]-----------------------------------------------
+| tags
+| content
+| unsupported browser warning
+| alerts
+| pagination
 */
 /*----------[ tags ]------------------------------------------------------------
 */
@@ -280,7 +295,7 @@ ul {
   list-style-type: disc;
 }
 
-/*----------[ general ]---------------------------------------------------------
+/*----------[ content ]---------------------------------------------------------
 */
 .align-center {
   margin: 0px auto;
@@ -421,11 +436,41 @@ span.keep-together {
   background-color: transparent;
 }
 
+/*-----[ mixins ]---------------------------------------------------------------
+| Define mixins and reusable CSS rulesets here. An example:
+| 
+|   $silver-sand: #c1c0be;
+|   $content-inner-bg: white;
+|   
+|   @mixin content-inner-border
+|   {
+|     @include border-radius(5px);
+|   }
+|   
+|   @mixin content-shadow
+|   {
+|     @include single-box-shadow($silver-sand, 0, 3px, 5px);
+|   }
+|   
+|   @mixin content-inner-box
+|   {
+|     @include content-inner-border;
+|     @include content-shadow;
+|     background-color: $content-inner-bg;
+|   }
+*/
 /*-----[ forms ]----------------------------------------------------------------
 | Global form and form element styles. Feature-specific form styles should be
 | co-located with other feature-specific styles.
 */
-/*-----[ text and password fields, textareas ]----------------------------------
+/*----------[ table of contents ]-----------------------------------------------
+| text and password fields, textareas
+| buttons and checkboxes
+| form layout
+| validation
+| datepicker
+*/
+/*----------[ text and password fields, textareas ]-----------------------------
 */
 input[type=email],
 input[type=password],
@@ -462,7 +507,7 @@ input[type=text].small {
   margin-right: 0.33em;
 }
 
-/*-----[ buttons and checkboxes]------------------------------------------------
+/*----------[ buttons and checkboxes]-------------------------------------------
 */
 input[type=checkbox],
 input[type=radio] {
@@ -474,70 +519,122 @@ input[type=checkbox] {
   background-color: white;
 }
 
+/*
+** Use the sassy-buttons gem to generate matte rounded-rectangle buttons with
+** gradients and hover styles, in the following colors:
+**    main buttons: orange,
+**    disabled buttons: grey,
+**    buttons for destructive actions: red
+** 
+** See
+**    http://jaredhardy.com/sassy-buttons/ and
+**    https://github.com/jhardy/Sassy-Buttons
+** for more details.
+*/
 input[type=submit],
 input[type=button],
 button {
-  border: 0.1rem solid #e07400;
-  border-top-color: #ff8400;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 0.2rem 2rem;
+  line-height: 1.8rem;
+  border-style: solid;
+  border-width: 0.1rem;
   -moz-border-radius: 0.6rem;
   -webkit-border-radius: 0.6rem;
   -o-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
   -khtml-border-radius: 0.6rem;
   border-radius: 0.6rem;
-  -moz-box-shadow: 0 0 0.1rem #d16c00;
-  -webkit-box-shadow: 0 0 0.1rem #d16c00;
-  -o-box-shadow: 0 0 0.1rem #d16c00;
-  box-shadow: 0 0 0.1rem #d16c00;
-  padding: 0.2rem 2rem;
-  background: #f07c00;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8400), color-stop(100%, #e07400));
-  background-image: -webkit-linear-gradient(#ff8400, #e07400);
-  background-image: -moz-linear-gradient(#ff8400, #e07400);
-  background-image: -o-linear-gradient(#ff8400, #e07400);
-  background-image: -ms-linear-gradient(#ff8400, #e07400);
-  background-image: linear-gradient(#ff8400, #e07400);
+  background-color: #f07c00;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffc68a), color-stop(3%, #ffa23d), color-stop(70%, #f07c00));
+  background: -webkit-linear-gradient(#ffc68a, #ffa23d 3%, #f07c00 70%);
+  background: -moz-linear-gradient(#ffc68a, #ffa23d 3%, #f07c00 70%);
+  background: -o-linear-gradient(#ffc68a, #ffa23d 3%, #f07c00 70%);
+  background: -ms-linear-gradient(#ffc68a, #ffa23d 3%, #f07c00 70%);
+  background: linear-gradient(#ffc68a, #ffa23d 3%, #f07c00 70%);
+  border-color: #f07c00;
   color: white;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-family: Calibri, "Myriad Pro", Tahoma, sans-serif;
   font-weight: bold;
-  cursor: pointer;
+}
+input[type=submit]:hover,
+input[type=button]:hover,
+button:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffc68a), color-stop(3%, #ffae57), color-stop(75%, #ff890a));
+  background: -webkit-linear-gradient(#ffc68a, #ffae57 3%, #ff890a 75%);
+  background: -moz-linear-gradient(#ffc68a, #ffae57 3%, #ff890a 75%);
+  background: -o-linear-gradient(#ffc68a, #ffae57 3%, #ff890a 75%);
+  background: -ms-linear-gradient(#ffc68a, #ffae57 3%, #ff890a 75%);
+  background: linear-gradient(#ffc68a, #ffae57 3%, #ff890a 75%);
 }
 input[type=submit].destructive,
 input[type=button].destructive,
 button.destructive {
-  border-color: #c93416;
-  border-top-color: #e53b19;
-  -moz-box-shadow: 0 0 0.1rem #bc3014;
-  -webkit-box-shadow: 0 0 0.1rem #bc3014;
-  -o-box-shadow: 0 0 0.1rem #bc3014;
-  box-shadow: 0 0 0.1rem #bc3014;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  font-size: 1.4rem;
   padding: 0.2rem 2rem;
-  background: #d73717;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e53b19), color-stop(100%, #c93416));
-  background-image: -webkit-linear-gradient(#e53b19, #c93416);
-  background-image: -moz-linear-gradient(#e53b19, #c93416);
-  background-image: -o-linear-gradient(#e53b19, #c93416);
-  background-image: -ms-linear-gradient(#e53b19, #c93416);
-  background-image: linear-gradient(#e53b19, #c93416);
+  line-height: 1.8rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  -moz-border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -khtml-border-radius: 0.6rem;
+  border-radius: 0.6rem;
+  background-color: #e53b19;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f5b0a2), color-stop(3%, #ed755d), color-stop(70%, #e53b19));
+  background: -webkit-linear-gradient(#f5b0a2, #ed755d 3%, #e53b19 70%);
+  background: -moz-linear-gradient(#f5b0a2, #ed755d 3%, #e53b19 70%);
+  background: -o-linear-gradient(#f5b0a2, #ed755d 3%, #e53b19 70%);
+  background: -ms-linear-gradient(#f5b0a2, #ed755d 3%, #e53b19 70%);
+  background: linear-gradient(#f5b0a2, #ed755d 3%, #e53b19 70%);
+  border-color: #e53b19;
   color: white;
+}
+input[type=submit].destructive:hover,
+input[type=button].destructive:hover,
+button.destructive:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f5b0a2), color-stop(3%, #f08974), color-stop(75%, #e84e2f));
+  background: -webkit-linear-gradient(#f5b0a2, #f08974 3%, #e84e2f 75%);
+  background: -moz-linear-gradient(#f5b0a2, #f08974 3%, #e84e2f 75%);
+  background: -o-linear-gradient(#f5b0a2, #f08974 3%, #e84e2f 75%);
+  background: -ms-linear-gradient(#f5b0a2, #f08974 3%, #e84e2f 75%);
+  background: linear-gradient(#f5b0a2, #f08974 3%, #e84e2f 75%);
 }
 input[type=submit][disabled],
 input[type=button][disabled],
 button[disabled] {
-  border: 0.1rem solid #c8c8c8;
-  border-top-color: #d7d7d7;
-  -moz-box-shadow: 0 0 0.1rem #b8b8b8;
-  -webkit-box-shadow: 0 0 0.1rem #b8b8b8;
-  -o-box-shadow: 0 0 0.1rem #b8b8b8;
-  box-shadow: 0 0 0.1rem #b8b8b8;
-  background: #c8c8c8;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cfcfcf), color-stop(100%, #c0c0c0));
-  background-image: -webkit-linear-gradient(#cfcfcf, #c0c0c0);
-  background-image: -moz-linear-gradient(#cfcfcf, #c0c0c0);
-  background-image: -o-linear-gradient(#cfcfcf, #c0c0c0);
-  background-image: -ms-linear-gradient(#cfcfcf, #c0c0c0);
-  background-image: linear-gradient(#cfcfcf, #c0c0c0);
+  display: inline-block;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 0.2rem 2rem;
+  line-height: 1.8rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  -moz-border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -khtml-border-radius: 0.6rem;
+  border-radius: 0.6rem;
+  background-color: #c8c8c8;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(3%, #eeeeee), color-stop(70%, #c8c8c8));
+  background: -webkit-linear-gradient(#ffffff, #eeeeee 3%, #c8c8c8 70%);
+  background: -moz-linear-gradient(#ffffff, #eeeeee 3%, #c8c8c8 70%);
+  background: -o-linear-gradient(#ffffff, #eeeeee 3%, #c8c8c8 70%);
+  background: -ms-linear-gradient(#ffffff, #eeeeee 3%, #c8c8c8 70%);
+  background: linear-gradient(#ffffff, #eeeeee 3%, #c8c8c8 70%);
+  border-color: #c8c8c8;
   color: #8d8d8d;
   cursor: default !important;
 }

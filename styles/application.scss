@@ -5,20 +5,30 @@
 | Created: yyyy-mm-dd
 |
 | This file rolls up the main styles for the entire application. You'll need to
-| include the IE-specific and print stylesheet separately in your markup.
+| include the IE-specific and print stylesheet separately in your markup. See
+| the readme for an explanation of the directory organization.
 ------------------------------------------------------------------------------*/
 
-
+// Reset
 @import "basics/reset";
+
+// Third-party mixins
 @import "compass/css3";
+@import "sassybuttons";
+
+// Basics
 @import "basics/colors";
 @import "basics/typography";
 @import "basics/grid";
+
+// Shared
 @import "shared/foundation";
 @import "shared/mixins";
 @import "shared/forms";
 @import "shared/header";
 @import "shared/footer";
+
+// Feature-/page-specific
 @import "home";
 @import "style-guide";
 @import "feature-1";

@@ -56,25 +56,13 @@ $success-feedback : darken($citrus, 3);
 
 /*----------[ forms ]-----------------------------------------------------------
 */
-$button-shadow         : darken($flush-orange, 9);
-$button-border         : darken($flush-orange, 6);
-$button-gradient-light : $flush-orange;
-$button-gradient-mid   : darken($flush-orange, 3);
-$button-gradient-dark  : darken($flush-orange, 6);
-$button-text-color     : white;
+$button-base-bg : darken($flush-orange, 3);
+$button-text    : white;
 
-$destructive-button-shadow         : darken($cinnabar, 9);
-$destructive-button-border         : darken($cinnabar, 6);
-$destructive-button-gradient-light : $cinnabar;
-$destructive-button-gradient-mid   : darken($cinnabar, 3);
-$destructive-button-gradient-dark  : darken($cinnabar, 6);
-$destructive-button-text-color     : white;
+$destructive-button-base-bg : $cinnabar;
+$destructive-button-text    : white;
 
-$disabled-button-shadow         : darken($silver, 3);
-$disabled-button-border         : lighten($silver, 3);
-$disabled-button-gradient-light : lighten($silver, 6);
-$disabled-button-gradient-mid   : lighten($silver, 3);
-$disabled-button-gradient-dark  : $silver;
-$disabled-button-text-color     : lighten($grey, 5);
+$disabled-button-base-bg : lighten($silver, 3);
+$disabled-button-text    : lighten($grey, 5);
 
 
