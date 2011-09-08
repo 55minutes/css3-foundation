@@ -2,7 +2,16 @@
 | Global form and form element styles. Feature-specific form styles should be
 | co-located with other feature-specific styles.
 */
-/*-----[ text and password fields, textareas ]----------------------------------
+
+/*----------[ table of contents ]-----------------------------------------------
+| text and password fields, textareas
+| buttons and checkboxes
+| form layout
+| validation
+| datepicker
+*/
+
+/*----------[ text and password fields, textareas ]-----------------------------
 */
 input[type=email],
 input[type=password],
@@ -42,7 +51,7 @@ input[type=text].small
   margin-right: 0.33em;
 }
 
-/*-----[ buttons and checkboxes]------------------------------------------------
+/*----------[ buttons and checkboxes]-------------------------------------------
 */
 $button-border-radius: 0.6rem;
 
