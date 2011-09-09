@@ -5,8 +5,9 @@
 | Created: yyyy-mm-dd
 |
 | This file rolls up the main styles for the entire application. You'll need to
-| include the IE-specific and print stylesheet separately in your markup. See
-| the readme for an explanation of the directory organization.
+| include the IE-specific and print stylesheets, as well as the display-size-
+| specific styles separately in your markup. See the readme for an explanation
+| of the directory organization.
 ------------------------------------------------------------------------------*/
 /*-----[ reset ]----------------------------------------------------------------
 | Based on:
@@ -911,9 +912,9 @@ img.ui-datepicker-trigger {
 | are too many to practically be in one file, create a new directory containing
 | styles for that feature:
 |
-|   _feature-1.css.scss
+|   _feature-1.scss
 |   feature-2/
-|     _sub-feature-1.css.scss
-|     _sub-feature-2.css.scss
-|   _feature-3.css.scss
+|     _sub-feature-1.scss
+|     _sub-feature-2.scss
+|   _feature-3.scss
 */
