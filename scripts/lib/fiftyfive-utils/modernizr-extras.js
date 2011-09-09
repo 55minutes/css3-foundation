@@ -18,7 +18,7 @@
 
 /*------------------------------------------------------------------------------
 | modernizr-extras.js
-| 55 Minutes JS utilities v2.0
+| 55 Minutes JS utilities v3.0
 | Author(s): Richa Avasthi
 | Created: 2010-10-13
 |
