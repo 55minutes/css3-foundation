@@ -2,7 +2,7 @@
 | Styles for the home page. See _feature-1.scss for more details on how feature-
 | specific styles should be organized.
 */
-#home #main
+#home #page
 {
   padding: $body-text-line-height $column-width;
   
@@ -28,7 +28,7 @@
 
 @media (min-width: 480px)
 {
-  #home #main
+  #home #page
   {
     max-width: 60rem;
   }
@@ -36,7 +36,7 @@
 
 @media (min-width: 768px)
 {
-  #home #main
+  #home #page
   {
     margin: 5rem auto;
     border: 0.2rem solid $silver;
@@ -48,7 +48,7 @@
 {
   #home
   {
-    #main
+    #page
     {
       max-width: 90rem;
     }
