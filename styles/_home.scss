@@ -13,6 +13,25 @@
   {
     margin-bottom: 0;
   }
+  
+  #about, #resources
+  {
+    margin-bottom: $section-spacing;
+  }
+  
+  footer
+  {
+    color: $secondary-text;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 480px)
+{
+  #home #main
+  {
+    max-width: 60rem;
+  }
 }
 
 @media (min-width: 768px)
@@ -22,7 +41,39 @@
     margin: 5rem auto;
     border: 0.2rem solid $silver;
     @include border-radius(1.5rem);
-    max-width: 65rem;
+  }
+}
+
+@media (min-width: 1024px)
+{
+  #home
+  {
+    #main
+    {
+      max-width: 90rem;
+    }
+    
+    #about, #resources
+    {
+      float: left;
+      margin-bottom: 0;
+    }
+    
+    #about
+    {
+      margin-right: 3%;
+      width: 67%;
+    }
+    
+    #resources
+    {
+      width: 30%;
+    }
+    
+    footer
+    {
+      clear: both;
+    }
   }
 }
 

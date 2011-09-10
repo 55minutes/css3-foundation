@@ -757,7 +757,19 @@ img.ui-datepicker-trigger {
 #home #main ul:last-of-type {
   margin-bottom: 0;
 }
+#home #main #about, #home #main #resources {
+  margin-bottom: 4.4rem;
+}
+#home #main footer {
+  color: gray;
+  font-style: italic;
+}
 
+@media (min-width: 480px) {
+  #home #main {
+    max-width: 60rem;
+  }
+}
 @media (min-width: 768px) {
   #home #main {
     margin: 5rem auto;
@@ -768,7 +780,25 @@ img.ui-datepicker-trigger {
     -ms-border-radius: 1.5rem;
     -khtml-border-radius: 1.5rem;
     border-radius: 1.5rem;
-    max-width: 65rem;
+  }
+}
+@media (min-width: 1024px) {
+  #home #main {
+    max-width: 90rem;
+  }
+  #home #about, #home #resources {
+    float: left;
+    margin-bottom: 0;
+  }
+  #home #about {
+    margin-right: 3%;
+    width: 67%;
+  }
+  #home #resources {
+    width: 30%;
+  }
+  #home footer {
+    clear: both;
   }
 }
 /*-----[ style guide ]----------------------------------------------------------
