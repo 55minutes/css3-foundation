@@ -744,34 +744,34 @@ img.ui-datepicker-trigger {
 /*-----[ footer ]---------------------------------------------------------------
 | Common page footer styles.
 */
-/*-----[ home ]-----------------------------------------------------------------
-| Styles for the home page. See _feature-1.scss for more details on how feature-
-| specific styles should be organized.
+/*-----[ documentation ]--------------------------------------------------------
+| Styles for the documentation pages. See _feature-1.scss for more details on
+| how feature-specific styles should be organized.
 */
-#home #main {
+.documentation #page {
   padding: 2.2rem 2rem;
 }
-#home #main p:last-of-type,
-#home #main dl:last-of-type,
-#home #main ol:last-of-type,
-#home #main ul:last-of-type {
+.documentation #page p:last-of-type,
+.documentation #page dl:last-of-type,
+.documentation #page ol:last-of-type,
+.documentation #page ul:last-of-type {
   margin-bottom: 0;
 }
-#home #main #about, #home #main #resources {
+.documentation #page #about, .documentation #page #resources {
   margin-bottom: 4.4rem;
 }
-#home #main footer {
+.documentation #page footer {
   color: gray;
   font-style: italic;
 }
 
 @media (min-width: 480px) {
-  #home #main {
+  .documentation #page {
     max-width: 60rem;
   }
 }
 @media (min-width: 768px) {
-  #home #main {
+  .documentation #page {
     margin: 5rem auto;
     border: 0.2rem solid silver;
     -moz-border-radius: 1.5rem;
@@ -783,21 +783,21 @@ img.ui-datepicker-trigger {
   }
 }
 @media (min-width: 1024px) {
-  #home #main {
+  .documentation #page {
     max-width: 90rem;
   }
-  #home #about, #home #resources {
+  .documentation #about, .documentation #resources {
     float: left;
     margin-bottom: 0;
   }
-  #home #about {
+  .documentation #about {
     margin-right: 3%;
     width: 67%;
   }
-  #home #resources {
+  .documentation #resources {
     width: 30%;
   }
-  #home footer {
+  .documentation footer {
     clear: both;
   }
 }
@@ -805,34 +805,34 @@ img.ui-datepicker-trigger {
 | Styles for the login page. See _feature-1.scss for more details on how 
 | feature-specific styles should be organized.
 */
-#login #main {
+#login #page {
   padding: 2.2rem 2rem;
 }
-#login #main p:last-of-type,
-#login #main dl:last-of-type,
-#login #main ol:last-of-type,
-#login #main ul:last-of-type {
+#login #page p:last-of-type,
+#login #page dl:last-of-type,
+#login #page ol:last-of-type,
+#login #page ul:last-of-type {
   margin-bottom: 0;
 }
-#login #main form {
+#login #page form {
   margin-bottom: 4.4rem;
 }
-#login #main input[type=email],
-#login #main input[type=password] {
+#login #page input[type=email],
+#login #page input[type=password] {
   width: 23rem;
 }
-#login #main footer {
+#login #page footer {
   color: gray;
   font-style: italic;
 }
 
 @media (min-width: 480px) {
-  #login #main {
+  #login #page {
     max-width: 25rem;
   }
 }
 @media (min-width: 768px) {
-  #login #main {
+  #login #page {
     margin: 5rem auto;
     border: 0.2rem solid silver;
     -moz-border-radius: 1.5rem;
