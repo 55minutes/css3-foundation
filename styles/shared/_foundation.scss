@@ -309,29 +309,29 @@ span.keep-together
 
 /*----------[ alerts ]----------------------------------------------------------
 */
-.alerts
+.alerts, .alerts .feedbackPanel
 {
   margin: 0;
   list-style-type: none;
   
-  .message
+  li, .message
   {
     margin-bottom: $vertical-nudge;
     padding: $vertical-nudge $column-width / 2;
     
-    &.success
+    &.success, &.feedbackPanelSUCCESS
     {
       background-color: desaturate(lighten($success-feedback, 55), 20);
       color: $success-feedback;
     }
     
-    &.warning
+    &.warning, &.feedbackPanelINFO, &.feedbackPanelWARNING
     {
       background-color: lighten($warning-feedback, 48);
       color: $warning-feedback;
     }
     
-    &.error
+    &.error, &.feedbackPanelERROR, &.feedbackPanelFATAL
     {
       background-color: lighten($error-feedback, 55);
       color: $error-feedback;

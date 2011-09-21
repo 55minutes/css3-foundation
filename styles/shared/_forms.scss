@@ -213,7 +213,7 @@ table.form
 
 /*----------[ validation ]------------------------------------------------------
 */
-.error
+.error, .feedbackPanelERROR
 {
   &, td, th
   {
@@ -242,7 +242,7 @@ table.form
     border-color: darken($error-feedback, 5);
   }
   
-  ul.error-explanation
+  ul.error-explanation, ul.feedbackPanel
   {
     margin: 0;
     margin-left: $column-width;
