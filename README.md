@@ -1,8 +1,14 @@
 # 55 Minutes CSS3/HTML5 Foundation #
 
-The 55 Minutes foundation is a [Compass](http://compass-style.org/ "Compass Home | Compass Documentation")-based CSS3/HTML5 project template for crafting modern web applications in Rails, Django and Wicket.
+This project is a [Compass](http://compass-style.org/ "Compass Home | Compass Documentation")-based CSS3/HTML5 template for crafting modern web applications. We're particularly focused on establishing patterns that work well with server-side frameworks like Rails, Django and Wicket.
 
-The project requires [Ruby](http://www.ruby-lang.org/en/) and [RubyGems](http://rubygems.org/), as well as the [compass](https://github.com/chriseppstein/compass) and [compass-colors](https://github.com/chriseppstein/compass-colors) gems.
+To use this project, the following must be installed on your computer:
+
+* [Ruby](http://www.ruby-lang.org/en/)
+* [RubyGems](http://rubygems.org/)
+* [compass gem](https://github.com/chriseppstein/compass)
+* [compass-colors gem](https://github.com/chriseppstein/compass-colors)
+* [sassy-buttons gem](https://github.com/jhardy/Sassy-Buttons)
 
 ## Feature Highlights ##
 
@@ -13,7 +19,9 @@ The project requires [Ruby](http://www.ruby-lang.org/en/) and [RubyGems](http://
 
 ## Getting Started ##
 
-Once you've got Ruby, RubyGems, compass and compass-colors installed, all you need to do is change into the <code>css3-foundation/styles/</code> directory in your favorite terminal application and type <code>compass watch</code>. This will monitor changes to your source files and recompile the output on demand. To compile the code one time only, type <code>compass compile</code>. More details can be found in the [Compass documentation](http://compass-style.org/reference/compass/ "Compass Core Framework | Compass Documentation").
+Once you've got Ruby, RubyGems, compass, compass-colors and sassy-buttons installed, all you need to do is change into the <code>css3-foundation/styles/</code> directory in your favorite terminal application and type <code>compass watch</code>. This will monitor changes to your source files and recompile the output on demand. To compile the code one time only, type <code>compass compile</code>. More details can be found in the [Compass documentation](http://compass-style.org/reference/compass/ "Compass Core Framework | Compass Documentation").
+
+If you're interested in using this foundation with the [Apache Wicket](http://wicket.apache.org/) framework, you'll want to check out our [fiftyfive-wicket](https://github.com/55minutes/fiftyfive-wicket) project, which includes a Maven archetype that bundles all of these CSS3 and HTML5 practices and integrates them nicely with Wicket.
 
 ## File organization ##
 

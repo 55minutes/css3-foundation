@@ -19,7 +19,7 @@
 
 /*------------------------------------------------------------------------------
 | jquery.ui.forminputplaceholdertext.js
-| 55 Minutes JS utilities v2.0
+| 55 Minutes JS utilities v3.1-pre
 | Author(s): Richa Avasthi
 | Created: 2011-03-21
 ------------------------------------------------------------------------------*/

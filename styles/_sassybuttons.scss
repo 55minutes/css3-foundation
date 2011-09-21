@@ -1,0 +1,26 @@
+@import "sassy-buttons";
+
+// Sassy Button defaults
+// These are the base defaults for the buttons, if you are going to use similar buttons on an entire site,
+// overriding these can save you some time by calling the sassy button mixin with less arguments.
+
+$sb-base-color: rgba(11, 153, 194, 1);
+$sb-second-color: false;
+$sb-border-radius: 10px;
+$sb-border-width: 1px;
+$sb-padding: 0.5em 1.5em;
+$sb-font-size: 16px;
+$sb-line-height: 1.2em;
+$sb-text-color: white;
+$sb-text-style: "inset";
+$sb-gradient-style: "matte";
+$sb-hover: true;
+$sb-ieSupport: false;
+
+// Mixing that gets included when calling the sassy-button-structure if you need any
+// styles applied to all your sassy buttons, you can add them here.
+@mixin sassy-button-default-structure {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  cursor: pointer; }

@@ -1,0 +1,79 @@
+/*-----[ documentation ]--------------------------------------------------------
+| Styles for the documentation pages. See _feature-1.scss for more details on
+| how feature-specific styles should be organized.
+*/
+.documentation #page
+{
+  padding: $body-text-line-height $column-width;
+  
+  p:last-of-type,
+  dl:last-of-type,
+  ol:last-of-type,
+  ul:last-of-type,
+  {
+    margin-bottom: 0;
+  }
+  
+  #about, #resources
+  {
+    margin-bottom: $section-spacing;
+  }
+  
+  footer
+  {
+    color: $secondary-text;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 480px)
+{
+  .documentation #page
+  {
+    max-width: 60rem;
+  }
+}
+
+@media (min-width: 768px)
+{
+  .documentation #page
+  {
+    margin: 5rem auto;
+    border: 0.2rem solid $silver;
+    @include border-radius(1.5rem);
+  }
+}
+
+@media (min-width: 1024px)
+{
+  .documentation
+  {
+    #page
+    {
+      max-width: 90rem;
+    }
+    
+    #about, #resources
+    {
+      float: left;
+      margin-bottom: 0;
+    }
+    
+    #about
+    {
+      margin-right: 3%;
+      width: 67%;
+    }
+    
+    #resources
+    {
+      width: 30%;
+    }
+    
+    footer
+    {
+      clear: both;
+    }
+  }
+}
+
