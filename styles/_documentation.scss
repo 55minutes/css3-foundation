@@ -5,6 +5,11 @@
 .documentation #page
 {
   padding: $body-text-line-height $column-width;
+ 
+  header
+  {
+    margin-bottom: $body-text-line-height;
+  }
   
   p:last-of-type,
   dl:last-of-type,
