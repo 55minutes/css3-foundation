@@ -744,6 +744,37 @@ img.ui-datepicker-trigger {
 /*-----[ footer ]---------------------------------------------------------------
 | Common page footer styles.
 */
+/*-----[ server errors ]--------------------------------------------------------
+| Styles for the server error pages. See _feature-1.scss for more details on
+| how feature-specific styles should be organized.
+*/
+.server-error #page {
+  padding: 2.2rem 2rem;
+}
+.server-error #page p:last-of-type,
+.server-error #page dl:last-of-type,
+.server-error #page ol:last-of-type,
+.server-error #page ul:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 480px) {
+  .server-error #page {
+    max-width: 60rem;
+  }
+}
+@media (min-width: 768px) {
+  .server-error #page {
+    margin: 5rem auto;
+    border: 0.2rem solid silver;
+    -moz-border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -khtml-border-radius: 1.5rem;
+    border-radius: 1.5rem;
+  }
+}
 /*-----[ documentation ]--------------------------------------------------------
 | Styles for the documentation pages. See _feature-1.scss for more details on
 | how feature-specific styles should be organized.
