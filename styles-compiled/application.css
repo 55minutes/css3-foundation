@@ -751,6 +751,9 @@ img.ui-datepicker-trigger {
 .documentation #page {
   padding: 2.2rem 2rem;
 }
+.documentation #page header {
+  margin-bottom: 2.2rem;
+}
 .documentation #page p:last-of-type,
 .documentation #page dl:last-of-type,
 .documentation #page ol:last-of-type,
