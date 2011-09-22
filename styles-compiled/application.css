@@ -391,23 +391,23 @@ span.keep-together {
 }
 /*----------[ alerts ]----------------------------------------------------------
 */
-.alerts {
+.alerts, .alerts .feedbackPanel {
   margin: 0;
   list-style-type: none;
 }
-.alerts .message {
+.alerts li, .alerts .message, .alerts .feedbackPanel li, .alerts .feedbackPanel .message {
   margin-bottom: 0.55rem;
   padding: 0.55rem 1rem;
 }
-.alerts .message.success {
+.alerts li.success, .alerts li.feedbackPanelSUCCESS, .alerts .message.success, .alerts .message.feedbackPanelSUCCESS, .alerts .feedbackPanel li.success, .alerts .feedbackPanel li.feedbackPanelSUCCESS, .alerts .feedbackPanel .message.success, .alerts .feedbackPanel .message.feedbackPanelSUCCESS {
   background-color: #f3f8be;
   color: #919e00;
 }
-.alerts .message.warning {
+.alerts li.warning, .alerts li.feedbackPanelINFO, .alerts li.feedbackPanelWARNING, .alerts .message.warning, .alerts .message.feedbackPanelINFO, .alerts .message.feedbackPanelWARNING, .alerts .feedbackPanel li.warning, .alerts .feedbackPanel li.feedbackPanelINFO, .alerts .feedbackPanel li.feedbackPanelWARNING, .alerts .feedbackPanel .message.warning, .alerts .feedbackPanel .message.feedbackPanelINFO, .alerts .feedbackPanel .message.feedbackPanelWARNING {
   background-color: #fff3c2;
   color: #cca300;
 }
-.alerts .message.error {
+.alerts li.error, .alerts li.feedbackPanelERROR, .alerts li.feedbackPanelFATAL, .alerts .message.error, .alerts .message.feedbackPanelERROR, .alerts .message.feedbackPanelFATAL, .alerts .feedbackPanel li.error, .alerts .feedbackPanel li.feedbackPanelERROR, .alerts .feedbackPanel li.feedbackPanelFATAL, .alerts .feedbackPanel .message.error, .alerts .feedbackPanel .message.feedbackPanelERROR, .alerts .feedbackPanel .message.feedbackPanelFATAL {
   background-color: #fcebe7;
   color: #b72f14;
 }
@@ -701,13 +701,13 @@ table.form .field, table.form .button-bar {
 
 /*----------[ validation ]------------------------------------------------------
 */
-.error, .error td, .error th {
+.error, .error td, .error th, .feedbackPanelERROR, .feedbackPanelERROR td, .feedbackPanelERROR th {
   background-color: #fcebe7;
 }
-.error label, .error .form-help {
+.error label, .error .form-help, .feedbackPanelERROR label, .feedbackPanelERROR .form-help {
   color: #b72f14;
 }
-.error label {
+.error label, .feedbackPanelERROR label {
   font-weight: bold;
 }
 .error input[type=email],
@@ -717,10 +717,10 @@ table.form .field, table.form .button-bar {
 .error input[type=text],
 .error input[type=url],
 .error select,
-.error textarea {
+.error textarea, .feedbackPanelERROR input[type=email], .feedbackPanelERROR input[type=password], .feedbackPanelERROR input[type=search], .feedbackPanelERROR input[type=tel], .feedbackPanelERROR input[type=text], .feedbackPanelERROR input[type=url], .feedbackPanelERROR select, .feedbackPanelERROR textarea {
   border-color: #a02911;
 }
-.error ul.error-explanation {
+.error ul.error-explanation, .error ul.feedbackPanel, .feedbackPanelERROR ul.error-explanation, .feedbackPanelERROR ul.feedbackPanel {
   margin: 0;
   margin-left: 2rem;
   font-size: 1.4rem;
