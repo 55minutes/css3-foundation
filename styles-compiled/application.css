@@ -783,7 +783,12 @@ img.ui-datepicker-trigger {
   padding: 2.2rem 2rem;
 }
 .documentation #page header {
-  margin-bottom: 2.2rem;
+  margin-bottom: 3.75rem;
+  border-bottom: 0.1rem solid silver;
+  padding-bottom: 0.55rem;
+}
+.documentation #page header .alerts {
+  margin-top: 0.55rem;
 }
 .documentation #page p:last-of-type,
 .documentation #page dl:last-of-type,
@@ -819,6 +824,9 @@ img.ui-datepicker-trigger {
 @media (min-width: 1024px) {
   .documentation #page {
     max-width: 90rem;
+  }
+  .documentation nav.auth-status {
+    float: right;
   }
   .documentation #about, .documentation #resources {
     float: left;
