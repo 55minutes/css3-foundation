@@ -11,23 +11,23 @@
 ------------------------------------------------------------------------------*/
 
 // Reset
-@import "basics/reset";
+@import "reset";
 
 // Third-party mixins
 @import "compass/css3";
 @import "sassybuttons";
 
 // Basics
-@import "basics/colors";
-@import "basics/typography";
-@import "basics/grid";
+@import "colors";
+@import "typography";
+@import "grid";
 
 // Shared
-@import "shared/foundation";
-@import "shared/mixins";
-@import "shared/forms";
-@import "shared/header";
-@import "shared/footer";
+@import "foundation";
+@import "mixins";
+@import "forms";
+@import "header";
+@import "footer";
 
 // Feature-/page-specific
 @import "documentation";
