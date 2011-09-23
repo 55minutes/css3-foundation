@@ -391,25 +391,71 @@ span.keep-together {
 }
 /*----------[ alerts ]----------------------------------------------------------
 */
+/*
+** Generate a sprite image by putting all the icons into a subdirectory of
+** images/. Then use the helpers sprite-url and sprite-position to place
+** the icon in the background.
+** 
+** See below and the Compass documentation for more details.
+**    <http://compass-style.org/reference/compass/helpers/sprites/>
+*/
 .alerts {
   margin: 0;
   list-style-type: none;
 }
 .alerts .message {
+  position: relative;
   margin-bottom: 0.55rem;
   padding: 0.55rem 1rem;
+  padding-left: 3rem;
+  /*
+  ** In order for a sprite to work properly, the element the sprite is set as
+  ** the background of needs to be exactly sized to the sprite's dimensions.
+  ** 
+  ** But what if you want to use the sprite as a background for a much larger
+  ** element? Like a single icon background to a block of text? That's exactly
+  ** what we want to do here for the alert messages. I want the warning icon
+  ** to be a background image placed in the top left of the message block,
+  ** and so on.
+  ** 
+  ** So how'd I do it? By using the :after pseudo-element (:before would work
+  ** equally well), sizing it to fit the icon-sprite size (in my case 16px 
+  ** square), and positioning it where my background position would have been
+  ** were I using the single icon image as a background.
+  */
+}
+.alerts .message:after {
+  position: absolute;
+  top: 0.713rem;
+  left: 0.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-repeat: no-repeat;
+  content: "";
 }
 .alerts .message.success {
   background-color: #f3f8be;
   color: #919e00;
 }
+.alerts .message.success:after {
+  background-image: url('../images/icon-sa21770bc59.png');
+  background-position: 0 -16px;
+}
 .alerts .message.warning {
   background-color: #fff3c2;
   color: #cca300;
 }
+.alerts .message.warning:after {
+  background-image: url('../images/icon-sa21770bc59.png');
+  background-position: 0 -32px;
+}
 .alerts .message.error {
   background-color: #fcebe7;
   color: #b72f14;
+}
+.alerts .message.error:after {
+  background-image: url('../images/icon-sa21770bc59.png');
+  background-position: 0 0;
 }
 
 /*----------[ pagination ]------------------------------------------------------
