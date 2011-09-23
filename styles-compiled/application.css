@@ -391,30 +391,77 @@ span.keep-together {
 }
 /*----------[ alerts ]----------------------------------------------------------
 */
+/*
+** Generate a sprite image by putting all the icons into a subdirectory of
+** images/. Then use the helpers sprite-url and sprite-position to place
+** the icon in the background.
+** 
+** See below and the Compass documentation for more details.
+**    <http://compass-style.org/reference/compass/helpers/sprites/>
+*/
 .alerts, .alerts .feedbackPanel {
   margin: 0;
   list-style-type: none;
 }
 .alerts li, .alerts .message, .alerts .feedbackPanel li, .alerts .feedbackPanel .message {
+  position: relative;
   margin-bottom: 0.55rem;
   padding: 0.55rem 1rem;
+  padding-left: 3rem;
+  /*
+  ** In order for a sprite to work properly, the element the sprite is set as
+  ** the background of needs to be exactly sized to the sprite's dimensions.
+  ** 
+  ** But what if you want to use the sprite as a background for a much larger
+  ** element? Like a single icon background to a block of text? That's exactly
+  ** what we want to do here for the alert messages. I want the warning icon
+  ** to be a background image placed in the top left of the message block,
+  ** and so on.
+  ** 
+  ** So how'd I do it? By using the :after pseudo-element (:before would work
+  ** equally well), sizing it to fit the icon-sprite size (in my case 16px 
+  ** square), and positioning it where my background position would have been
+  ** were I using the single icon image as a background.
+  */
+}
+.alerts li:after, .alerts .message:after, .alerts .feedbackPanel li:after, .alerts .feedbackPanel .message:after {
+  position: absolute;
+  top: 0.713rem;
+  left: 0.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-repeat: no-repeat;
+  content: "";
 }
 .alerts li.success, .alerts li.feedbackPanelSUCCESS, .alerts .message.success, .alerts .message.feedbackPanelSUCCESS, .alerts .feedbackPanel li.success, .alerts .feedbackPanel li.feedbackPanelSUCCESS, .alerts .feedbackPanel .message.success, .alerts .feedbackPanel .message.feedbackPanelSUCCESS {
   background-color: #f3f8be;
   color: #919e00;
 }
+.alerts li.success:after, .alerts li.feedbackPanelSUCCESS:after, .alerts .message.success:after, .alerts .message.feedbackPanelSUCCESS:after, .alerts .feedbackPanel li.success:after, .alerts .feedbackPanel li.feedbackPanelSUCCESS:after, .alerts .feedbackPanel .message.success:after, .alerts .feedbackPanel .message.feedbackPanelSUCCESS:after {
+  background-image: url('../images/icon-sa21770bc59.png');
+  background-position: 0 -16px;
+}
 .alerts li.warning, .alerts li.feedbackPanelINFO, .alerts li.feedbackPanelWARNING, .alerts .message.warning, .alerts .message.feedbackPanelINFO, .alerts .message.feedbackPanelWARNING, .alerts .feedbackPanel li.warning, .alerts .feedbackPanel li.feedbackPanelINFO, .alerts .feedbackPanel li.feedbackPanelWARNING, .alerts .feedbackPanel .message.warning, .alerts .feedbackPanel .message.feedbackPanelINFO, .alerts .feedbackPanel .message.feedbackPanelWARNING {
   background-color: #fff3c2;
   color: #cca300;
+}
+.alerts li.warning:after, .alerts li.feedbackPanelINFO:after, .alerts li.feedbackPanelWARNING:after, .alerts .message.warning:after, .alerts .message.feedbackPanelINFO:after, .alerts .message.feedbackPanelWARNING:after, .alerts .feedbackPanel li.warning:after, .alerts .feedbackPanel li.feedbackPanelINFO:after, .alerts .feedbackPanel li.feedbackPanelWARNING:after, .alerts .feedbackPanel .message.warning:after, .alerts .feedbackPanel .message.feedbackPanelINFO:after, .alerts .feedbackPanel .message.feedbackPanelWARNING:after {
+  background-image: url('../images/icon-sa21770bc59.png');
+  background-position: 0 -32px;
 }
 .alerts li.error, .alerts li.feedbackPanelERROR, .alerts li.feedbackPanelFATAL, .alerts .message.error, .alerts .message.feedbackPanelERROR, .alerts .message.feedbackPanelFATAL, .alerts .feedbackPanel li.error, .alerts .feedbackPanel li.feedbackPanelERROR, .alerts .feedbackPanel li.feedbackPanelFATAL, .alerts .feedbackPanel .message.error, .alerts .feedbackPanel .message.feedbackPanelERROR, .alerts .feedbackPanel .message.feedbackPanelFATAL {
   background-color: #fcebe7;
   color: #b72f14;
 }
+.alerts li.error:after, .alerts li.feedbackPanelERROR:after, .alerts li.feedbackPanelFATAL:after, .alerts .message.error:after, .alerts .message.feedbackPanelERROR:after, .alerts .message.feedbackPanelFATAL:after, .alerts .feedbackPanel li.error:after, .alerts .feedbackPanel li.feedbackPanelERROR:after, .alerts .feedbackPanel li.feedbackPanelFATAL:after, .alerts .feedbackPanel .message.error:after, .alerts .feedbackPanel .message.feedbackPanelERROR:after, .alerts .feedbackPanel .message.feedbackPanelFATAL:after {
+  background-image: url('../images/icon-sa21770bc59.png');
+  background-position: 0 0;
+}
 
 /*----------[ pagination ]------------------------------------------------------
 */
 .pagination {
+  margin-top: 1.1rem;
   white-space-collapse: discard;
 }
 .pagination .first, .pagination .prev, .pagination .page, .pagination .next, .pagination .last {
@@ -433,7 +480,7 @@ span.keep-together {
   text-decoration: none;
 }
 .pagination .first a, .pagination .first.current, .pagination .first.gap, .pagination .prev a, .pagination .prev.current, .pagination .prev.gap, .pagination .page a, .pagination .page.current, .pagination .page.gap, .pagination .next a, .pagination .next.current, .pagination .next.gap, .pagination .last a, .pagination .last.current, .pagination .last.gap {
-  padding: 0 1rem;
+  padding: 0.55rem 1rem;
   background-color: transparent;
 }
 

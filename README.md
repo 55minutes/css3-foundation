@@ -6,7 +6,7 @@ To use this project, the following must be installed on your computer:
 
 * [Ruby](http://www.ruby-lang.org/en/)
 * [RubyGems](http://rubygems.org/)
-* [compass gem](https://github.com/chriseppstein/compass)
+* [compass gem](https://github.com/chriseppstein/compass) (≥ v0.11.5)
 * [compass-colors gem](https://github.com/chriseppstein/compass-colors)
 * [sassy-buttons gem](https://github.com/jhardy/Sassy-Buttons)
 
