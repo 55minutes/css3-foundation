@@ -401,6 +401,7 @@ $icon-size: 1.6rem;
 */
 .pagination
 {
+  margin-top: $body-text-line-height - (2 * $vertical-nudge);
   white-space-collapse: discard;
   
   .first, .prev, .page, .next, .last
@@ -418,7 +419,7 @@ $icon-size: 1.6rem;
     
     a, &.current, &.gap
     {
-      padding: 0 $column-width / 2;
+      padding: $vertical-nudge $column-width / 2;
       background-color: transparent;
     }
   }

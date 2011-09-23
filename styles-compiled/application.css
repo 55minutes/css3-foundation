@@ -461,6 +461,7 @@ span.keep-together {
 /*----------[ pagination ]------------------------------------------------------
 */
 .pagination {
+  margin-top: 1.1rem;
   white-space-collapse: discard;
 }
 .pagination .first, .pagination .prev, .pagination .page, .pagination .next, .pagination .last {
@@ -479,7 +480,7 @@ span.keep-together {
   text-decoration: none;
 }
 .pagination .first a, .pagination .first.current, .pagination .first.gap, .pagination .prev a, .pagination .prev.current, .pagination .prev.gap, .pagination .page a, .pagination .page.current, .pagination .page.gap, .pagination .next a, .pagination .next.current, .pagination .next.gap, .pagination .last a, .pagination .last.current, .pagination .last.gap {
-  padding: 0 1rem;
+  padding: 0.55rem 1rem;
   background-color: transparent;
 }
 
