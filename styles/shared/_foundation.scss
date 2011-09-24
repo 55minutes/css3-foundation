@@ -123,22 +123,22 @@ ol, ul
 ol
 {
   list-style-type: decimal;
-}
 
-ol ol
-{
-  list-style-type: lower-alpha;
+  ol
+  {
+    list-style-type: lower-alpha;
+
+    ol
+    {
+      list-style-type: lower-roman;
+    }
+  }
 }
 
 dl dl, ol ol, ul ul
 {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-ol ol ol
-{
-  list-style-type: lower-roman;
 }
 
 pre
