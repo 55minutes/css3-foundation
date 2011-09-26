@@ -59,9 +59,16 @@ A single CSS rule set can quickly grow large and unwieldy, so to promote ease of
       bottom: …;
       left: …;
       z-index: …;
-      float: …;
       clear: …;
+      float: …;
+
+      /* Transforms and animations */
+      transform: …;
+      animation: …;
+      transition: …;
+
       /* Box model/layout */
+      box-*: …;
       margin: …;
       outline: …;
       border: …;
@@ -73,16 +80,24 @@ A single CSS rule set can quickly grow large and unwieldy, so to promote ease of
       min-height: …;
       max-height: …;
       overflow: …;
+      clip: …;
+      resize: …;
+      table-layout: …;
+
       /* Alignment */
       vertical-align: …;
       text-align: …;
+
       /* Background/foreground color */
       background: …;
       color: …;
+      opacity: …;
+
       /* Text properties */
       font-family: …;
       font-size: …;
       line-height: …;
+      direction: …;
       font-style: …;
       font-variant
       text-decoration: …;
@@ -90,7 +105,13 @@ A single CSS rule set can quickly grow large and unwieldy, so to promote ease of
       text-transform: …;
       letter-spacing: …;
       word-spacing: …;
+      word-break: …;
+      word-wrap: …;
+      quotes: …;
+      page-break-*: …;
       list-style: …;
       white-space: …;
     }
+
+This is of course not required; some teams prefer, for example, to alphabetize the rules instead. The important thing is that whatever your team chooses, there is a consistent, documented pattern.
 
