@@ -23,17 +23,17 @@ html
 a
 {
   color: $link;
-}
 
-a:link:visited
-{
-  color: $visited-link;
-}
+  &:visited
+  {
+    color: $visited-link;
+  }
 
-a:hover,
-a:active
-{
-  color: darken($link, 10);
+  &:hover,
+  &:active
+  {
+    color: darken($link, 10);
+  }
 }
 
 blockquote, dl, ol, p, pre, table, ul
@@ -194,7 +194,7 @@ ul
 */
 .align-center
 {
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .align-left
@@ -244,17 +244,17 @@ span.keep-together
 .reset
 {
   clear: both;
-  margin: 0px;
-  padding: 0px;
-  height: 1px;
-  font-size: 0px;
+  margin: 0;
+  padding: 0;
+  height: 0.1rem;
+  font-size: 0;
 }
 
 .spacer
 {
-  padding: 0px;
+  padding: 0;
   height: $body-text-line-height / 2;
-  font-size: 0px;
+  font-size: 0;
 }
 
 .subtitle
