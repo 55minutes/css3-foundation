@@ -10,7 +10,8 @@
 | using media queries. See _home.scss for an example.
 ------------------------------------------------------------------------------*/
 
+@import "compass/css3";
 // Include variables if needed.
-@import "basics/colors";
-@import "basics/typography";
-@import "basics/grid";
+@import "colors";
+@import "typography";
+@import "grid";

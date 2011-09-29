@@ -245,18 +245,16 @@ ol, ul {
 ol {
   list-style-type: decimal;
 }
-
 ol ol {
   list-style-type: lower-alpha;
+}
+ol ol ol {
+  list-style-type: lower-roman;
 }
 
 dl dl, ol ol, ul ul {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-ol ol ol {
-  list-style-type: lower-roman;
 }
 
 pre {
@@ -299,7 +297,7 @@ ul {
 /*----------[ content ]---------------------------------------------------------
 */
 .align-center {
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .align-left {
@@ -341,16 +339,16 @@ span.keep-together {
 
 .reset {
   clear: both;
-  margin: 0px;
-  padding: 0px;
-  height: 1px;
-  font-size: 0px;
+  margin: 0;
+  padding: 0;
+  height: 0.1rem;
+  font-size: 0;
 }
 
 .spacer {
-  padding: 0px;
+  padding: 0;
   height: 1.1rem;
-  font-size: 0px;
+  font-size: 0;
 }
 
 .subtitle {
