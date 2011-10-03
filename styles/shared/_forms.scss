@@ -87,9 +87,9 @@ button
   $sb-second-color: false;
   $sb-border-radius: $button-border-radius;
   $sb-border-width: 0.1rem;
-  $sb-padding: 0.2rem $column-width;
+  $sb-padding: 0.3rem $column-width;
   $sb-font-size: $secondary-text-size;
-  $sb-line-height: $body-text-line-height - 0.4rem;
+  $sb-line-height: $secondary-text-size;
   $sb-text-color: $button-text;
   $sb-text-style: false;
   $sb-gradient-style: "matte";
