@@ -41,7 +41,7 @@ select[disabled],
 textarea[disabled]
 {
   border-color: $disabled-stroke !important;
-  color: $disabled-text !important;
+  color: $disabled-text-color !important;
   cursor: default !important;
 }
 
@@ -90,7 +90,7 @@ button
   $sb-padding: 0.3rem $column-width;
   $sb-font-size: $secondary-text-size;
   $sb-line-height: $secondary-text-size;
-  $sb-text-color: $button-text;
+  $sb-text-color: $button-text-color;
   $sb-text-style: false;
   $sb-gradient-style: "matte";
   $sb-hover: true;
@@ -98,7 +98,7 @@ button
   @include sassy-button();
   
   // For some reason, the color I set above gets ignored. Set it manually.
-  color: $button-text;
+  color: $button-text-color;
   font-family:  $body-text-family;
   font-weight: bold;
 //  cursor: pointer;
@@ -106,24 +106,24 @@ button
   &.destructive
   {
     $sb-base-color: $destructive-button-base-bg;
-    $sb-text-color: $destructive-button-text;
+    $sb-text-color: $destructive-button-text-color;
     
     @include sassy-button();
 
     // For some reason, the color I set above gets ignored. Set it manually.
-    color: $destructive-button-text;
+    color: $destructive-button-text-color;
   }
 
   &[disabled]
   {
     $sb-base-color: $disabled-button-base-bg;
-    $sb-text-color: $disabled-button-text;
+    $sb-text-color: $disabled-button-text-color;
     $sb-hover: false;
     
     @include sassy-button();
 
     // For some reason, the color I set above gets ignored. Set it manually.
-    color: $disabled-button-text;
+    color: $disabled-button-text-color;
     cursor: default !important;
   }
 }
@@ -165,7 +165,7 @@ table.form
   
   .section-heading th
   {
-    color: $subheading-text;
+    color: $subheading-text-color;
   }
   
   .field-label
@@ -197,7 +197,7 @@ table.form
   .section-heading
   {
     font-weight: bold;
-    color: $subheading-text;
+    color: $subheading-text-color;
   }
 
   .field > label:first-of-type
