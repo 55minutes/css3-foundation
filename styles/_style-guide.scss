@@ -160,23 +160,29 @@
 
 @media (min-width: 480px)
 {
-  #intro, .explanation, .example
+  #style-guide
   {
-    max-width: 60rem;
+    #intro, .explanation, .example
+    {
+      max-width: 60rem;
+    }
   }
 }
 
 @media (min-width: 768px)
 {
-  #examples .columns .column
+  #style-guide
   {
-    float: left;
-    margin-right: 2%;
-    width: 32%;
-    
-    &:last-of-type
+    #examples .columns .column
     {
-      margin-right: 0;
+      float: left;
+      margin-right: 2%;
+      width: 32%;
+
+      &:last-of-type
+      {
+        margin-right: 0;
+      }
     }
   }
 }

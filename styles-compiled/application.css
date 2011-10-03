@@ -168,13 +168,10 @@ html {
 a {
   color: #1673a1;
 }
-
-a:link:visited {
+a:visited {
   color: #4a1a2b;
 }
-
-a:hover,
-a:active {
+a:hover, a:active {
   color: #105374;
 }
 
@@ -585,8 +582,8 @@ button {
   height: auto;
   cursor: pointer;
   font-size: 1.4rem;
-  padding: 0.2rem 2rem;
-  line-height: 1.8rem;
+  padding: 0.3rem 2rem;
+  line-height: 1.4rem;
   border-style: solid;
   border-width: 0.1rem;
   -moz-border-radius: 0.6rem;
@@ -625,8 +622,8 @@ button.destructive {
   height: auto;
   cursor: pointer;
   font-size: 1.4rem;
-  padding: 0.2rem 2rem;
-  line-height: 1.8rem;
+  padding: 0.3rem 2rem;
+  line-height: 1.4rem;
   border-style: solid;
   border-width: 0.1rem;
   -moz-border-radius: 0.6rem;
@@ -663,8 +660,8 @@ button[disabled] {
   height: auto;
   cursor: pointer;
   font-size: 1.4rem;
-  padding: 0.2rem 2rem;
-  line-height: 1.8rem;
+  padding: 0.3rem 2rem;
+  line-height: 1.4rem;
   border-style: solid;
   border-width: 0.1rem;
   -moz-border-radius: 0.6rem;
@@ -1031,17 +1028,17 @@ img.ui-datepicker-trigger {
 }
 
 @media (min-width: 480px) {
-  #intro, .explanation, .example {
+  #style-guide #intro, #style-guide .explanation, #style-guide .example {
     max-width: 60rem;
   }
 }
 @media (min-width: 768px) {
-  #examples .columns .column {
+  #style-guide #examples .columns .column {
     float: left;
     margin-right: 2%;
     width: 32%;
   }
-  #examples .columns .column:last-of-type {
+  #style-guide #examples .columns .column:last-of-type {
     margin-right: 0;
   }
 }
