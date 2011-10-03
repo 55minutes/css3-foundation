@@ -44,13 +44,13 @@ blockquote, dl, ol, p, pre, table, ul
 blockquote
 {
   margin-left: $column-width;
-  color: $secondary-text;
+  color: $secondary-text-color;
 }
 
 body
 {
   background-color: $page-bg;
-  color: $body-text;
+  color: $body-text-color;
   font-family: $body-text-family;
   font-size: $body-text-size;
   line-height: $body-text-line-height;
@@ -83,7 +83,7 @@ h1
 h2
 {
   margin: 1.5 * $body-text-line-height 0 $body-text-line-height / 2;
-  color: $subheading-text;
+  color: $subheading-text-color;
   font-size: $subheading-text-size;
 }
 
@@ -211,7 +211,7 @@ ul
 .fine-print,
 .form-help
 {
-  color: $secondary-text;
+  color: $secondary-text-color;
   font-weight: normal;
   font-style: italic;
 }
