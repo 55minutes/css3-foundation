@@ -66,7 +66,16 @@ $.extend(FiftyfiveExample, {
         {
           $("html").addClass("unsupported-browser");
         }
+        /*
+        ** Uncomment the following if you want to save the fact that the user
+        ** dismissed the unsupported browser warning in a cookie. See
+        ** jquery.ui.unsupportedbrowserwarning.js for details on the available
+        ** options.
+        */
+        // $("#unsupported-browser-warning").unsupportedbrowserwarningwidget();
+
         FiftyfiveExample.util.iosZoomWorkaround();
+
         // Other stuff to do as soon as the DOM is ready
     }
 });
