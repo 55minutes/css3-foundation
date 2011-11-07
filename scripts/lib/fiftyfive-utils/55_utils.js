@@ -16,7 +16,7 @@
 
 /*------------------------------------------------------------------------------
 | 55_utils.js
-| 55 Minutes JS utilities v3.1-pre
+| 55 Minutes JS utilities c3.2pre
 | Author: Richa Avasthi
 | Created: 2010-01-26
 |
