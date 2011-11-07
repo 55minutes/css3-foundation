@@ -274,6 +274,7 @@ span.keep-together
   display: none;
   margin: $body-text-line-height auto;
   border: 0.5rem solid darken($error-feedback, 5);
+  @include border-radius(1.5rem);
   padding: $body-text-line-height $column-width;
   background-color: white;
   
