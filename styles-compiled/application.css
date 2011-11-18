@@ -362,11 +362,10 @@ span.keep-together {
   display: none;
   margin: 2.2rem auto;
   border: 0.5rem solid #a02911;
-  -moz-border-radius: 1.5rem;
   -webkit-border-radius: 1.5rem;
-  -o-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
   -ms-border-radius: 1.5rem;
-  -khtml-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
   border-radius: 1.5rem;
   padding: 2.2rem 2rem;
   background-color: white;
@@ -439,24 +438,24 @@ span.keep-together {
   color: #919e00;
 }
 .alerts .message.success:after {
-  background-image: url('../images/icon-sa21770bc59.png');
-  background-position: 0 -16px;
+  background-image: url('../images/icon-s8f000dbda0.png');
+  background-position: 0 -32px;
 }
 .alerts .message.warning {
   background-color: #fff3c2;
   color: #cca300;
 }
 .alerts .message.warning:after {
-  background-image: url('../images/icon-sa21770bc59.png');
-  background-position: 0 -32px;
+  background-image: url('../images/icon-s8f000dbda0.png');
+  background-position: 0 0;
 }
 .alerts .message.error {
   background-color: #fcebe7;
   color: #b72f14;
 }
 .alerts .message.error:after {
-  background-image: url('../images/icon-sa21770bc59.png');
-  background-position: 0 0;
+  background-image: url('../images/icon-s8f000dbda0.png');
+  background-position: 0 -16px;
 }
 
 /*----------[ pagination ]------------------------------------------------------
@@ -468,11 +467,10 @@ span.keep-together {
 .pagination .first, .pagination .prev, .pagination .page, .pagination .next, .pagination .last {
   display: inline-block;
   margin-right: 1rem;
-  -moz-border-radius: 0.6rem;
   -webkit-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
-  -khtml-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   border-radius: 0.6rem;
   background-color: #e8e8e8;
 }
@@ -574,7 +572,7 @@ input[type=checkbox] {
 **    main buttons: orange,
 **    disabled buttons: grey,
 **    buttons for destructive actions: red
-** 
+**
 ** See
 **    http://jaredhardy.com/sassy-buttons/ and
 **    https://github.com/jhardy/Sassy-Buttons
@@ -584,16 +582,15 @@ input[type=submit],
 input[type=button],
 button {
   font-size: 1.4rem;
-  padding: 0.3rem 2rem;
+  padding: 0 2rem;
   display: inline-block;
-  width: auto;
-  height: auto;
   cursor: pointer;
-  -moz-border-radius: 0.6rem;
+  text-decoration: none;
+  line-height: 1.5;
   -webkit-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
-  -khtml-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   border-radius: 0.6rem;
   background-color: #f07c00;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffa23d), color-stop(70%, #f07c00));
@@ -602,9 +599,8 @@ button {
   background: -o-linear-gradient(#ffa23d, #f07c00 70%);
   background: -ms-linear-gradient(#ffa23d, #f07c00 70%);
   background: linear-gradient(#ffa23d, #f07c00 70%);
-  -moz-box-shadow: #ffc68a 0 1px 0 inset;
   -webkit-box-shadow: #ffc68a 0 1px 0 inset;
-  -o-box-shadow: #ffc68a 0 1px 0 inset;
+  -moz-box-shadow: #ffc68a 0 1px 0 inset;
   box-shadow: #ffc68a 0 1px 0 inset;
   border: 1px solid #d66f00;
   color: white;
@@ -625,25 +621,23 @@ button:hover {
 input[type=submit]:active,
 input[type=button]:active,
 button:active {
-  -moz-box-shadow: #c76700 0 1px 2px inset;
   -webkit-box-shadow: #c76700 0 1px 2px inset;
-  -o-box-shadow: #c76700 0 1px 2px inset;
+  -moz-box-shadow: #c76700 0 1px 2px inset;
   box-shadow: #c76700 0 1px 2px inset;
 }
 input[type=submit].destructive,
 input[type=button].destructive,
 button.destructive {
   font-size: 1.4rem;
-  padding: 0.3rem 2rem;
+  padding: 0 2rem;
   display: inline-block;
-  width: auto;
-  height: auto;
   cursor: pointer;
-  -moz-border-radius: 0.6rem;
+  text-decoration: none;
+  line-height: 1.5;
   -webkit-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
-  -khtml-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   border-radius: 0.6rem;
   background-color: #e53b19;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ed755d), color-stop(70%, #e53b19));
@@ -652,9 +646,8 @@ button.destructive {
   background: -o-linear-gradient(#ed755d, #e53b19 70%);
   background: -ms-linear-gradient(#ed755d, #e53b19 70%);
   background: linear-gradient(#ed755d, #e53b19 70%);
-  -moz-box-shadow: #f5b0a2 0 1px 0 inset;
   -webkit-box-shadow: #f5b0a2 0 1px 0 inset;
-  -o-box-shadow: #f5b0a2 0 1px 0 inset;
+  -moz-box-shadow: #f5b0a2 0 1px 0 inset;
   box-shadow: #f5b0a2 0 1px 0 inset;
   border: 1px solid #ce3516;
   color: white;
@@ -673,25 +666,23 @@ button.destructive:hover {
 input[type=submit].destructive:active,
 input[type=button].destructive:active,
 button.destructive:active {
-  -moz-box-shadow: #c03215 0 1px 2px inset;
   -webkit-box-shadow: #c03215 0 1px 2px inset;
-  -o-box-shadow: #c03215 0 1px 2px inset;
+  -moz-box-shadow: #c03215 0 1px 2px inset;
   box-shadow: #c03215 0 1px 2px inset;
 }
 input[type=submit][disabled],
 input[type=button][disabled],
 button[disabled] {
   font-size: 1.4rem;
-  padding: 0.3rem 2rem;
+  padding: 0 2rem;
   display: inline-block;
-  width: auto;
-  height: auto;
   cursor: pointer;
-  -moz-border-radius: 0.6rem;
+  text-decoration: none;
+  line-height: 1.5;
   -webkit-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
-  -khtml-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   border-radius: 0.6rem;
   background-color: #c8c8c8;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(70%, #c8c8c8));
@@ -700,9 +691,8 @@ button[disabled] {
   background: -o-linear-gradient(#eeeeee, #c8c8c8 70%);
   background: -ms-linear-gradient(#eeeeee, #c8c8c8 70%);
   background: linear-gradient(#eeeeee, #c8c8c8 70%);
-  -moz-box-shadow: white 0 1px 0 inset;
   -webkit-box-shadow: white 0 1px 0 inset;
-  -o-box-shadow: white 0 1px 0 inset;
+  -moz-box-shadow: white 0 1px 0 inset;
   box-shadow: white 0 1px 0 inset;
   border: 1px solid #bbbbbb;
   color: #8d8d8d;
@@ -722,22 +712,14 @@ button[disabled]:hover {
 input[type=submit][disabled]:active,
 input[type=button][disabled]:active,
 button[disabled]:active {
-  -moz-box-shadow: #b3b3b3 0 1px 2px inset;
   -webkit-box-shadow: #b3b3b3 0 1px 2px inset;
-  -o-box-shadow: #b3b3b3 0 1px 2px inset;
+  -moz-box-shadow: #b3b3b3 0 1px 2px inset;
   box-shadow: #b3b3b3 0 1px 2px inset;
 }
 
 .button-bar {
   margin: 2.2rem 0;
   padding: 0;
-}
-
-.button-bar > a {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
 }
 
 .button-bar input[type=submit],
@@ -747,6 +729,14 @@ button[disabled]:active {
   float: left;
   margin: 0;
   margin-right: 1rem;
+}
+
+.button-bar > a {
+  display: inline-block;
+  margin-top: 0.1rem;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
 }
 
 /*----------[ form layout ]-----------------------------------------------------
@@ -865,11 +855,10 @@ img.ui-datepicker-trigger {
   .documentation #page {
     margin: 5rem auto;
     border: 0.2rem solid silver;
-    -moz-border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
-    -khtml-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
     border-radius: 1.5rem;
   }
 }
@@ -926,11 +915,10 @@ img.ui-datepicker-trigger {
   #login #page {
     margin: 5rem auto;
     border: 0.2rem solid silver;
-    -moz-border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
-    -khtml-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
     border-radius: 1.5rem;
   }
 }

@@ -1,0 +1,5 @@
+source "http://rubygems.org"
+gem "compass", "0.12.alpha.1"
+gem "rb-fsevent"
+gem "compass-colors"
+gem "sassy-buttons"

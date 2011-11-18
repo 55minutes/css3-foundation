@@ -73,7 +73,7 @@ input[type=checkbox]
 **    main buttons: orange,
 **    disabled buttons: grey,
 **    buttons for destructive actions: red
-** 
+**
 ** See
 **    http://jaredhardy.com/sassy-buttons/ and
 **    https://github.com/jhardy/Sassy-Buttons
@@ -83,31 +83,30 @@ input[type=submit],
 input[type=button],
 button
 {
-  $sb-base-color: $button-base-bg;
-  $sb-second-color: false;
-  $sb-border-radius: $button-border-radius;
-  $sb-border-width: 0.1rem;
-  $sb-padding: 0.3rem $column-width;
-  $sb-font-size: $secondary-text-size;
-  $sb-line-height: $secondary-text-size;
-  $sb-text-color: $button-text-color;
-  $sb-text-style: false;
-  $sb-gradient-style: "matte";
-  $sb-hover: true;
-  
+  $sb-base-color     : $button-base-bg;
+  $sb-second-color   : false;
+  $sb-border-radius  : $button-border-radius;
+  $sb-border-width   : 0.1rem;
+  $sb-padding        : 0 $column-width;
+  $sb-font-size      : $secondary-text-size;
+  $sb-line-height    : $secondary-text-line-height;
+  $sb-text-color     : $button-text-color;
+  $sb-text-style     : false;
+  $sb-gradient-style : "matte";
+  $sb-hover          : true;
+
   @include sassy-button();
-  
+
   // For some reason, the color I set above gets ignored. Set it manually.
   color: $button-text-color;
   font-family:  $body-text-family;
   font-weight: bold;
-//  cursor: pointer;
-  
+
   &.destructive
   {
     $sb-base-color: $destructive-button-base-bg;
     $sb-text-color: $destructive-button-text-color;
-    
+
     @include sassy-button();
 
     // For some reason, the color I set above gets ignored. Set it manually.
@@ -119,7 +118,7 @@ button
     $sb-base-color: $disabled-button-base-bg;
     $sb-text-color: $disabled-button-text-color;
     $sb-hover: false;
-    
+
     @include sassy-button();
 
     // For some reason, the color I set above gets ignored. Set it manually.
@@ -134,14 +133,6 @@ button
   padding: 0;
 }
 
-.button-bar > a
-{
-  display: inline-block;
-  vertical-align: middle;
-  font-size: $secondary-text-size;
-  line-height: $body-text-line-height;
-}
-
 .button-bar input[type=submit],
 .button-bar input[type=button],
 .button-bar button,
@@ -152,22 +143,31 @@ button
   margin-right: $column-width / 2;
 }
 
+.button-bar > a
+{
+  display: inline-block;
+  margin-top: 0.1rem;
+  vertical-align: middle;
+  font-size: $secondary-text-size;
+  line-height: $body-text-line-height;
+}
+
 /*----------[ form layout ]-----------------------------------------------------
 */
 table.form
 {
   margin-top: 0;
-  
+
   &, th, td
   {
     border-style: none;
   }
-  
+
   .section-heading th
   {
     color: $subheading-text-color;
   }
-  
+
   .field-label
   {
     padding-right: $column-width;
@@ -175,7 +175,7 @@ table.form
     text-align: right;
     font-weight: normal;
   }
-  
+
   .field, .button-bar
   {
     padding-left: 0;
@@ -204,7 +204,7 @@ table.form
   {
     margin-top: $body-text-line-height / 2;
   }
-  
+
   .field, .section-heading, .button-bar
   {
     padding-left: $horizontal-nudge;
@@ -219,17 +219,17 @@ table.form
   {
     background-color: lighten($error-feedback, 55);
   }
-  
+
   label, .form-help
   {
     color: $error-feedback;
   }
-  
+
   label
   {
     font-weight: bold;
   }
-  
+
   input[type=email],
   input[type=password],
   input[type=search],
@@ -241,7 +241,7 @@ table.form
   {
     border-color: darken($error-feedback, 5);
   }
-  
+
   ul.error-explanation
   {
     margin: 0;
