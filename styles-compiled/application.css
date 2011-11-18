@@ -582,7 +582,7 @@ input[type=submit],
 input[type=button],
 button {
   font-size: 1.4rem;
-  padding: 0 2rem;
+  padding: 0.0rem 2rem;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
@@ -604,6 +604,7 @@ button {
   box-shadow: #ffc68a 0 1px 0 inset;
   border: 1px solid #d66f00;
   color: white;
+  line-height: 2rem;
   font-family: Calibri, "Myriad Pro", Tahoma, sans-serif;
   font-weight: bold;
 }
@@ -629,7 +630,7 @@ input[type=submit].destructive,
 input[type=button].destructive,
 button.destructive {
   font-size: 1.4rem;
-  padding: 0 2rem;
+  padding: 0.0rem 2rem;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
@@ -651,6 +652,7 @@ button.destructive {
   box-shadow: #f5b0a2 0 1px 0 inset;
   border: 1px solid #ce3516;
   color: white;
+  line-height: 2rem;
 }
 input[type=submit].destructive:hover,
 input[type=button].destructive:hover,
@@ -674,7 +676,7 @@ input[type=submit][disabled],
 input[type=button][disabled],
 button[disabled] {
   font-size: 1.4rem;
-  padding: 0 2rem;
+  padding: 0.0rem 2rem;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
@@ -696,6 +698,7 @@ button[disabled] {
   box-shadow: white 0 1px 0 inset;
   border: 1px solid #bbbbbb;
   color: #8d8d8d;
+  line-height: 2rem;
   cursor: default !important;
 }
 input[type=submit][disabled]:hover,
@@ -733,7 +736,6 @@ button[disabled]:active {
 
 .button-bar > a {
   display: inline-block;
-  margin-top: 0.1rem;
   vertical-align: middle;
   font-size: 1.4rem;
   line-height: 2.2rem;

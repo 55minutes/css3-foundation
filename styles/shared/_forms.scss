@@ -79,6 +79,10 @@ input[type=checkbox]
 **    https://github.com/jhardy/Sassy-Buttons
 ** for more details.
 */
+$button-border-width: 0.1rem;
+$button-line-height: $body-text-line-height - 2 * $button-border-width;
+$button-vertical-padding: ($body-text-line-height - $button-line-height - 2 * $button-border-width) / 2;
+
 input[type=submit],
 input[type=button],
 button
@@ -86,10 +90,10 @@ button
   $sb-base-color     : $button-base-bg;
   $sb-second-color   : false;
   $sb-border-radius  : $button-border-radius;
-  $sb-border-width   : 0.1rem;
-  $sb-padding        : 0 $column-width;
+  $sb-border-width   : $button-border-width;
+  $sb-padding        : $button-vertical-padding $column-width;
   $sb-font-size      : $secondary-text-size;
-  $sb-line-height    : $secondary-text-line-height;
+  $sb-line-height    : $button-line-height;
   $sb-text-color     : $button-text-color;
   $sb-text-style     : false;
   $sb-gradient-style : "matte";
@@ -97,8 +101,9 @@ button
 
   @include sassy-button();
 
-  // For some reason, the color I set above gets ignored. Set it manually.
+  // For some reason, the color and line-height I set above get ignored. Set them manually.
   color: $button-text-color;
+  line-height: $button-line-height;
   font-family:  $body-text-family;
   font-weight: bold;
 
@@ -109,8 +114,9 @@ button
 
     @include sassy-button();
 
-    // For some reason, the color I set above gets ignored. Set it manually.
+    // For some reason, the color and line-height I set above get ignored. Set them manually.
     color: $destructive-button-text-color;
+    line-height: $button-line-height;
   }
 
   &[disabled]
@@ -121,8 +127,9 @@ button
 
     @include sassy-button();
 
-    // For some reason, the color I set above gets ignored. Set it manually.
+    // For some reason, the color and line-height I set above get ignored. Set them manually.
     color: $disabled-button-text-color;
+    line-height: $button-line-height;
     cursor: default !important;
   }
 }
@@ -146,7 +153,6 @@ button
 .button-bar > a
 {
   display: inline-block;
-  margin-top: 0.1rem;
   vertical-align: middle;
   font-size: $secondary-text-size;
   line-height: $body-text-line-height;
