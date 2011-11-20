@@ -767,6 +767,9 @@ table.form .field, table.form .button-bar {
   display: block;
 }
 
+.stacked {
+  margin-left: -0.5rem;
+}
 .stacked .section-heading {
   font-weight: bold;
   color: #207861;

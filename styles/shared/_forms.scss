@@ -200,6 +200,8 @@ table.form
 
 .stacked
 {
+  margin-left: -$horizontal-nudge;
+
   .section-heading
   {
     font-weight: bold;
