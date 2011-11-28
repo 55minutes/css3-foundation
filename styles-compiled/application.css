@@ -114,6 +114,7 @@ input, select {
   vertical-align: middle;
 }
 
+@import url(_cssgrid-1140.css);
 /*-----[ colors ]---------------------------------------------------------------
 | Variables defining the colors to be used throughout the application. Curious
 | about the color names? Check out <www.colblindor.com/color-name-hue/> and 
@@ -579,7 +580,8 @@ input[type=checkbox] {
 */
 input[type=submit],
 input[type=button],
-button {
+button,
+a.button {
   font-size: 1.4rem;
   padding: 0.0rem 2rem;
   display: inline-block;
@@ -609,7 +611,8 @@ button {
 }
 input[type=submit]:hover,
 input[type=button]:hover,
-button:hover {
+button:hover,
+a.button:hover {
   background-color: #d66f00;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #ff9524), color-stop(75%, #d66f00));
   background: -webkit-linear-gradient(#ff9524 3%, #d66f00 75%);
@@ -620,14 +623,16 @@ button:hover {
 }
 input[type=submit]:active,
 input[type=button]:active,
-button:active {
+button:active,
+a.button:active {
   -webkit-box-shadow: #c76700 0 1px 2px inset;
   -moz-box-shadow: #c76700 0 1px 2px inset;
   box-shadow: #c76700 0 1px 2px inset;
 }
 input[type=submit].destructive,
 input[type=button].destructive,
-button.destructive {
+button.destructive,
+a.button.destructive {
   font-size: 1.4rem;
   padding: 0.0rem 2rem;
   display: inline-block;
@@ -655,7 +660,8 @@ button.destructive {
 }
 input[type=submit].destructive:hover,
 input[type=button].destructive:hover,
-button.destructive:hover {
+button.destructive:hover,
+a.button.destructive:hover {
   background-color: #ce3516;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #eb6246), color-stop(75%, #ce3516));
   background: -webkit-linear-gradient(#eb6246 3%, #ce3516 75%);
@@ -666,14 +672,16 @@ button.destructive:hover {
 }
 input[type=submit].destructive:active,
 input[type=button].destructive:active,
-button.destructive:active {
+button.destructive:active,
+a.button.destructive:active {
   -webkit-box-shadow: #c03215 0 1px 2px inset;
   -moz-box-shadow: #c03215 0 1px 2px inset;
   box-shadow: #c03215 0 1px 2px inset;
 }
 input[type=submit][disabled],
 input[type=button][disabled],
-button[disabled] {
+button[disabled],
+a.button[disabled] {
   font-size: 1.4rem;
   padding: 0.0rem 2rem;
   display: inline-block;
@@ -702,7 +710,8 @@ button[disabled] {
 }
 input[type=submit][disabled]:hover,
 input[type=button][disabled]:hover,
-button[disabled]:hover {
+button[disabled]:hover,
+a.button[disabled]:hover {
   background-color: #bbbbbb;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #e1e1e1), color-stop(75%, #bbbbbb));
   background: -webkit-linear-gradient(#e1e1e1 3%, #bbbbbb 75%);
@@ -713,7 +722,8 @@ button[disabled]:hover {
 }
 input[type=submit][disabled]:active,
 input[type=button][disabled]:active,
-button[disabled]:active {
+button[disabled]:active,
+a.button[disabled]:active {
   -webkit-box-shadow: #b3b3b3 0 1px 2px inset;
   -moz-box-shadow: #b3b3b3 0 1px 2px inset;
   box-shadow: #b3b3b3 0 1px 2px inset;
