@@ -85,7 +85,8 @@ $button-vertical-padding: ($body-text-line-height - $button-line-height - 2 * $b
 
 input[type=submit],
 input[type=button],
-button
+button,
+a.button
 {
   $sb-base-color     : $button-base-bg;
   $sb-second-color   : false;
