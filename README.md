@@ -17,6 +17,7 @@ To use this project, the following must be installed on your computer:
 * Best practices recommended by the [320 and Up](http://stuffandnonsense.co.uk/projects/320andup/ "320 and up") boilerplate project, as well as our own experience developing web applications.
 * Integration with the [jQuery](http://jquery.com/ "jQuery: The Write Less, Do More, JavaScript Library"), [jQuery UI](http://jqueryui.com/ "jQuery UI - Home") and [Modernizr](http://www.modernizr.com/ "Modernizr") JavaScript libraries, as well as 55 Minutes' own set of JS utilities and conveniences.
 * A style guide similar to the [Twitter bootstrap](http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter") containing examples of the default styles defined in the project.
+* The [1140 CSS grid](http://cssgrid.net "The 1140px CSS Grid System &middot; Fluid down to mobile") for rapid prototyping.
 
 ## Getting Started ##
 
