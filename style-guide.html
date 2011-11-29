@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" href="styles-compiled/768.css"/>
   <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1024px)" href="styles-compiled/1024.css"/>
   <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1200px)" href="styles-compiled/1200.css"/>
-  
+
   <!-- conditional comments -->
   <!--[if IE]>
     <link rel="stylesheet" type="text/css" media="all" href="styles-compiled/ie.css" />
@@ -22,15 +22,28 @@
 
   <!-- print stylesheet -->
   <link rel="stylesheet" type="text/css" media="print" href="styles-compiled/print.css"/>
-  
+
   <!-- external styles -->
   <!-- <link rel="stylesheet" type="text/css" media="all" href="scripts/lib/jquery-ui/1.8.16/themes/redmond/jquery-ui.redmond.css"/> -->
-  
+
+  <!-- Favicons and touch icons -->
+  <!-- For iPhone 4 -->
+  <link href="images/apple-touch-icon-large.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png"/>
+  <!-- For iPad 1 -->
+  <link href="images/apple-touch-icon-medium.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png"/>
+  <!-- For iPhone 3G, iPod Touch and Android -->
+  <link href="images/apple-touch-icon-small.png" rel="apple-touch-icon-precomposed" type="image/png"/>
+  <!-- For Nokia -->
+  <link href="images/apple-touch-icon-small.png" rel="shortcut icon"/>
+  <!-- For everything else -->
+  <link href="favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href="favicon.ico" rel="shortcut icon"/>
+
   <!-- header javascript -->
   <!-- stand-alone utilities -->
   <script type="text/javascript" src="scripts/lib/fiftyfive-utils/55_utils.js">
   </script>
-  
+
   <script type="text/javascript" charset="utf-8">
     document.getElementsByTagName("html")[0].className += fiftyfive.util.getIEClass();
   </script>
@@ -50,7 +63,7 @@
       <h1>CSS3/HTML5 scaffolding style guide</h1>
       <p>This page contains the style guide for your application: the colors, typography, and common widget styles. The guide's structure and organization borrows heavily from the <a href="http://twitter.github.com/bootstrap/" title="Bootstrap, from Twitter">Twitter bootstrap</a>.</p>
     </header> <!-- /#intro -->
-    
+
     <section id="examples">
       <section class="colors group">
         <h1>Colors</h1>
@@ -160,7 +173,7 @@
           </table>
         </div> <!-- /.example -->
       </section> <!-- /.colors -->
-      
+
       <section class="typography group">
         <h1>Typography</h1>
         <div class="explanation">
@@ -177,7 +190,7 @@
 
             <p>Curabitur bibendum eros sit amet <a href="http://google.com/">elit lacinia</a> imperdiet. Sed venenatis dictum <strong>interdum</strong>. Praesent sit amet vehicula ligula. Aliquam erat volutpat. Suspendisse velit dolor, ullamcorper at gravida at, congue tincidunt mi.</p>
           </blockquote>
-          
+
           <div class="columns group">
             <div class="column">
               <h2>Ordered list</h2>
@@ -562,7 +575,7 @@
   <!-- page- or feature-specific javascript -->
   <!-- <script type="text/javascript" src="scripts/home.js">
   </script> -->
-  
+
   <!-- onload javascript -->
   <script type="text/javascript" charset="utf-8">
   (function($) {
