@@ -6,7 +6,8 @@ To use this project, the following must be installed on your computer:
 
 * [Ruby](http://www.ruby-lang.org/en/)
 * [RubyGems](http://rubygems.org/)
-* [compass gem](https://github.com/chriseppstein/compass) (≥ v0.11.5)
+* [Bundler](http://gembundler.com/)
+* [compass gem](https://github.com/chriseppstein/compass)
 * [compass-colors gem](https://github.com/chriseppstein/compass-colors)
 * [sassy-buttons gem](https://github.com/jhardy/Sassy-Buttons)
 
@@ -16,12 +17,28 @@ To use this project, the following must be installed on your computer:
 * Best practices recommended by the [320 and Up](http://stuffandnonsense.co.uk/projects/320andup/ "320 and up") boilerplate project, as well as our own experience developing web applications.
 * Integration with the [jQuery](http://jquery.com/ "jQuery: The Write Less, Do More, JavaScript Library"), [jQuery UI](http://jqueryui.com/ "jQuery UI - Home") and [Modernizr](http://www.modernizr.com/ "Modernizr") JavaScript libraries, as well as 55 Minutes' own set of JS utilities and conveniences.
 * A style guide similar to the [Twitter bootstrap](http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter") containing examples of the default styles defined in the project.
+* The [1140 CSS grid](http://cssgrid.net "The 1140px CSS Grid System &middot; Fluid down to mobile") for rapid prototyping.
 
 ## Getting Started ##
 
-Once you've got Ruby, RubyGems, compass, compass-colors and sassy-buttons installed, all you need to do is change into the <code>css3-foundation/</code> directory in your favorite terminal application and type <code>compass watch</code>. This will monitor changes to your source files and recompile the output on demand. To compile the code one time only, type <code>compass compile</code>. More details can be found in the [Compass documentation](http://compass-style.org/reference/compass/ "Compass Core Framework | Compass Documentation").
+1. Install Ruby, RubyGems and Bundler, or verify that they are already installed. 
+2. Change into the <code>css3-foundation/</code> directory in your favorite terminal application and type <code>bundle install</code>.
+3. Once the dependencies have been installed, regenerate the sassy-buttons mixin file:
 
-If you're interested in using this foundation with the [Apache Wicket](http://wicket.apache.org/) framework, you'll want to check out our [fiftyfive-wicket](https://github.com/55minutes/fiftyfive-wicket) project, which includes a Maven archetype that bundles all of these CSS3 and HTML5 practices and integrates them nicely with Wicket.
+        bundle exec compass install -r sassy-buttons -f sassy-buttons
+
+    Note that <code>bundle exec</code> ensures that any command you type after it is executed within the context of the bundle; in our case this means that the versions of Compass, etc. that we specifically required are being used.
+4. Steps 1-3 are one-time-only setup requirements. Hereafter, all you need to do is run the following command from <code>css3-foundation/</code>:
+
+        bundle exec compass watch
+
+    This will monitor changes to your source files and recompile the output on demand. To compile the code one time only, type:
+
+        bundle exec compass compile
+
+    More details can be found in the [Compass documentation](http://compass-style.org/reference/compass/ "Compass Core Framework | Compass Documentation").
+
+    If you're interested in using this foundation with the [Apache Wicket](http://wicket.apache.org/) framework, you'll want to check out our [fiftyfive-wicket](https://github.com/55minutes/fiftyfive-wicket) project, which includes a Maven archetype that bundles all of these CSS3 and HTML5 practices and integrates them nicely with Wicket.
 
 ## File organization ##
 

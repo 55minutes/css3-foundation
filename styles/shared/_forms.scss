@@ -73,45 +73,51 @@ input[type=checkbox]
 **    main buttons: orange,
 **    disabled buttons: grey,
 **    buttons for destructive actions: red
-** 
+**
 ** See
 **    http://jaredhardy.com/sassy-buttons/ and
 **    https://github.com/jhardy/Sassy-Buttons
 ** for more details.
 */
+$button-border-width: 0.1rem;
+$button-line-height: $body-text-line-height - 2 * $button-border-width;
+$button-vertical-padding: ($body-text-line-height - $button-line-height - 2 * $button-border-width) / 2;
+
 input[type=submit],
 input[type=button],
-button
+button,
+a.button
 {
-  $sb-base-color: $button-base-bg;
-  $sb-second-color: false;
-  $sb-border-radius: $button-border-radius;
-  $sb-border-width: 0.1rem;
-  $sb-padding: 0.3rem $column-width;
-  $sb-font-size: $secondary-text-size;
-  $sb-line-height: $secondary-text-size;
-  $sb-text-color: $button-text-color;
-  $sb-text-style: false;
-  $sb-gradient-style: "matte";
-  $sb-hover: true;
-  
+  $sb-base-color     : $button-base-bg;
+  $sb-second-color   : false;
+  $sb-border-radius  : $button-border-radius;
+  $sb-border-width   : $button-border-width;
+  $sb-padding        : $button-vertical-padding $column-width;
+  $sb-font-size      : $secondary-text-size;
+  $sb-line-height    : $button-line-height;
+  $sb-text-color     : $button-text-color;
+  $sb-text-style     : false;
+  $sb-gradient-style : "matte";
+  $sb-hover          : true;
+
   @include sassy-button();
-  
-  // For some reason, the color I set above gets ignored. Set it manually.
+
+  // For some reason, the color and line-height I set above get ignored. Set them manually.
   color: $button-text-color;
+  line-height: $button-line-height;
   font-family:  $body-text-family;
   font-weight: bold;
-//  cursor: pointer;
-  
+
   &.destructive
   {
     $sb-base-color: $destructive-button-base-bg;
     $sb-text-color: $destructive-button-text-color;
-    
+
     @include sassy-button();
 
-    // For some reason, the color I set above gets ignored. Set it manually.
+    // For some reason, the color and line-height I set above get ignored. Set them manually.
     color: $destructive-button-text-color;
+    line-height: $button-line-height;
   }
 
   &[disabled]
@@ -119,11 +125,12 @@ button
     $sb-base-color: $disabled-button-base-bg;
     $sb-text-color: $disabled-button-text-color;
     $sb-hover: false;
-    
+
     @include sassy-button();
 
-    // For some reason, the color I set above gets ignored. Set it manually.
+    // For some reason, the color and line-height I set above get ignored. Set them manually.
     color: $disabled-button-text-color;
+    line-height: $button-line-height;
     cursor: default !important;
   }
 }
@@ -132,14 +139,6 @@ button
 {
   margin: $body-text-line-height 0;
   padding: 0;
-}
-
-.button-bar > a
-{
-  display: inline-block;
-  vertical-align: middle;
-  font-size: $secondary-text-size;
-  line-height: $body-text-line-height;
 }
 
 .button-bar input[type=submit],
@@ -152,22 +151,30 @@ button
   margin-right: $column-width / 2;
 }
 
+.button-bar > a
+{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: $secondary-text-size;
+  line-height: $body-text-line-height;
+}
+
 /*----------[ form layout ]-----------------------------------------------------
 */
 table.form
 {
   margin-top: 0;
-  
+
   &, th, td
   {
     border-style: none;
   }
-  
+
   .section-heading th
   {
     color: $subheading-text-color;
   }
-  
+
   .field-label
   {
     padding-right: $column-width;
@@ -175,7 +182,7 @@ table.form
     text-align: right;
     font-weight: normal;
   }
-  
+
   .field, .button-bar
   {
     padding-left: 0;
@@ -194,6 +201,8 @@ table.form
 
 .stacked
 {
+  margin-left: -$horizontal-nudge;
+
   .section-heading
   {
     font-weight: bold;
@@ -204,7 +213,7 @@ table.form
   {
     margin-top: $body-text-line-height / 2;
   }
-  
+
   .field, .section-heading, .button-bar
   {
     padding-left: $horizontal-nudge;
@@ -219,17 +228,17 @@ table.form
   {
     background-color: lighten($error-feedback, 55);
   }
-  
+
   label, .form-help
   {
     color: $error-feedback;
   }
-  
+
   label
   {
     font-weight: bold;
   }
-  
+
   input[type=email],
   input[type=password],
   input[type=search],
@@ -241,7 +250,7 @@ table.form
   {
     border-color: darken($error-feedback, 5);
   }
-  
+
   ul.error-explanation, ul.feedbackPanel
   {
     margin: 0;

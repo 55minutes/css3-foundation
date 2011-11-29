@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" href="styles-compiled/768.css"/>
   <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1024px)" href="styles-compiled/1024.css"/>
   <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1200px)" href="styles-compiled/1200.css"/>
-  
+
   <!-- conditional comments -->
   <!--[if IE]>
     <link rel="stylesheet" type="text/css" media="all" href="styles-compiled/ie.css" />
@@ -22,15 +22,28 @@
 
   <!-- print stylesheet -->
   <link rel="stylesheet" type="text/css" media="print" href="styles-compiled/print.css"/>
-  
+
   <!-- external styles -->
   <!-- <link rel="stylesheet" type="text/css" media="all" href="scripts/lib/jquery-ui/1.8.16/themes/redmond/jquery-ui.redmond.css"/> -->
-  
+
+  <!-- Favicons and touch icons -->
+  <!-- For iPhone 4 -->
+  <link href="images/apple-touch-icon-large.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png"/>
+  <!-- For iPad 1 -->
+  <link href="images/apple-touch-icon-medium.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png"/>
+  <!-- For iPhone 3G, iPod Touch and Android -->
+  <link href="images/apple-touch-icon-small.png" rel="apple-touch-icon-precomposed" type="image/png"/>
+  <!-- For Nokia -->
+  <link href="images/apple-touch-icon-small.png" rel="shortcut icon"/>
+  <!-- For everything else -->
+  <link href="favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href="favicon.ico" rel="shortcut icon"/>
+
   <!-- header javascript -->
   <!-- stand-alone utilities -->
   <script type="text/javascript" src="scripts/lib/fiftyfive-utils/55_utils.js">
   </script>
-  
+
   <script type="text/javascript" charset="utf-8">
     document.getElementsByTagName("html")[0].className += fiftyfive.util.getIEClass();
   </script>
@@ -69,7 +82,7 @@
 
       </fieldset> <!-- /.login -->
     </form>
-    
+
     <footer>
       &copy; 2011 55 Minutes.
     </footer>
@@ -79,7 +92,7 @@
   <!-- libraries -->
   <!-- <script type="text/javascript" src="scripts/lib/modernizr/2.0.6/modernizr.min.js">
   </script> -->
-  <script type="text/javascript" src="scripts/lib/jquery/1.6.4/jquery.min.js">
+  <script type="text/javascript" src="scripts/lib/jquery/1.7.1/jquery.min.js">
   </script>
   <!-- <script type="text/javascript" src="scripts/lib/jquery-ui/1.8.16/jquery-ui.min.js">
   </script> -->
@@ -102,7 +115,7 @@
   <!-- page- or feature-specific javascript -->
   <!-- <script type="text/javascript" src="scripts/login.js">
   </script> -->
-  
+
   <!-- onload javascript -->
   <script type="text/javascript" charset="utf-8">
     (function($) {

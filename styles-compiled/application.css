@@ -12,7 +12,7 @@
 /*-----[ reset ]----------------------------------------------------------------
 | Based on:
 |   html5doctor.com Reset Stylesheet
-|   v1.6 2010-08-18 | Authors: Eric Meyer & Richard Clark
+|   v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
 |   <http://html5doctor.com/html-5-reset-stylesheet/>
 */
 html, body, div, span, object, iframe,
@@ -87,17 +87,16 @@ del {
 }
 
 abbr[title], dfn[title] {
-  border-bottom: 1px dotted inherit;
+  border-bottom: 1px dotted;
   cursor: help;
 }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  border-style: none;
 }
 
-th, td, tr {
+table, th, td, tr {
   border-style: none;
 }
 
@@ -115,6 +114,7 @@ input, select {
   vertical-align: middle;
 }
 
+@import url(_cssgrid-1140.css);
 /*-----[ colors ]---------------------------------------------------------------
 | Variables defining the colors to be used throughout the application. Curious
 | about the color names? Check out <www.colblindor.com/color-name-hue/> and 
@@ -362,6 +362,11 @@ span.keep-together {
   display: none;
   margin: 2.2rem auto;
   border: 0.5rem solid #a02911;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  border-radius: 1.5rem;
   padding: 2.2rem 2rem;
   background-color: white;
 }
@@ -433,24 +438,24 @@ span.keep-together {
   color: #919e00;
 }
 .alerts li.success:after, .alerts li.feedbackPanelSUCCESS:after, .alerts .message.success:after, .alerts .message.feedbackPanelSUCCESS:after, .alerts .feedbackPanel li.success:after, .alerts .feedbackPanel li.feedbackPanelSUCCESS:after, .alerts .feedbackPanel .message.success:after, .alerts .feedbackPanel .message.feedbackPanelSUCCESS:after {
-  background-image: url('../images/icon-sa21770bc59.png');
-  background-position: 0 -16px;
+  background-image: url('../images/icon-s8f000dbda0.png');
+  background-position: 0 -32px;
 }
 .alerts li.warning, .alerts li.feedbackPanelINFO, .alerts li.feedbackPanelWARNING, .alerts .message.warning, .alerts .message.feedbackPanelINFO, .alerts .message.feedbackPanelWARNING, .alerts .feedbackPanel li.warning, .alerts .feedbackPanel li.feedbackPanelINFO, .alerts .feedbackPanel li.feedbackPanelWARNING, .alerts .feedbackPanel .message.warning, .alerts .feedbackPanel .message.feedbackPanelINFO, .alerts .feedbackPanel .message.feedbackPanelWARNING {
   background-color: #fff3c2;
   color: #cca300;
 }
 .alerts li.warning:after, .alerts li.feedbackPanelINFO:after, .alerts li.feedbackPanelWARNING:after, .alerts .message.warning:after, .alerts .message.feedbackPanelINFO:after, .alerts .message.feedbackPanelWARNING:after, .alerts .feedbackPanel li.warning:after, .alerts .feedbackPanel li.feedbackPanelINFO:after, .alerts .feedbackPanel li.feedbackPanelWARNING:after, .alerts .feedbackPanel .message.warning:after, .alerts .feedbackPanel .message.feedbackPanelINFO:after, .alerts .feedbackPanel .message.feedbackPanelWARNING:after {
-  background-image: url('../images/icon-sa21770bc59.png');
-  background-position: 0 -32px;
+  background-image: url('../images/icon-s8f000dbda0.png');
+  background-position: 0 0;
 }
 .alerts li.error, .alerts li.feedbackPanelERROR, .alerts li.feedbackPanelFATAL, .alerts .message.error, .alerts .message.feedbackPanelERROR, .alerts .message.feedbackPanelFATAL, .alerts .feedbackPanel li.error, .alerts .feedbackPanel li.feedbackPanelERROR, .alerts .feedbackPanel li.feedbackPanelFATAL, .alerts .feedbackPanel .message.error, .alerts .feedbackPanel .message.feedbackPanelERROR, .alerts .feedbackPanel .message.feedbackPanelFATAL {
   background-color: #fcebe7;
   color: #b72f14;
 }
 .alerts li.error:after, .alerts li.feedbackPanelERROR:after, .alerts li.feedbackPanelFATAL:after, .alerts .message.error:after, .alerts .message.feedbackPanelERROR:after, .alerts .message.feedbackPanelFATAL:after, .alerts .feedbackPanel li.error:after, .alerts .feedbackPanel li.feedbackPanelERROR:after, .alerts .feedbackPanel li.feedbackPanelFATAL:after, .alerts .feedbackPanel .message.error:after, .alerts .feedbackPanel .message.feedbackPanelERROR:after, .alerts .feedbackPanel .message.feedbackPanelFATAL:after {
-  background-image: url('../images/icon-sa21770bc59.png');
-  background-position: 0 0;
+  background-image: url('../images/icon-s8f000dbda0.png');
+  background-position: 0 -16px;
 }
 
 /*----------[ pagination ]------------------------------------------------------
@@ -462,11 +467,10 @@ span.keep-together {
 .pagination .first, .pagination .prev, .pagination .page, .pagination .next, .pagination .last {
   display: inline-block;
   margin-right: 1rem;
-  -moz-border-radius: 0.6rem;
   -webkit-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
-  -khtml-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   border-radius: 0.6rem;
   background-color: #e8e8e8;
 }
@@ -568,7 +572,7 @@ input[type=checkbox] {
 **    main buttons: orange,
 **    disabled buttons: grey,
 **    buttons for destructive actions: red
-** 
+**
 ** See
 **    http://jaredhardy.com/sassy-buttons/ and
 **    https://github.com/jhardy/Sassy-Buttons
@@ -576,122 +580,158 @@ input[type=checkbox] {
 */
 input[type=submit],
 input[type=button],
-button {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  cursor: pointer;
+button,
+a.button {
   font-size: 1.4rem;
-  padding: 0.3rem 2rem;
-  line-height: 1.4rem;
-  border-style: solid;
-  border-width: 0.1rem;
-  -moz-border-radius: 0.6rem;
+  padding: 0.0rem 2rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.5;
   -webkit-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
-  -khtml-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   border-radius: 0.6rem;
   background-color: #f07c00;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffc68a), color-stop(3%, #ffa23d), color-stop(70%, #f07c00));
-  background: -webkit-linear-gradient(#ffc68a, #ffa23d 3%, #f07c00 70%);
-  background: -moz-linear-gradient(#ffc68a, #ffa23d 3%, #f07c00 70%);
-  background: -o-linear-gradient(#ffc68a, #ffa23d 3%, #f07c00 70%);
-  background: -ms-linear-gradient(#ffc68a, #ffa23d 3%, #f07c00 70%);
-  background: linear-gradient(#ffc68a, #ffa23d 3%, #f07c00 70%);
-  border-color: #f07c00;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffa23d), color-stop(70%, #f07c00));
+  background: -webkit-linear-gradient(#ffa23d, #f07c00 70%);
+  background: -moz-linear-gradient(#ffa23d, #f07c00 70%);
+  background: -o-linear-gradient(#ffa23d, #f07c00 70%);
+  background: -ms-linear-gradient(#ffa23d, #f07c00 70%);
+  background: linear-gradient(#ffa23d, #f07c00 70%);
+  -webkit-box-shadow: #ffc68a 0 1px 0 inset;
+  -moz-box-shadow: #ffc68a 0 1px 0 inset;
+  box-shadow: #ffc68a 0 1px 0 inset;
+  border: 1px solid #d66f00;
   color: white;
+  line-height: 2rem;
   font-family: Calibri, "Myriad Pro", Tahoma, sans-serif;
   font-weight: bold;
 }
 input[type=submit]:hover,
 input[type=button]:hover,
-button:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffc68a), color-stop(3%, #ffae57), color-stop(75%, #ff890a));
-  background: -webkit-linear-gradient(#ffc68a, #ffae57 3%, #ff890a 75%);
-  background: -moz-linear-gradient(#ffc68a, #ffae57 3%, #ff890a 75%);
-  background: -o-linear-gradient(#ffc68a, #ffae57 3%, #ff890a 75%);
-  background: -ms-linear-gradient(#ffc68a, #ffae57 3%, #ff890a 75%);
-  background: linear-gradient(#ffc68a, #ffae57 3%, #ff890a 75%);
+button:hover,
+a.button:hover {
+  background-color: #d66f00;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #ff9524), color-stop(75%, #d66f00));
+  background: -webkit-linear-gradient(#ff9524 3%, #d66f00 75%);
+  background: -moz-linear-gradient(#ff9524 3%, #d66f00 75%);
+  background: -o-linear-gradient(#ff9524 3%, #d66f00 75%);
+  background: -ms-linear-gradient(#ff9524 3%, #d66f00 75%);
+  background: linear-gradient(#ff9524 3%, #d66f00 75%);
+}
+input[type=submit]:active,
+input[type=button]:active,
+button:active,
+a.button:active {
+  -webkit-box-shadow: #c76700 0 1px 2px inset;
+  -moz-box-shadow: #c76700 0 1px 2px inset;
+  box-shadow: #c76700 0 1px 2px inset;
 }
 input[type=submit].destructive,
 input[type=button].destructive,
-button.destructive {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  cursor: pointer;
+button.destructive,
+a.button.destructive {
   font-size: 1.4rem;
-  padding: 0.3rem 2rem;
-  line-height: 1.4rem;
-  border-style: solid;
-  border-width: 0.1rem;
-  -moz-border-radius: 0.6rem;
+  padding: 0.0rem 2rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.5;
   -webkit-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
-  -khtml-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   border-radius: 0.6rem;
   background-color: #e53b19;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f5b0a2), color-stop(3%, #ed755d), color-stop(70%, #e53b19));
-  background: -webkit-linear-gradient(#f5b0a2, #ed755d 3%, #e53b19 70%);
-  background: -moz-linear-gradient(#f5b0a2, #ed755d 3%, #e53b19 70%);
-  background: -o-linear-gradient(#f5b0a2, #ed755d 3%, #e53b19 70%);
-  background: -ms-linear-gradient(#f5b0a2, #ed755d 3%, #e53b19 70%);
-  background: linear-gradient(#f5b0a2, #ed755d 3%, #e53b19 70%);
-  border-color: #e53b19;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ed755d), color-stop(70%, #e53b19));
+  background: -webkit-linear-gradient(#ed755d, #e53b19 70%);
+  background: -moz-linear-gradient(#ed755d, #e53b19 70%);
+  background: -o-linear-gradient(#ed755d, #e53b19 70%);
+  background: -ms-linear-gradient(#ed755d, #e53b19 70%);
+  background: linear-gradient(#ed755d, #e53b19 70%);
+  -webkit-box-shadow: #f5b0a2 0 1px 0 inset;
+  -moz-box-shadow: #f5b0a2 0 1px 0 inset;
+  box-shadow: #f5b0a2 0 1px 0 inset;
+  border: 1px solid #ce3516;
   color: white;
+  line-height: 2rem;
 }
 input[type=submit].destructive:hover,
 input[type=button].destructive:hover,
-button.destructive:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f5b0a2), color-stop(3%, #f08974), color-stop(75%, #e84e2f));
-  background: -webkit-linear-gradient(#f5b0a2, #f08974 3%, #e84e2f 75%);
-  background: -moz-linear-gradient(#f5b0a2, #f08974 3%, #e84e2f 75%);
-  background: -o-linear-gradient(#f5b0a2, #f08974 3%, #e84e2f 75%);
-  background: -ms-linear-gradient(#f5b0a2, #f08974 3%, #e84e2f 75%);
-  background: linear-gradient(#f5b0a2, #f08974 3%, #e84e2f 75%);
+button.destructive:hover,
+a.button.destructive:hover {
+  background-color: #ce3516;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #eb6246), color-stop(75%, #ce3516));
+  background: -webkit-linear-gradient(#eb6246 3%, #ce3516 75%);
+  background: -moz-linear-gradient(#eb6246 3%, #ce3516 75%);
+  background: -o-linear-gradient(#eb6246 3%, #ce3516 75%);
+  background: -ms-linear-gradient(#eb6246 3%, #ce3516 75%);
+  background: linear-gradient(#eb6246 3%, #ce3516 75%);
+}
+input[type=submit].destructive:active,
+input[type=button].destructive:active,
+button.destructive:active,
+a.button.destructive:active {
+  -webkit-box-shadow: #c03215 0 1px 2px inset;
+  -moz-box-shadow: #c03215 0 1px 2px inset;
+  box-shadow: #c03215 0 1px 2px inset;
 }
 input[type=submit][disabled],
 input[type=button][disabled],
-button[disabled] {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  cursor: pointer;
+button[disabled],
+a.button[disabled] {
   font-size: 1.4rem;
-  padding: 0.3rem 2rem;
-  line-height: 1.4rem;
-  border-style: solid;
-  border-width: 0.1rem;
-  -moz-border-radius: 0.6rem;
+  padding: 0.0rem 2rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.5;
   -webkit-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
-  -khtml-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   border-radius: 0.6rem;
   background-color: #c8c8c8;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(3%, #eeeeee), color-stop(70%, #c8c8c8));
-  background: -webkit-linear-gradient(#ffffff, #eeeeee 3%, #c8c8c8 70%);
-  background: -moz-linear-gradient(#ffffff, #eeeeee 3%, #c8c8c8 70%);
-  background: -o-linear-gradient(#ffffff, #eeeeee 3%, #c8c8c8 70%);
-  background: -ms-linear-gradient(#ffffff, #eeeeee 3%, #c8c8c8 70%);
-  background: linear-gradient(#ffffff, #eeeeee 3%, #c8c8c8 70%);
-  border-color: #c8c8c8;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(70%, #c8c8c8));
+  background: -webkit-linear-gradient(#eeeeee, #c8c8c8 70%);
+  background: -moz-linear-gradient(#eeeeee, #c8c8c8 70%);
+  background: -o-linear-gradient(#eeeeee, #c8c8c8 70%);
+  background: -ms-linear-gradient(#eeeeee, #c8c8c8 70%);
+  background: linear-gradient(#eeeeee, #c8c8c8 70%);
+  -webkit-box-shadow: white 0 1px 0 inset;
+  -moz-box-shadow: white 0 1px 0 inset;
+  box-shadow: white 0 1px 0 inset;
+  border: 1px solid #bbbbbb;
   color: #8d8d8d;
+  line-height: 2rem;
   cursor: default !important;
+}
+input[type=submit][disabled]:hover,
+input[type=button][disabled]:hover,
+button[disabled]:hover,
+a.button[disabled]:hover {
+  background-color: #bbbbbb;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #e1e1e1), color-stop(75%, #bbbbbb));
+  background: -webkit-linear-gradient(#e1e1e1 3%, #bbbbbb 75%);
+  background: -moz-linear-gradient(#e1e1e1 3%, #bbbbbb 75%);
+  background: -o-linear-gradient(#e1e1e1 3%, #bbbbbb 75%);
+  background: -ms-linear-gradient(#e1e1e1 3%, #bbbbbb 75%);
+  background: linear-gradient(#e1e1e1 3%, #bbbbbb 75%);
+}
+input[type=submit][disabled]:active,
+input[type=button][disabled]:active,
+button[disabled]:active,
+a.button[disabled]:active {
+  -webkit-box-shadow: #b3b3b3 0 1px 2px inset;
+  -moz-box-shadow: #b3b3b3 0 1px 2px inset;
+  box-shadow: #b3b3b3 0 1px 2px inset;
 }
 
 .button-bar {
   margin: 2.2rem 0;
   padding: 0;
-}
-
-.button-bar > a {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
 }
 
 .button-bar input[type=submit],
@@ -701,6 +741,13 @@ button[disabled] {
   float: left;
   margin: 0;
   margin-right: 1rem;
+}
+
+.button-bar > a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
 }
 
 /*----------[ form layout ]-----------------------------------------------------
@@ -730,6 +777,9 @@ table.form .field, table.form .button-bar {
   display: block;
 }
 
+.stacked {
+  margin-left: -0.5rem;
+}
 .stacked .section-heading {
   font-weight: bold;
   color: #207861;
@@ -809,11 +859,10 @@ img.ui-datepicker-trigger {
   .server-error #page {
     margin: 5rem auto;
     border: 0.2rem solid silver;
-    -moz-border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
-    -khtml-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
     border-radius: 1.5rem;
   }
 }
@@ -855,11 +904,10 @@ img.ui-datepicker-trigger {
   .documentation #page {
     margin: 5rem auto;
     border: 0.2rem solid silver;
-    -moz-border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
-    -khtml-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
     border-radius: 1.5rem;
   }
 }
@@ -919,11 +967,10 @@ img.ui-datepicker-trigger {
   #login #page {
     margin: 5rem auto;
     border: 0.2rem solid silver;
-    -moz-border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
-    -khtml-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
     border-radius: 1.5rem;
   }
 }

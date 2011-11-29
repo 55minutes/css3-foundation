@@ -14,23 +14,39 @@
   <link rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" href="styles-compiled/768.css"/>
   <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1024px)" href="styles-compiled/1024.css"/>
   <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1200px)" href="styles-compiled/1200.css"/>
-  
+
   <!-- conditional comments -->
   <!--[if IE]>
     <link rel="stylesheet" type="text/css" media="all" href="styles-compiled/ie.css" />
   <![endif]-->
+  <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="all" href="styles/_cssgrid-1140-ie.css" />
+  <![endif]-->
 
   <!-- print stylesheet -->
   <link rel="stylesheet" type="text/css" media="print" href="styles-compiled/print.css"/>
-  
+
   <!-- external styles -->
   <!-- <link rel="stylesheet" type="text/css" media="all" href="scripts/lib/jquery-ui/1.8.16/themes/redmond/jquery-ui.redmond.css"/> -->
-  
+
+  <!-- Favicons and touch icons -->
+  <!-- For iPhone 4 -->
+  <link href="images/apple-touch-icon-large.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png"/>
+  <!-- For iPad 1 -->
+  <link href="images/apple-touch-icon-medium.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png"/>
+  <!-- For iPhone 3G, iPod Touch and Android -->
+  <link href="images/apple-touch-icon-small.png" rel="apple-touch-icon-precomposed" type="image/png"/>
+  <!-- For Nokia -->
+  <link href="images/apple-touch-icon-small.png" rel="shortcut icon"/>
+  <!-- For everything else -->
+  <link href="favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+
   <!-- header javascript -->
   <!-- stand-alone utilities -->
   <script type="text/javascript" src="scripts/lib/fiftyfive-utils/55_utils.js">
   </script>
-  
+
   <script type="text/javascript" charset="utf-8">
     document.getElementsByTagName("html")[0].className += fiftyfive.util.getIEClass();
   </script>
@@ -41,7 +57,7 @@
   <section id="unsupported-browser-warning">
     <!-- Use this if you want to allow the user to hide the warning after it's been shown. -->
     <!-- <a class="dismiss" href="javascript://">Dismiss</a> -->
-    <h1>Your browser is not supported.</h1>
+    <h1>Please upgrade to a newer browser.</h1>
     <p>&laquo;Your application name here&raquo; works best with modern browsers like <span class="keep-together">Safari/MobileSafari 3</span>, <span class="keep-together">Chrome 10</span>, <span class="keep-together">Firefox 4</span>, <span class="keep-together">Internet Explorer 8</span> and newer. If you use another browser, please note that you may encounter visual glitches or other problems.
   </section> <!-- /#unsupported-browser-warning -->
 
@@ -59,18 +75,18 @@
     <section id="about">
       <h1>Compass-based CSS3/HTML5 scaffolding</h1>
       <p>These files contain a <a href="http://compass-style.org/" title="Compass">Compass</a>-based CSS3/HTML5 scaffolding. The markup and styling contained within may be used as a bootstrap for a variety of web projects, ranging from simple, static websites to full-fledged web applications built with frameworks like <a href="https://www.djangoproject.com/">Django</a>, <a href="http://wicket.apache.org/" title="Apache Wicket - Welcome to Apache Wicket">Wicket</a> and <a href="http://rubyonrails.org/" title="Ruby on Rails">Rails</a>.</p>
-      
+
       <h2>Goals and features</h2>
-      
+
       <h3>Standards-compliance</h3>
       <p>Clean, readable, semantic markup is the basis of any good web project, be it simple or complex. In addition to providing a rock-solid, cross-browser-compatible basis for your project, you should be able to open the source code for any page in this scaffolding and comprehend it as easily as you do the final HTML rendering.</p>
-      
+
       <h3>Responsiveness</h3>
       <p>The past few years have seen an explosion of new ways by which people access and interact with the web. This scaffolding uses the principles of <a href="http://www.abookapart.com/products/responsive-web-design" title="A Book Apart, Responsive Web Design">responsive web design</a> to provide a fast, friendly user experience to a variety of devices, from phones to tablets to desktop computers. To see it in action on this page, try resizing your browser window.</p>
 
       <h3>Freshness</h3>
       <p>The pace of innovation on the web is staggering, with new tools and methodologies changing the landscape so frequently it's hard to keep track. This scaffolding strives to incorporate the latest innovations and best-practices for markup, styling and behavior, like those suggested in <a href="http://stuffandnonsense.co.uk/projects/320andup/" title="320 and up">320 and up</a>.</p>
-      
+
     </section> <!-- /#content -->
     <section id="resources">
       <h1>Resources</h1>
@@ -81,7 +97,7 @@
         <li><a href="http://jaredhardy.com/sassy-buttons/" title="Sassy Buttons, Awesome CSS3 Buttons With Compass and Sass - Jared Hardy">Sassy Buttons</a></li>
         <li><a href="http://opensource.55minutes.com/" title="opensource @ 55 Minutes: Java and HTML5 goodies">Other 55 Minutes open-source projects</a></li>
     </section> <!-- /#resources -->
-    
+
     <footer>
       &copy; 2011 55 Minutes. Icons by <a href="http://www.famfamfam.com/lab/icons/silk/" title="famfamfam.com: Silk Icons">famfamfam</a>.
     </footer>
@@ -91,9 +107,11 @@
   <!-- libraries -->
   <!-- <script type="text/javascript" src="scripts/lib/modernizr/2.0.6/modernizr.min.js">
   </script> -->
-  <script type="text/javascript" src="scripts/lib/jquery/1.6.4/jquery.min.js">
+  <script type="text/javascript" src="scripts/lib/jquery/1.7.1/jquery.min.js">
   </script>
   <!-- <script type="text/javascript" src="scripts/lib/jquery-ui/1.8.16/jquery-ui.min.js">
+  </script>
+  <script type="text/javascript" src="scripts/lib/jquery-ui/1.8.16/jquery-ui.widget.min.js">
   </script> -->
 
   <!-- utilities and library extensions -->
@@ -105,16 +123,18 @@
   <script type="text/javascript" src="scripts/lib/strftime/strftime-min.js">
   </script>
   <script type="text/javascript" src="scripts/lib/fiftyfive-utils/modernizr-extras.js">
-  </script> -->
+  </script>
   <script type="text/javascript" src="scripts/lib/fiftyfive-utils/jquery.55_utils.js">
   </script>
+  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/jquery.ui.unsupportedbrowserwarning.js">
+  </script> -->
   <script type="text/javascript" src="scripts/common.js">
   </script>
 
   <!-- page- or feature-specific javascript -->
   <!-- <script type="text/javascript" src="scripts/home.js">
   </script> -->
-  
+
   <!-- onload javascript -->
   <script type="text/javascript" charset="utf-8">
     (function($) {
@@ -125,4 +145,3 @@
   </script>
 </body>
 </html>
-

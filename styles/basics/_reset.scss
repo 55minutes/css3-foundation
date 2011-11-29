@@ -1,7 +1,7 @@
 /*-----[ reset ]----------------------------------------------------------------
 | Based on:
 |   html5doctor.com Reset Stylesheet
-|   v1.6 2010-08-18 | Authors: Eric Meyer & Richard Clark
+|   v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
 |   <http://html5doctor.com/html-5-reset-stylesheet/>
 */
 html, body, div, span, object, iframe,
@@ -13,7 +13,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video
 {
@@ -75,7 +75,7 @@ ins
 mark
 {
   background-color: #ff9;
-  color: #000; 
+  color: #000;
   font-style: italic;
   font-weight: bold;
 }
@@ -87,7 +87,7 @@ del
 
 abbr[title], dfn[title]
 {
-  border-bottom: 1px dotted inherit;
+  border-bottom: 1px dotted;
   cursor: help;
 }
 
@@ -95,10 +95,9 @@ table
 {
   border-collapse: collapse;
   border-spacing: 0;
-  border-style: none;
 }
 
-th, td, tr
+table, th, td, tr
 {
   border-style: none;
 }
@@ -108,7 +107,7 @@ hr
 {
   display: block;
   height: 1px;
-  border: 0;   
+  border: 0;
   border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0;
@@ -118,4 +117,3 @@ input, select
 {
   vertical-align: middle;
 }
-
