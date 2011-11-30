@@ -6,7 +6,7 @@
   {
     padding: $body-text-line-height $column-width;
   }
-  
+
   #examples
   {
     & > section
@@ -21,98 +21,98 @@
       padding-bottom: $vertical-nudge;
       color: darken($flush-orange, 5);
     }
-    
+
     .explanation h2
     {
       margin: 0;
       color: darken($supernova, 10);
     }
-    
+
     .explanation p
     {
       margin-top: 0;
     }
-    
+
     .columns h2
     {
       margin-top: $body-text-line-height / 2;
     }
   }
-  
+
   .colors
   {
     table
     {
       margin-top: 0;
     }
-    
+
     .swatch
     {
       padding: 0;
       width: 2 * $column-width;
-      
+
       &.blackberry
       {
         background-color: $blackberry;
       }
-      
+
       &.eucalyptus
       {
         background-color: $eucalyptus;
       }
-      
+
       &.citrus
       {
         background-color: $citrus;
       }
-      
+
       &.supernova
       {
         background-color: $supernova;
       }
-      
+
       &.flush-orange
       {
         background-color: $flush-orange;
       }
-      
+
       &.matisse
       {
         background-color: $matisse;
       }
-      
+
       &.cinnabar
       {
         background-color: $cinnabar;
       }
-      
+
       &.charcoal
       {
         background-color: $charcoal;
       }
-      
+
       &.grey
       {
         background-color: $grey;
       }
-      
+
       &.silver
       {
         background-color: $silver;
       }
-      
+
       &.white-smoke
       {
         background-color: $white-smoke;
       }
     }
-    
+
     .hex-code
     {
       padding-left: $column-width / 2;
     }
   }
-  
+
   .tables
   {
     .quantity, .price
@@ -130,7 +130,7 @@
       font-weight: bold;
     }
   }
-  
+
   .forms
   {
     input[type=email],
@@ -142,14 +142,14 @@
     select
     {
       width: 20rem;
-      
+
       &.large
       {
         width: 25rem;
       }
     }
   }
-  
+
   footer
   {
     margin-top: $body-text-line-height;
@@ -196,7 +196,7 @@
       float: left;
       margin-bottom: $body-text-line-height;
     }
-    
+
     .explanation
     {
       clear: left;
