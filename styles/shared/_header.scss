@@ -1,3 +1,7 @@
 /*-----[ header ]---------------------------------------------------------------
 | Common page header styles.
 */
+.row > header
+{
+  margin-top: 2 * $body-text-line-height;
+}

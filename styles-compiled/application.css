@@ -950,6 +950,10 @@ img.ui-datepicker-trigger {
 /*-----[ header ]---------------------------------------------------------------
 | Common page header styles.
 */
+.row > header {
+  margin-top: 4.4rem;
+}
+
 /*-----[ footer ]---------------------------------------------------------------
 | Common page footer styles.
 */
@@ -981,73 +985,6 @@ img.ui-datepicker-trigger {
     -ms-border-radius: 1.5rem;
     -o-border-radius: 1.5rem;
     border-radius: 1.5rem;
-  }
-}
-/*-----[ documentation ]--------------------------------------------------------
-| Styles for the documentation pages. See _feature-1.scss for more details on
-| how feature-specific styles should be organized.
-*/
-.documentation #page {
-  padding: 2.2rem 2rem;
-}
-.documentation #page header {
-  margin-bottom: 3.75rem;
-  border-bottom: 0.1rem solid silver;
-  padding-bottom: 0.55rem;
-}
-.documentation #page header .alerts {
-  margin-top: 0.55rem;
-}
-.documentation #page p:last-of-type,
-.documentation #page dl:last-of-type,
-.documentation #page ol:last-of-type,
-.documentation #page ul:last-of-type {
-  margin-bottom: 0;
-}
-.documentation #page #about, .documentation #page #resources {
-  margin-bottom: 4.4rem;
-}
-.documentation #page footer {
-  color: gray;
-  font-style: italic;
-}
-
-@media (min-width: 480px) {
-  .documentation #page {
-    max-width: 60rem;
-  }
-}
-@media (min-width: 768px) {
-  .documentation #page {
-    margin: 5rem auto;
-    border: 0.2rem solid silver;
-    -webkit-border-radius: 1.5rem;
-    -moz-border-radius: 1.5rem;
-    -ms-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
-    border-radius: 1.5rem;
-  }
-}
-@media (min-width: 1024px) {
-  .documentation #page {
-    max-width: 90rem;
-  }
-  .documentation nav.auth-status {
-    float: right;
-  }
-  .documentation #about, .documentation #resources {
-    float: left;
-    margin-bottom: 0;
-  }
-  .documentation #about {
-    margin-right: 3%;
-    width: 67%;
-  }
-  .documentation #resources {
-    width: 30%;
-  }
-  .documentation footer {
-    clear: both;
   }
 }
 /*-----[ login ]----------------------------------------------------------------
