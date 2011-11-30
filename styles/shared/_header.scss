@@ -4,4 +4,9 @@
 .row > header
 {
   margin-top: 2 * $body-text-line-height;
+
+  nav.auth-status
+  {
+    float: right;
+  }
 }

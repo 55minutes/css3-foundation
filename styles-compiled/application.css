@@ -953,6 +953,9 @@ img.ui-datepicker-trigger {
 .row > header {
   margin-top: 4.4rem;
 }
+.row > header nav.auth-status {
+  float: right;
+}
 
 /*-----[ footer ]---------------------------------------------------------------
 | Common page footer styles.
