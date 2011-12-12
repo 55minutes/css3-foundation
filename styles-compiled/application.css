@@ -719,6 +719,7 @@ a.button {
   background: linear-gradient(#ffa23d, #f07c00 70%);
   -webkit-box-shadow: #ffc68a 0 1px 0 inset;
   -moz-box-shadow: #ffc68a 0 1px 0 inset;
+  -o-box-shadow: #ffc68a 0 1px 0 inset;
   box-shadow: #ffc68a 0 1px 0 inset;
   border: 1px solid #d66f00;
   color: white;
@@ -744,6 +745,7 @@ button:active,
 a.button:active {
   -webkit-box-shadow: #c76700 0 1px 2px inset;
   -moz-box-shadow: #c76700 0 1px 2px inset;
+  -o-box-shadow: #c76700 0 1px 2px inset;
   box-shadow: #c76700 0 1px 2px inset;
 }
 input[type=submit].destructive,
@@ -770,6 +772,7 @@ a.button.destructive {
   background: linear-gradient(#ed755d, #e53b19 70%);
   -webkit-box-shadow: #f5b0a2 0 1px 0 inset;
   -moz-box-shadow: #f5b0a2 0 1px 0 inset;
+  -o-box-shadow: #f5b0a2 0 1px 0 inset;
   box-shadow: #f5b0a2 0 1px 0 inset;
   border: 1px solid #ce3516;
   color: white;
@@ -793,6 +796,7 @@ button.destructive:active,
 a.button.destructive:active {
   -webkit-box-shadow: #c03215 0 1px 2px inset;
   -moz-box-shadow: #c03215 0 1px 2px inset;
+  -o-box-shadow: #c03215 0 1px 2px inset;
   box-shadow: #c03215 0 1px 2px inset;
 }
 input[type=submit][disabled],
@@ -819,6 +823,7 @@ a.button[disabled] {
   background: linear-gradient(#eeeeee, #c8c8c8 70%);
   -webkit-box-shadow: white 0 1px 0 inset;
   -moz-box-shadow: white 0 1px 0 inset;
+  -o-box-shadow: white 0 1px 0 inset;
   box-shadow: white 0 1px 0 inset;
   border: 1px solid #bbbbbb;
   color: #8d8d8d;
@@ -843,6 +848,7 @@ button[disabled]:active,
 a.button[disabled]:active {
   -webkit-box-shadow: #b3b3b3 0 1px 2px inset;
   -moz-box-shadow: #b3b3b3 0 1px 2px inset;
+  -o-box-shadow: #b3b3b3 0 1px 2px inset;
   box-shadow: #b3b3b3 0 1px 2px inset;
 }
 
