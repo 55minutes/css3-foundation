@@ -2,10 +2,10 @@
 | Style specifying the dimensions of the basic page grid and other common
 | measures.
 */
-$column-width: 2rem;
-$horizontal-nudge: $column-width / 4;
+$column-width     : 2rem;
+$horizontal-nudge : $column-width / 4;
 
-$gutter-width: 1.5 * $column-width;
+$gutter-width     : 1.5 * $column-width;
 
-$vertical-nudge: $body-text-line-height / 4;
-$section-spacing: 2 * $body-text-line-height;
+$vertical-nudge   : $body-text-line-height / 4;
+$section-spacing  : 2 * $body-text-line-height;
