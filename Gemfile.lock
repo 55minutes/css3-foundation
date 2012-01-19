@@ -13,6 +13,7 @@ GEM
     sass (3.1.11)
     sassy-buttons (0.0.7)
       compass (>= 0.11)
+    vendorer (0.1.9)
 
 PLATFORMS
   ruby
@@ -22,3 +23,4 @@ DEPENDENCIES
   compass-colors
   rb-fsevent
   sassy-buttons
+  vendorer

@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-//= require <jquery>
-//= require <55_utils>
+//= require ./55_utils
 
 /*------------------------------------------------------------------------------
 | jquery.55_utils.js

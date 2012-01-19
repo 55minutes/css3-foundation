@@ -14,8 +14,6 @@
  * limitations under the License.
  */
 
-//= require <modernizr>
-
 /*------------------------------------------------------------------------------
 | modernizr-extras.js
 | 55 Minutes JS utilities v3.2-pre
