@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-//= require <cookies>
-//= require <jquery-ui>
+//= require ./cookies
 
 /*------------------------------------------------------------------------------
 | jquery.ui.unsupportedbrowserwarning.js

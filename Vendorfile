@@ -1,0 +1,28 @@
+# Vendorfile for use with vendorer command. https://github.com/grosser/vendorer
+# Run `vendorer` to install jQuery and jQuery UI dependencies into scripts/lib.
+
+JQUERY_VER = "1.7.1"
+JQUERY_UI_VER = "1.8.17"
+MODERNIZR_VER = "2.0.6"
+
+folder "scripts/lib" do
+
+  # 55 Minutes JavaScript utils (master)
+  #
+  folder "fiftyfive-utils", "git://github.com/55minutes/fiftyfive-util-js.git"
+
+  # Standard jQuery/UI dist
+  #
+  file "jquery.js",         "http://code.jquery.com/jquery-#{JQUERY_VER}.js"
+  file "jquery-ui.js",      "http://code.jquery.com/ui/#{JQUERY_UI_VER}/jquery-ui.js"
+  
+  # jQuery UI components
+  #
+  file "jquery-ui.widget.js", "https://raw.github.com/jquery/jquery-ui/#{JQUERY_UI_VER}/ui/jquery.ui.widget.js" do |path|
+    rewrite(path) { |js| js.gsub /@VERSION/, JQUERY_UI_VER }
+  end
+  
+  # Modernizr
+  #
+  file "modernizr.js", "http://www.modernizr.com/downloads/modernizr-#{MODERNIZR_VER}.js"
+end
