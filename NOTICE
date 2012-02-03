@@ -13,4 +13,8 @@ This product contains a modified version of the 1140px CSS Grid System,
 licensed under the Creative Commons Attribution 3.0 Australia License.
 (http://cssgrid.net/)
 
-This product contains the 55 Minutes JavaScript Utilities library (https://github.com/55minutes/fiftyfive-util-js/), which also packages some third-party libraries. For information on those, please refer to its own NOTICE (https://github.com/55minutes/fiftyfive-util-js/blob/master/NOTICE).
+This product contains the 55 Minutes JavaScript Utilities library
+(https://github.com/55minutes/fiftyfive-util-js/), which also packages
+some third-party libraries. For information on those, please refer to
+its own NOTICE
+(https://github.com/55minutes/fiftyfive-util-js/blob/master/NOTICE).
