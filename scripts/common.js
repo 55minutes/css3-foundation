@@ -32,7 +32,7 @@ FiftyfiveExample.util = {
         // …etc.
         return supported;
     },
-    
+
     /*
     ** Workaround for MobileSafari zoom bug after orientation change.
     ** From: http://adactio.com/journal/4470/

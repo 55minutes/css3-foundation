@@ -15,7 +15,7 @@ To use this project, the following must be installed on your computer:
 
 * A fluid, responsive layout following the principles of [Responsive Web Design](http://www.abookapart.com/products/responsive-web-design "A Book Apart, Responsive Web Design").
 * Best practices recommended by the [320 and Up](http://stuffandnonsense.co.uk/projects/320andup/ "320 and up") boilerplate project, as well as our own experience developing web applications.
-* Integration with the [jQuery](http://jquery.com/ "jQuery: The Write Less, Do More, JavaScript Library"), [jQuery UI](http://jqueryui.com/ "jQuery UI - Home") and [Modernizr](http://www.modernizr.com/ "Modernizr") JavaScript libraries, as well as [55 Minutes' own set of JS utilities and conveniences](https://github.com/55minutes/fiftyfive-util-js/).
+* Integration with the [jQuery](http://jquery.com/ "jQuery: The Write Less, Do More, JavaScript Library") and [jQuery UI](http://jqueryui.com/ "jQuery UI - Home") JavaScript libraries, as well as [55 Minutes' own set of JS utilities and conveniences](https://github.com/55minutes/fiftyfive-util-js/).
 * A style guide similar to the [Twitter bootstrap](http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter") containing examples of the default styles defined in the project.
 * The [1140 CSS grid](http://cssgrid.net "The 1140px CSS Grid System &middot; Fluid down to mobile") for rapid prototyping.
 
@@ -47,12 +47,13 @@ To use this project, the following must be installed on your computer:
 Files in this project are organized into directories like so:
 
     css3-foundation/
-      styles/
-        basics/
-        shared/
-      styles-compiled/
-      scripts/
-        lib/
+    ├── images
+    ├── scripts
+    │   └── lib
+    ├── styles
+    │   ├── basics
+    │   └── shared
+    └── styles-compiled
 
 Please refer to individual source files for details on what should be included there, but here are some general guidelines for file organization:
 
@@ -61,7 +62,7 @@ Please refer to individual source files for details on what should be included t
     * **styles/shared/** contains application-wide styles like header, footer and form styles. Default styles for the basic HTML tags should also be included here.
 * **styles-compiled/** contains the compiled stylesheets, the CSS files that we will include in our markup.
 * **scripts/** contains all of the project's JavaScript files. Put custom JavaScript at the top level of this directory.
-    * **scripts/lib/** contains libraries like jQuery and Modernizr.
+    * **scripts/lib/** contains libraries like jQuery and jQuery UI.
 
 ## CSS rule organization ##
 

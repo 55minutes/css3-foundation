@@ -66,7 +66,7 @@
 
         <div class="field">
           <label for="email">Email</label>
-          <input type="email" id="email"
+          <input type="email" id="email" placeholder="me@example.com"
                  autocapitalize="off" autocorrect="off" autofocus="autofocus" />
         </div> <!-- /.field -->
 
@@ -90,31 +90,35 @@
 
   <!-- all other javascript goes at the end of the body -->
   <!-- libraries -->
-  <!-- <script type="text/javascript" src="scripts/lib/modernizr/2.0.6/modernizr.min.js">
-  </script> -->
-  <script type="text/javascript" src="scripts/lib/jquery/1.7.1/jquery.min.js">
+  <script type="text/javascript" src="scripts/lib/jquery.js">
   </script>
-  <!-- <script type="text/javascript" src="scripts/lib/jquery-ui/1.8.16/jquery-ui.min.js">
+  <!-- <script type="text/javascript" src="scripts/lib/jquery-ui.js">
   </script> -->
+  <script type="text/javascript" src="scripts/lib/jquery-ui.widget.js">
+  </script>
 
   <!-- utilities and library extensions -->
   <!-- uncomment as necessary -->
-  <!-- <script type="text/javascript" src="scripts/lib/cookies/cookies.js">
+  <!-- <script type="text/javascript" src="scripts/lib/fiftyfive-utils/cookies.js">
   </script>
-  <script type="text/javascript" src="scripts/lib/dump/dump.js">
+  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/dump.js">
   </script>
-  <script type="text/javascript" src="scripts/lib/strftime/strftime-min.js">
-  </script>
-  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/modernizr-extras.js">
+  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/strftime.js">
   </script> -->
-  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/jquery.55_utils.js">
+  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/feature-detect.js">
   </script>
+  <!-- <script type="text/javascript" src="scripts/lib/fiftyfive-utils/jquery.55_utils.js">
+  </script> -->
+  <script type="text/javascript" src="scripts/lib/fiftyfive-utils/jquery.ui.forminputplaceholdertext.js">
+  </script>
+  <!-- <script type="text/javascript" src="scripts/lib/fiftyfive-utils/jquery.ui.unsupportedbrowserwarning.js">
+  </script> -->
   <script type="text/javascript" src="scripts/common.js">
   </script>
 
   <!-- page- or feature-specific javascript -->
-  <!-- <script type="text/javascript" src="scripts/login.js">
-  </script> -->
+  <script type="text/javascript" src="scripts/login.js">
+  </script>
 
   <!-- onload javascript -->
   <script type="text/javascript" charset="utf-8">
