@@ -44,7 +44,7 @@
   <script type="text/javascript" src="scripts/lib/fiftyfive-utils/55_utils.js">
   </script>
 
-  <script type="text/javascript" charset="utf-8">
+  <script type="text/javascript">
     document.getElementsByTagName("html")[0].className += fiftyfive.util.getIEClass();
   </script>
 
@@ -237,7 +237,7 @@
           Check out the source for our recommendation on marking up tables in a readable, semantic manner.
         </div> <!-- /.explanation -->
         <div class="example">
-          <table summary="Describe the data in this table.">
+          <table>
             <caption>Your order placed on 09/02/2011</caption>
             <thead>
               <tr>
@@ -282,7 +282,7 @@
           <p>Note how destructive actions like deletion are marked with a class of <code>"destructive"</code> and highlighted visually.</p>
         </div> <!-- /.explanation -->
         <div class="example">
-          <form action="" method="get" accept-charset="utf-8">
+          <form action="." method="get" accept-charset="utf-8">
             <table class="form">
               <tfoot>
                 <tr>
@@ -401,25 +401,25 @@
           <p>Top-aligned form labels tend to reduce form-completion times the most and are best used when the data being requested is well-known to the user and requires minimum thought. Top-aligned labels should also be used for mobile applications.</p>
         </div> <!-- /.explanation -->
         <div class="example">
-          <form action="" method="get" accept-charset="utf-8">
+          <form action="." method="get" accept-charset="utf-8">
             <fieldset class="stacked">
               <legend class="section-heading">
                 Form section heading
               </legend>
               <div class="field">
                 <label for="text-input-example">Text input</label>
-                <input type="text" name="text-input-example" value="" id="text-input-example" class="large"/>
+                <input type="text" name="text-input-example" value="" id="text-input-example-2" class="large"/>
                 <p class="form-help">
                   Field help text
                 </p> <!-- /.form-help -->
               </div> <!-- /.field -->
               <div class="field">
                 <label for="disabled-text-input-example">Disabled text input</label>
-                <input type="text" disabled="disabled" name="disabled-text-input-example" value="Johannes Brahms" id="disabled-text-input-example"/>
+                <input type="text" disabled="disabled" name="disabled-text-input-example" value="Johannes Brahms" id="disabled-text-input-example-2"/>
               </div> <!-- /.field -->
               <div class="field">
                 <label for="select-example">Select</label>
-                <select name="select-example" id="select-example">
+                <select name="select-example" id="select-example-2">
                   <option value="">Choose one</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -430,7 +430,7 @@
               </div> <!-- /.field -->
               <div class="field error">
                 <label for="invalid-text-input-example">Invalid input</label>
-                <input type="text" name="invalid-text-input-example" value="" id="invalid-text-input-example"/>
+                <input type="text" name="invalid-text-input-example" value="" id="invalid-text-input-example-2"/>
                 <span class="form-help">inline help text</span>
                 <ul class="error-explanation">
                   <li>Please enter an email address</li>
@@ -581,7 +581,7 @@
   </script> -->
 
   <!-- onload javascript -->
-  <script type="text/javascript" charset="utf-8">
+  <script type="text/javascript">
   (function($) {
     $(function() {
       FiftyfiveExample.commonInit();
