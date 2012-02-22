@@ -40,7 +40,7 @@ To use this project, the following must be installed on your computer:
 
     If you're interested in using this foundation with the [Apache Wicket](http://wicket.apache.org/) framework, you'll want to check out our [fiftyfive-wicket](https://github.com/55minutes/fiftyfive-wicket) project, which includes a Maven archetype that bundles all of these CSS3 and HTML5 practices and integrates them nicely with Wicket.
 
-    If you plan to use it with Ruby on Rails, read our [recent blog post](http://blog.55minutes.com/post/16586931456/getting-compass-to-work-with-rails-3-1-and-3-2) on integrating Compass and Rails 3.1/3.2.
+    If you plan to use it with Ruby on Rails, read our [recent blog post](http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/) on integrating Compass and Rails 3.1/3.2.
 
 ## File organization ##
 
