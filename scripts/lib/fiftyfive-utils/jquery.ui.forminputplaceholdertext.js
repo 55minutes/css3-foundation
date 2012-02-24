@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-//= require ./modernizr-extras
+//= require ./feature-detect
 
 /*------------------------------------------------------------------------------
 | jquery.ui.forminputplaceholdertext.js

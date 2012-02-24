@@ -10,7 +10,7 @@ GEM
       compass (>= 0.8.7)
     fssm (0.2.8.1)
     rb-fsevent (0.9.0)
-    sass (3.1.14)
+    sass (3.1.15)
     sassy-buttons (0.0.9)
       compass (>= 0.11)
     vendorer (0.1.9)
