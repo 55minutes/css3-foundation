@@ -593,7 +593,7 @@ input[type=button],
 button,
 a.button {
   font-size: 1.4rem;
-  padding: 0.0rem 2rem;
+  padding: 0.4rem 2rem 0.0rem;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
@@ -615,7 +615,7 @@ a.button {
   box-shadow: #ffc68a 0 1px 0 inset;
   border: 1px solid #d66f00;
   color: white;
-  line-height: 2rem;
+  line-height: 1.6rem;
   font-family: Candara, "DejaVu Sans", "Bitstream Vera Sans", Optima, "Trebuchet MS", sans-serif;
   font-weight: bold;
 }
@@ -644,7 +644,7 @@ input[type=button].destructive,
 button.destructive,
 a.button.destructive {
   font-size: 1.4rem;
-  padding: 0.0rem 2rem;
+  padding: 0.4rem 2rem 0.0rem;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
@@ -666,7 +666,7 @@ a.button.destructive {
   box-shadow: #f5b0a2 0 1px 0 inset;
   border: 1px solid #ce3516;
   color: white;
-  line-height: 2rem;
+  line-height: 1.6rem;
 }
 input[type=submit].destructive:hover,
 input[type=button].destructive:hover,
@@ -693,7 +693,7 @@ input[type=button][disabled],
 button[disabled],
 a.button[disabled] {
   font-size: 1.4rem;
-  padding: 0.0rem 2rem;
+  padding: 0.4rem 2rem 0.0rem;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
@@ -715,7 +715,7 @@ a.button[disabled] {
   box-shadow: white 0 1px 0 inset;
   border: 1px solid #bbbbbb;
   color: #8d8d8d;
-  line-height: 2rem;
+  line-height: 1.6rem;
   cursor: default !important;
 }
 input[type=submit][disabled]:hover,
@@ -823,7 +823,7 @@ table.form .field, table.form .button-bar {
   border-color: #a02911;
 }
 .error ul.error-explanation {
-  margin: 0;
+  margin: 0.55rem;
   margin-left: 2rem;
   font-size: 1.4rem;
   line-height: 1.8rem;
