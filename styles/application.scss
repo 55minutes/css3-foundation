@@ -26,7 +26,11 @@
 // Shared
 @import "mixins";
 @import "foundation";
+@import "page";
 @import "forms";
+@import "unsupported-browser-warning";
+@import "alerts";
+@import "pagination";
 @import "header";
 @import "footer";
 

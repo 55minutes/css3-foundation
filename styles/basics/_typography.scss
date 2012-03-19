@@ -1,14 +1,19 @@
 /*-----[ typography ]-----------------------------------------------------------
 */
-$body-text-family           : Calibri, "Myriad Pro", Tahoma, sans-serif;
-$body-text-size             : 1.6rem;
-$body-text-line-height      : 2.2rem;
+$body-text-family              : Candara, "DejaVu Sans", "Bitstream Vera Sans", Optima, "Trebuchet MS", sans-serif;
+$monospace-text-family         : Consolas, Monaco, "Lucida Console", monospace;
 
-$monospace-text-family      : Consolas, Monaco, "Lucida Console", monospace;
-$monospace-text-size        : $body-text-size;
+$body-text-size                : 1.6rem;
+$body-text-line-height         : 2.2rem;
 
-$secondary-text-size        : 1.4rem;
-$secondary-text-line-height : 1.8rem;
+$secondary-text-size           : 1.4rem;
+$secondary-text-line-height    : 1.8rem;
 
-$page-heading-text-size     : 2.4rem;
-$subheading-text-size       : 1.8rem;
+$small-text-size               : 1.2rem;
+$small-text-line-height        : $secondary-text-line-height;
+
+$page-heading-text-size        : 2.4rem;
+$page-heading-text-line-height : 3rem;
+
+$subheading-text-size          : 1.8rem;
+$subheading-text-line-height   : $body-text-line-height;

@@ -1,0 +1,41 @@
+/*----------[ unsupported browser warning ]-------------------------------------
+*/
+#unsupported-browser-warning
+{
+  display: none;
+  margin: $body-text-line-height auto;
+  border: 5px solid darken($error-feedback, 5);
+  @include border-radius(15px);
+  padding: $body-text-line-height $column-width;
+  background-color: white;
+
+  .unsupported-browser &
+  {
+    display: block;
+  }
+
+  h1
+  {
+    color: $error-feedback;
+  }
+
+  a.dismiss
+  {
+    float: right;
+    line-height: $page-heading-text-line-height;
+  }
+
+  p
+  {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px)
+{
+  #unsupported-browser-warning
+  {
+    max-width: 65rem;
+  }
+}
+

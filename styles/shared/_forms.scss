@@ -23,12 +23,12 @@ select,
 textarea
 {
   margin: 0;
-  border: 0.1rem solid $stroke;
+  border: 1px solid $stroke;
   padding: ($body-text-line-height - $secondary-text-size - 0.2) / 2;
   background-color: white;
   font-family:  $body-text-family;
   font-size: $secondary-text-size;
-  line-height: $secondary-text-size;
+  line-height: 1;
 }
 
 input[type=email][disabled],
@@ -63,7 +63,7 @@ input[type=radio]
 
 input[type=checkbox]
 {
-  border: 0.1rem solid $grey;
+  border: 1px solid $grey;
   background-color: white;
 }
 
@@ -255,7 +255,7 @@ table.form
   {
     margin: 0;
     margin-left: $column-width;
-    font-size: $secondary-text-size;
+    @include secondary-text;
     color: $error-feedback;
   }
 }

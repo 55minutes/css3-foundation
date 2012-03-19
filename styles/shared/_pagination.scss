@@ -1,0 +1,27 @@
+/*----------[ pagination ]------------------------------------------------------
+*/
+.pagination
+{
+  margin-top: $body-text-line-height - (2 * $vertical-nudge);
+  white-space-collapse: discard;
+
+  .first, .prev, .page, .next, .last
+  {
+    display: inline-block;
+    margin-right: $column-width / 2;
+    @include border-radius(0.6rem);
+    background-color: darken($white-smoke, 3);
+
+    a
+    {
+      display: block;
+      text-decoration: none;
+    }
+
+    a, &.current, &.gap
+    {
+      padding: $vertical-nudge $column-width / 2;
+      background-color: transparent;
+    }
+  }
+}
