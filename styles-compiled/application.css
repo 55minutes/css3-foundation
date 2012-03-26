@@ -200,13 +200,6 @@ img {
   height: auto;
 }
 
-/* Smaller screens */
-@media only screen and (max-width: 1023px) {
-  body {
-    font-size: 0.8em;
-    line-height: 1.5em;
-  }
-}
 /* Mobile */
 @media handheld, only screen and (max-width: 767px) {
   body {
@@ -300,17 +293,10 @@ img {
 */
 /*----------[ table of contents ]-----------------------------------------------
 | tags
-| content
-| unsupported browser warning
-| alerts
-| pagination
+| non-semantic styles
 */
 /*----------[ tags ]------------------------------------------------------------
 */
-html {
-  font-size: 62.5%;
-}
-
 a {
   color: #1673a1;
 }
@@ -841,39 +827,6 @@ img.ui-datepicker-trigger {
   font-size: 14px !important;
 }
 
-/*----------[ unsupported browser warning ]-------------------------------------
-*/
-#unsupported-browser-warning {
-  display: none;
-  margin: 22px auto;
-  border: 5px solid #a02911;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
-  padding: 22px 20px;
-  background-color: white;
-}
-.unsupported-browser #unsupported-browser-warning {
-  display: block;
-}
-#unsupported-browser-warning h1 {
-  color: #b72f14;
-}
-#unsupported-browser-warning a.dismiss {
-  float: right;
-  line-height: 30px;
-}
-#unsupported-browser-warning p {
-  margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  #unsupported-browser-warning {
-    max-width: 650px;
-  }
-}
 /*----------[ alerts ]----------------------------------------------------------
 */
 /*
