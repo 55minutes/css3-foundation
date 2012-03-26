@@ -22,7 +22,7 @@
   input[type=email],
   input[type=password]
   {
-    width: 23rem;
+    width: 230px;
   }
 
   footer
@@ -36,7 +36,7 @@
 {
   #login #page
   {
-    max-width: 25rem;
+    max-width: 250px;
   }
 }
 
@@ -44,8 +44,8 @@
 {
   #login #page
   {
-    margin: 5rem auto;
-    border: 0.2rem solid $silver;
-    @include border-radius(1.5rem);
+    margin: 50px auto;
+    border: 2px solid $silver;
+    @include border-radius(15px);
   }
 }

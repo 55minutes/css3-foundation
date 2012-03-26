@@ -322,11 +322,11 @@ a:hover, a:active {
 }
 
 blockquote, dl, ol, p, pre, table, ul {
-  margin: 2.2rem 0;
+  margin: 22px 0;
 }
 
 blockquote {
-  margin-left: 2rem;
+  margin-left: 20px;
   color: gray;
 }
 
@@ -334,8 +334,8 @@ body {
   background-color: white;
   color: #444444;
   font-family: Candara, "DejaVu Sans", "Bitstream Vera Sans", Optima, "Trebuchet MS", sans-serif;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
+  font-size: 16px;
+  line-height: 22px;
   text-rendering: optimizeLegibility;
 }
 
@@ -348,25 +348,25 @@ dt {
 }
 
 dd {
-  margin: 0 0 2.2rem;
+  margin: 0 0 22px;
 }
 
 h1 {
-  margin-bottom: 1.4rem;
+  margin-bottom: 14px;
   padding: 0;
-  font-size: 2.4rem;
-  line-height: 3rem;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 h2 {
-  margin: 3.3rem 0 1.1rem;
+  margin: 33px 0 11px;
   color: #207861;
-  font-size: 1.8rem;
-  line-height: 2.2rem;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 h3 {
-  margin: 2.2rem 0 0;
+  margin: 22px 0 0;
   font-weight: normal;
   font-style: italic;
 }
@@ -376,14 +376,14 @@ h1 + blockquote, h1 + dl, h1 + ol, h1 + ul, h1 + p, h2 + blockquote, h2 + dl, h2
 }
 
 hr {
-  margin: 1rem auto 1.1rem;
+  margin: 10.9px auto 11px;
   border-style: none;
   height: 1px;
   background-color: black;
 }
 
 ol, ul {
-  margin-left: 2rem;
+  margin-left: 20px;
 }
 
 ol {
@@ -402,7 +402,7 @@ dl dl, ol ol, ul ul {
 }
 
 pre {
-  padding: 1.1rem 1rem;
+  padding: 11px 10px;
   overflow: auto;
   background-color: #f0f0f0;
 }
@@ -429,14 +429,14 @@ table, thead th {
 }
 
 td, th {
-  padding: 0.55rem 0;
-  padding-right: 2rem;
+  padding: 5.5px 0;
+  padding-right: 20px;
 }
 td:first-of-type, th:first-of-type {
-  padding-left: 0.5rem;
+  padding-left: 5px;
 }
 td:last-of-type, th:last-of-type {
-  padding-right: 0.5rem;
+  padding-right: 5px;
 }
 
 th {
@@ -484,13 +484,13 @@ span.keep-together {
   clear: both;
   margin: 0;
   padding: 0;
-  height: 0.1rem;
+  height: 1px;
   font-size: 0;
 }
 
 .spacer {
   padding: 0;
-  height: 1.1rem;
+  height: 11px;
   font-size: 0;
 }
 
@@ -506,8 +506,8 @@ span.keep-together {
 }
 #page .fine-print, #page .form-help {
   margin: 0;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 12px;
+  line-height: 18px;
 }
 #page .subtitle {
   font-weight: normal;
@@ -539,10 +539,10 @@ select,
 textarea {
   margin: 0;
   border: 1px solid black;
-  padding: 0.3rem;
+  padding: 3.9px;
   background-color: white;
   font-family: Candara, "DejaVu Sans", "Bitstream Vera Sans", Optima, "Trebuchet MS", sans-serif;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 1;
 }
 
@@ -560,7 +560,7 @@ textarea[disabled] {
 }
 
 input[type=text].small {
-  width: 5rem;
+  width: 50px;
   margin-right: 0.33em;
 }
 
@@ -592,17 +592,17 @@ input[type=submit],
 input[type=button],
 button,
 a.button {
-  font-size: 1.4rem;
-  padding: 0.4rem 2rem 0.0rem;
+  font-size: 14px;
+  padding: 4px 20px 0px;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
   line-height: 1.5;
-  -webkit-border-radius: 0.6rem;
-  -moz-border-radius: 0.6rem;
-  -ms-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
-  border-radius: 0.6rem;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
   background-color: #f07c00;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffa23d), color-stop(70%, #f07c00));
   background: -webkit-linear-gradient(#ffa23d, #f07c00 70%);
@@ -615,7 +615,7 @@ a.button {
   box-shadow: #ffc68a 0 1px 0 inset;
   border: 1px solid #d66f00;
   color: white;
-  line-height: 1.6rem;
+  line-height: 16px;
   font-family: Candara, "DejaVu Sans", "Bitstream Vera Sans", Optima, "Trebuchet MS", sans-serif;
   font-weight: bold;
 }
@@ -643,17 +643,17 @@ input[type=submit].destructive,
 input[type=button].destructive,
 button.destructive,
 a.button.destructive {
-  font-size: 1.4rem;
-  padding: 0.4rem 2rem 0.0rem;
+  font-size: 14px;
+  padding: 4px 20px 0px;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
   line-height: 1.5;
-  -webkit-border-radius: 0.6rem;
-  -moz-border-radius: 0.6rem;
-  -ms-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
-  border-radius: 0.6rem;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
   background-color: #e53b19;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ed755d), color-stop(70%, #e53b19));
   background: -webkit-linear-gradient(#ed755d, #e53b19 70%);
@@ -666,7 +666,7 @@ a.button.destructive {
   box-shadow: #f5b0a2 0 1px 0 inset;
   border: 1px solid #ce3516;
   color: white;
-  line-height: 1.6rem;
+  line-height: 16px;
 }
 input[type=submit].destructive:hover,
 input[type=button].destructive:hover,
@@ -692,17 +692,17 @@ input[type=submit][disabled],
 input[type=button][disabled],
 button[disabled],
 a.button[disabled] {
-  font-size: 1.4rem;
-  padding: 0.4rem 2rem 0.0rem;
+  font-size: 14px;
+  padding: 4px 20px 0px;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
   line-height: 1.5;
-  -webkit-border-radius: 0.6rem;
-  -moz-border-radius: 0.6rem;
-  -ms-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
-  border-radius: 0.6rem;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
   background-color: #c8c8c8;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(70%, #c8c8c8));
   background: -webkit-linear-gradient(#eeeeee, #c8c8c8 70%);
@@ -715,7 +715,7 @@ a.button[disabled] {
   box-shadow: white 0 1px 0 inset;
   border: 1px solid #bbbbbb;
   color: #8d8d8d;
-  line-height: 1.6rem;
+  line-height: 16px;
   cursor: default !important;
 }
 input[type=submit][disabled]:hover,
@@ -740,7 +740,7 @@ a.button[disabled]:active {
 }
 
 .button-bar {
-  margin: 2.2rem 0;
+  margin: 22px 0;
   padding: 0;
 }
 
@@ -750,14 +750,14 @@ a.button[disabled]:active {
 .button-bar > a {
   float: left;
   margin: 0;
-  margin-right: 1rem;
+  margin-right: 10px;
 }
 
 .button-bar > a {
   display: inline-block;
   vertical-align: middle;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 /*----------[ form layout ]-----------------------------------------------------
@@ -772,7 +772,7 @@ table.form .section-heading th {
   color: #207861;
 }
 table.form .field-label {
-  padding-right: 2rem;
+  padding-right: 20px;
   vertical-align: top;
   text-align: right;
   font-weight: normal;
@@ -788,17 +788,17 @@ table.form .field, table.form .button-bar {
 }
 
 .stacked {
-  margin-left: -0.5rem;
+  margin-left: -5px;
 }
 .stacked .section-heading {
   font-weight: bold;
   color: #207861;
 }
 .stacked .field > label:first-of-type {
-  margin-top: 1.1rem;
+  margin-top: 11px;
 }
 .stacked .field, .stacked .section-heading, .stacked .button-bar {
-  padding-left: 0.5rem;
+  padding-left: 5px;
 }
 
 /*----------[ validation ]------------------------------------------------------
@@ -823,10 +823,10 @@ table.form .field, table.form .button-bar {
   border-color: #a02911;
 }
 .error ul.error-explanation {
-  margin: 0.55rem;
-  margin-left: 2rem;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  margin: 5.5px;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 18px;
   color: #b72f14;
 }
 
@@ -838,21 +838,21 @@ img.ui-datepicker-trigger {
 }
 
 .ui-datepicker {
-  font-size: 1.4rem !important;
+  font-size: 14px !important;
 }
 
 /*----------[ unsupported browser warning ]-------------------------------------
 */
 #unsupported-browser-warning {
   display: none;
-  margin: 2.2rem auto;
+  margin: 22px auto;
   border: 5px solid #a02911;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   border-radius: 15px;
-  padding: 2.2rem 2rem;
+  padding: 22px 20px;
   background-color: white;
 }
 .unsupported-browser #unsupported-browser-warning {
@@ -863,7 +863,7 @@ img.ui-datepicker-trigger {
 }
 #unsupported-browser-warning a.dismiss {
   float: right;
-  line-height: 3rem;
+  line-height: 30px;
 }
 #unsupported-browser-warning p {
   margin-bottom: 0;
@@ -871,7 +871,7 @@ img.ui-datepicker-trigger {
 
 @media (min-width: 768px) {
   #unsupported-browser-warning {
-    max-width: 65rem;
+    max-width: 650px;
   }
 }
 /*----------[ alerts ]----------------------------------------------------------
@@ -890,9 +890,9 @@ img.ui-datepicker-trigger {
 }
 .alerts .message {
   position: relative;
-  margin-bottom: 0.55rem;
-  padding: 0.55rem 1rem;
-  padding-left: 3rem;
+  margin-bottom: 5.5px;
+  padding: 5.5px 10px;
+  padding-left: 30px;
   /*
   ** In order for a sprite to work properly, the element the sprite is set as
   ** the background of needs to be exactly sized to the sprite's dimensions.
@@ -911,10 +911,10 @@ img.ui-datepicker-trigger {
 }
 .alerts .message:after {
   position: absolute;
-  top: 0.713rem;
-  left: 0.5rem;
-  width: 1.6rem;
-  height: 1.6rem;
+  top: 7.125px;
+  left: 5px;
+  width: 16px;
+  height: 16px;
   background-repeat: no-repeat;
   content: "";
 }
@@ -946,17 +946,17 @@ img.ui-datepicker-trigger {
 /*----------[ pagination ]------------------------------------------------------
 */
 .pagination {
-  margin-top: 1.1rem;
+  margin-top: 11px;
   white-space-collapse: discard;
 }
 .pagination .first, .pagination .prev, .pagination .page, .pagination .next, .pagination .last {
   display: inline-block;
-  margin-right: 1rem;
-  -webkit-border-radius: 0.6rem;
-  -moz-border-radius: 0.6rem;
-  -ms-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
-  border-radius: 0.6rem;
+  margin-right: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
   background-color: #e8e8e8;
 }
 .pagination .first a, .pagination .prev a, .pagination .page a, .pagination .next a, .pagination .last a {
@@ -964,7 +964,7 @@ img.ui-datepicker-trigger {
   text-decoration: none;
 }
 .pagination .first a, .pagination .first.current, .pagination .first.gap, .pagination .prev a, .pagination .prev.current, .pagination .prev.gap, .pagination .page a, .pagination .page.current, .pagination .page.gap, .pagination .next a, .pagination .next.current, .pagination .next.gap, .pagination .last a, .pagination .last.current, .pagination .last.gap {
-  padding: 0.55rem 1rem;
+  padding: 5.5px 10px;
   background-color: transparent;
 }
 
@@ -979,10 +979,10 @@ img.ui-datepicker-trigger {
 | how feature-specific styles should be organized.
 */
 .documentation #page {
-  padding: 2.2rem 2rem;
+  padding: 22px 20px;
 }
 .documentation #page header {
-  margin-bottom: 2.2rem;
+  margin-bottom: 22px;
 }
 .documentation #page p:last-of-type,
 .documentation #page dl:last-of-type,
@@ -991,7 +991,7 @@ img.ui-datepicker-trigger {
   margin-bottom: 0;
 }
 .documentation #page #about, .documentation #page #resources {
-  margin-bottom: 4.4rem;
+  margin-bottom: 44px;
 }
 .documentation #page footer {
   color: gray;
@@ -1004,23 +1004,23 @@ img.ui-datepicker-trigger {
 */
 @media (min-width: 480px) {
   .documentation #page {
-    max-width: 60rem;
+    max-width: 600px;
   }
 }
 @media (min-width: 768px) {
   .documentation #page {
-    margin: 5rem auto;
-    border: 0.2rem solid silver;
-    -webkit-border-radius: 1.5rem;
-    -moz-border-radius: 1.5rem;
-    -ms-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
-    border-radius: 1.5rem;
+    margin: 50px auto;
+    border: 2px solid silver;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
   }
 }
 @media (min-width: 1024px) {
   .documentation #page {
-    max-width: 90rem;
+    max-width: 900px;
   }
   .documentation #about, .documentation #resources {
     float: left;
@@ -1042,7 +1042,7 @@ img.ui-datepicker-trigger {
 | feature-specific styles should be organized.
 */
 #login #page {
-  padding: 2.2rem 2rem;
+  padding: 22px 20px;
 }
 #login #page p:last-of-type,
 #login #page dl:last-of-type,
@@ -1051,11 +1051,11 @@ img.ui-datepicker-trigger {
   margin-bottom: 0;
 }
 #login #page form {
-  margin-bottom: 4.4rem;
+  margin-bottom: 44px;
 }
 #login #page input[type=email],
 #login #page input[type=password] {
-  width: 23rem;
+  width: 230px;
 }
 #login #page footer {
   color: gray;
@@ -1064,32 +1064,32 @@ img.ui-datepicker-trigger {
 
 @media (min-width: 480px) {
   #login #page {
-    max-width: 25rem;
+    max-width: 250px;
   }
 }
 @media (min-width: 768px) {
   #login #page {
-    margin: 5rem auto;
-    border: 0.2rem solid silver;
-    -webkit-border-radius: 1.5rem;
-    -moz-border-radius: 1.5rem;
-    -ms-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
-    border-radius: 1.5rem;
+    margin: 50px auto;
+    border: 2px solid silver;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
   }
 }
 /*-----[ style guide ]----------------------------------------------------------
 */
 #style-guide #page {
-  padding: 2.2rem 2rem;
+  padding: 22px 20px;
 }
 #style-guide #examples > section {
-  margin-top: 4.4rem;
+  margin-top: 44px;
 }
 #style-guide #examples > section > h1 {
-  margin-bottom: 1.35rem;
-  border-bottom: 0.1rem solid #d6d6d6;
-  padding-bottom: 0.55rem;
+  margin-bottom: 14.4px;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 5.5px;
   color: #e67700;
 }
 #style-guide #examples .explanation h2 {
@@ -1100,14 +1100,14 @@ img.ui-datepicker-trigger {
   margin-top: 0;
 }
 #style-guide #examples .columns h2 {
-  margin-top: 1.1rem;
+  margin-top: 11px;
 }
 #style-guide .colors table {
   margin-top: 0;
 }
 #style-guide .colors .swatch {
   padding: 0;
-  width: 4rem;
+  width: 40px;
 }
 #style-guide .colors .swatch.blackberry {
   background-color: #4a1a2b;
@@ -1143,7 +1143,7 @@ img.ui-datepicker-trigger {
   background-color: #f0f0f0;
 }
 #style-guide .colors .hex-code {
-  padding-left: 1rem;
+  padding-left: 10px;
 }
 #style-guide .tables .quantity, #style-guide .tables .price {
   text-align: right;
@@ -1161,7 +1161,7 @@ img.ui-datepicker-trigger {
 #style-guide .forms input[type=text],
 #style-guide .forms input[type=url],
 #style-guide .forms select {
-  width: 20rem;
+  width: 200px;
 }
 #style-guide .forms input[type=email].large,
 #style-guide .forms input[type=password].large,
@@ -1170,17 +1170,17 @@ img.ui-datepicker-trigger {
 #style-guide .forms input[type=text].large,
 #style-guide .forms input[type=url].large,
 #style-guide .forms select.large {
-  width: 25rem;
+  width: 250px;
 }
 #style-guide footer {
-  margin-top: 2.2rem;
+  margin-top: 22px;
   font-style: italic;
   color: gray;
 }
 
 @media (min-width: 480px) {
   #style-guide #intro, #style-guide .explanation, #style-guide .example {
-    max-width: 60rem;
+    max-width: 600px;
   }
 }
 @media (min-width: 768px) {
@@ -1196,7 +1196,7 @@ img.ui-datepicker-trigger {
 @media (min-width: 1024px) {
   #style-guide #examples .explanation, #style-guide #examples .example {
     float: left;
-    margin-bottom: 2.2rem;
+    margin-bottom: 22px;
   }
   #style-guide #examples .explanation {
     clear: left;
@@ -1205,12 +1205,12 @@ img.ui-datepicker-trigger {
   }
   #style-guide #examples .example {
     width: 65%;
-    max-width: 65rem;
+    max-width: 650px;
   }
 }
 @media (min-width: 1200px) {
   #style-guide #page {
-    max-width: 120rem;
+    max-width: 1200px;
   }
 }
 /*-----[ feature 1 ]------------------------------------------------------------

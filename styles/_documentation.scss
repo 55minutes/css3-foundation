@@ -39,7 +39,7 @@
 {
   .documentation #page
   {
-    max-width: 60rem;
+    max-width: 600px;
   }
 }
 
@@ -47,9 +47,9 @@
 {
   .documentation #page
   {
-    margin: 5rem auto;
-    border: 0.2rem solid $silver;
-    @include border-radius(1.5rem);
+    margin: 50px auto;
+    border: 2px solid $silver;
+    @include border-radius(15px);
   }
 }
 
@@ -59,7 +59,7 @@
   {
     #page
     {
-      max-width: 90rem;
+      max-width: 900px;
     }
 
     #about, #resources
