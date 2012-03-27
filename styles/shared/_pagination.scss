@@ -10,7 +10,7 @@
     display: inline-block;
     margin-right: $column-width / 2;
     @include border-radius(6px);
-    background-color: darken($white-smoke, 3);
+    background-color: darken($greyish-white, 3);
 
     a
     {

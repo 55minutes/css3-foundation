@@ -19,13 +19,13 @@
       margin-bottom: 2 * $body-text-line-height - ($page-heading-text-size + $vertical-nudge + 0.1);
       border-bottom: 1px solid $light-stroke;
       padding-bottom: $vertical-nudge;
-      color: darken($flush-orange, 5);
+      color: darken($orange, 5);
     }
 
     .explanation h2
     {
       margin: 0;
-      color: darken($supernova, 10);
+      color: darken($bright-yellow, 10);
     }
 
     .explanation p
@@ -51,39 +51,39 @@
       padding: 0;
       width: 2 * $column-width;
 
-      &.blackberry
+      &.eggplant-purple
       {
-        background-color: $blackberry;
+        background-color: $eggplant-purple;
       }
 
-      &.eucalyptus
+      &.teal
       {
-        background-color: $eucalyptus;
+        background-color: $teal;
       }
 
-      &.citrus
+      &.leaf-green
       {
-        background-color: $citrus;
+        background-color: $leaf-green;
       }
 
-      &.supernova
+      &.bright-yellow
       {
-        background-color: $supernova;
+        background-color: $bright-yellow;
       }
 
-      &.flush-orange
+      &.orange
       {
-        background-color: $flush-orange;
+        background-color: $orange;
       }
 
-      &.matisse
+      &.blue
       {
-        background-color: $matisse;
+        background-color: $blue;
       }
 
-      &.cinnabar
+      &.red
       {
-        background-color: $cinnabar;
+        background-color: $red;
       }
 
       &.charcoal
@@ -101,9 +101,9 @@
         background-color: $silver;
       }
 
-      &.white-smoke
+      &.greyish-white
       {
-        background-color: $white-smoke;
+        background-color: $greyish-white;
       }
     }
 

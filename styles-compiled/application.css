@@ -238,13 +238,6 @@ img {
 */
 /*----------[ palette ]---------------------------------------------------------
 */
-/* purple */
-/* teal */
-/* green */
-/* yellow */
-/* orange */
-/* blue */
-/* red */
 /*----------[ backgrounds and borders ]-----------------------------------------
 */
 /*----------[ text ]------------------------------------------------------------
@@ -1062,25 +1055,25 @@ img.ui-datepicker-trigger {
   padding: 0;
   width: 40px;
 }
-#style-guide .colors .swatch.blackberry {
+#style-guide .colors .swatch.eggplant-purple {
   background-color: #4a1a2b;
 }
-#style-guide .colors .swatch.eucalyptus {
+#style-guide .colors .swatch.teal {
   background-color: #207861;
 }
-#style-guide .colors .swatch.citrus {
+#style-guide .colors .swatch.leaf-green {
   background-color: #9fad00;
 }
-#style-guide .colors .swatch.supernova {
+#style-guide .colors .swatch.bright-yellow {
   background-color: #ffcc00;
 }
-#style-guide .colors .swatch.flush-orange {
+#style-guide .colors .swatch.orange {
   background-color: #ff8400;
 }
-#style-guide .colors .swatch.matisse {
+#style-guide .colors .swatch.blue {
   background-color: #1673a1;
 }
-#style-guide .colors .swatch.cinnabar {
+#style-guide .colors .swatch.red {
   background-color: #e53b19;
 }
 #style-guide .colors .swatch.charcoal {
@@ -1092,7 +1085,7 @@ img.ui-datepicker-trigger {
 #style-guide .colors .swatch.silver {
   background-color: silver;
 }
-#style-guide .colors .swatch.white-smoke {
+#style-guide .colors .swatch.greyish-white {
   background-color: #f0f0f0;
 }
 #style-guide .colors .hex-code {
