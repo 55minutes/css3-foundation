@@ -1,3 +1,5 @@
 .sass-cache/
 .DS_Store
 .bundle/
+images/icon-*.png
+styles-compiled/*
