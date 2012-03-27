@@ -80,7 +80,7 @@ input[type=checkbox]
 ** for more details.
 */
 $button-border-width: 1px;
-$button-line-height: $secondary-text-size + 2px;
+$button-line-height: $secondary-text-size;
 $button-vertical-padding: ($body-text-line-height - $button-line-height - 2 * $button-border-width) / 2;
 
 input[type=submit],
@@ -92,7 +92,7 @@ a.button
   $sb-second-color   : false;
   $sb-border-radius  : $button-border-radius;
   $sb-border-width   : $button-border-width;
-  $sb-padding        : $button-vertical-padding + 2px $column-width $button-vertical-padding - 2px ;
+  $sb-padding        : $button-vertical-padding + 1px $column-width $button-vertical-padding - 1px;
   $sb-font-size      : $secondary-text-size;
   $sb-line-height    : $button-line-height;
   $sb-text-color     : $button-text-color;
