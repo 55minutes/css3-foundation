@@ -1,7 +1,7 @@
 # Vendorfile for use with vendorer command. https://github.com/grosser/vendorer
 # Run `vendorer` to install jQuery and jQuery UI dependencies into scripts/lib.
 
-JQUERY_VER = "1.7.1"
+JQUERY_VER = "1.7.2"
 JQUERY_UI_VER = "1.8.18"
 
 folder "scripts/lib" do
