@@ -2,4 +2,5 @@
 .DS_Store
 .bundle/
 images/icon-*.png
-styles-compiled/*.css
+styles-compiled/
+
