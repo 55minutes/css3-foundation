@@ -45,7 +45,19 @@ body
   color: $body-text-color;
   font-family: $body-text-family;
   @include body-text;
+  // Use ligatures if available.
   text-rendering: optimizeLegibility;
+
+  /*
+  ** Turn off automatic text resizing in MobileSafari for iPhone. This assumes
+  ** that you've been mindful of readability and have already chosen the text
+  ** size you feel is effective at those screen sizes. REMOVE IT if you want
+  ** iPhone to automatically resize the text.
+  */
+  @media (max-width: 500px)
+  {
+    -webkit-text-size-adjust: none;
+  }
 }
 
 caption
@@ -142,6 +154,11 @@ pre
 sub, sup
 {
   font-size: 80%;
+  /*
+  ** A non-zero line-height on a sub or sup element will alter the line-height
+  ** of your paragraph text. To keep your vertical rhythm nice and smooth, set
+  ** the line-height on your subs and sups to 0.
+  */
   line-height: 0;
 }
 
@@ -197,6 +214,7 @@ ul
 }
 
 /*----------[ non-semantic styles ]---------------------------------------------
+** Purely presentational styles with non-semantic names.
 */
 .align-center
 {

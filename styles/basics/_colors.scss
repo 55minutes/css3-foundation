@@ -1,7 +1,5 @@
 /*-----[ colors ]---------------------------------------------------------------
-| Variables defining the colors to be used throughout the application. Curious
-| about the color names? Check out <www.colblindor.com/color-name-hue/> and
-| <http://chir.ag/projects/name-that-color/>.
+| Variables defining the colors to be used throughout the application.
 */
 
 /*----------[ table of contents ]-----------------------------------------------
@@ -13,6 +11,9 @@
 
 
 /*----------[ palette ]---------------------------------------------------------
+| Use color names you can easily remember here, like "light-blue". Doing this
+| makes it easier for you to tweak the exact shade of "light-blue" you're using
+| transparently.
 */
 // Main palette
 $eggplant-purple : #4a1a2b;
@@ -30,6 +31,19 @@ $silver          : #c0c0c0;
 $greyish-white   : #f0f0f0;
 
 /*----------[ backgrounds and borders ]-----------------------------------------
+| From this point on, we create semantic variables and assign our color values
+| to them. Then in the rest of our styles, we refer to these semantic color
+| values like so:
+|
+|   body
+|   {
+|      background-color: $page-bg;
+|      color: $body-text-color;
+|   }
+|
+| By adding this extra layer of abstraction, we can swap out our
+| page background or link color—or change the palette entirely—in just one
+| place without a lot of tedious search-and-replace.
 */
 $page-bg         : white;
 $accent-bg       : $greyish-white;
