@@ -14,5 +14,4 @@ javascripts_dir = "scripts"
 
 relative_assets = true
 
-output_style = :expanded
 line_comments = false
