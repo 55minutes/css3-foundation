@@ -1,6 +1,6 @@
 source "http://rubygems.org"
-gem "compass", ">= 0.12.rc.1"
+gem "compass", ">= 0.12"
 gem "rb-fsevent"
-gem "compass-colors"
 gem "sassy-buttons"
 gem "vendorer"
+gem "sass", "~> 3.2.0.alpha"

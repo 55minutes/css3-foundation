@@ -6,11 +6,9 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    compass-colors (0.9.0)
-      compass (>= 0.8.7)
     fssm (0.2.9)
     rb-fsevent (0.9.1)
-    sass (3.1.15)
+    sass (3.2.0.alpha.103)
     sassy-buttons (0.1.0)
       compass (>= 0.12.1)
     vendorer (0.1.11)
@@ -19,8 +17,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass (>= 0.12.rc.1)
-  compass-colors
+  compass (>= 0.12)
   rb-fsevent
+  sass (~> 3.2.0.alpha)
   sassy-buttons
   vendorer
