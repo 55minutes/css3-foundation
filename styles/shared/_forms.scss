@@ -96,15 +96,12 @@ a.button
   $sb-font-size      : $secondary-text-size;
   $sb-line-height    : $button-line-height;
   $sb-text-color     : $button-text-color;
-  $sb-text-style     : false;
+  $sb-text-style     : "normal";
   $sb-gradient-style : "matte";
   $sb-hover          : true;
 
   @include sassy-button();
 
-  // For some reason, the color and line-height I set above get ignored. Set them manually.
-  color: $button-text-color;
-  line-height: $button-line-height;
   font-family:  $body-text-family;
   font-weight: bold;
 
@@ -114,10 +111,6 @@ a.button
     $sb-text-color: $destructive-button-text-color;
 
     @include sassy-button();
-
-    // For some reason, the color and line-height I set above get ignored. Set them manually.
-    color: $destructive-button-text-color;
-    line-height: $button-line-height;
   }
 
   &[disabled]
@@ -128,9 +121,6 @@ a.button
 
     @include sassy-button();
 
-    // For some reason, the color and line-height I set above get ignored. Set them manually.
-    color: $disabled-button-text-color;
-    line-height: $button-line-height;
     cursor: default !important;
   }
 }
