@@ -45,8 +45,6 @@ body
   color: $body-text-color;
   font-family: $body-text-family;
   @include body-text;
-  // Use ligatures if available.
-  text-rendering: optimizeLegibility;
 
   /*
   ** Turn off automatic text resizing in MobileSafari for iPhone. This assumes
@@ -94,6 +92,12 @@ h3
   margin: $body-text-line-height 0 0;
   font-weight: normal;
   font-style: italic;
+}
+
+// For large headings, use ligatures if available.
+h1, h2, h3
+{
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3
