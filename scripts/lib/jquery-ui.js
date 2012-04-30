@@ -14,7 +14,7 @@ if ( $.ui.version ) {
 }
 
 $.extend( $.ui, {
-	version: "@VERSION",
+	version: "1.8.19",
 
 	keyCode: {
 		ALT: 18,
@@ -1225,7 +1225,7 @@ $.widget("ui.draggable", $.ui.mouse, {
 });
 
 $.extend($.ui.draggable, {
-	version: "@VERSION"
+	version: "1.8.19"
 });
 
 $.ui.plugin.add("draggable", "connectToSortable", {
@@ -1678,7 +1678,7 @@ $.widget("ui.droppable", {
 });
 
 $.extend($.ui.droppable, {
-	version: "@VERSION"
+	version: "1.8.19"
 });
 
 $.ui.intersect = function(draggable, droppable, toleranceMode) {
@@ -2355,7 +2355,7 @@ $.widget("ui.resizable", $.ui.mouse, {
 });
 
 $.extend($.ui.resizable, {
-	version: "@VERSION"
+	version: "1.8.19"
 });
 
 /*
@@ -2870,7 +2870,7 @@ $.widget("ui.selectable", $.ui.mouse, {
 });
 
 $.extend($.ui.selectable, {
-	version: "@VERSION"
+	version: "1.8.19"
 });
 
 })(jQuery);
@@ -3938,7 +3938,7 @@ $.widget("ui.sortable", $.ui.mouse, {
 });
 
 $.extend($.ui.sortable, {
-	version: "@VERSION"
+	version: "1.8.19"
 });
 
 })(jQuery);
@@ -4242,7 +4242,7 @@ $.fn.extend({
 /******************************************************************************/
 
 $.extend($.effects, {
-	version: "@VERSION",
+	version: "1.8.19",
 
 	// Saves a set of properties in a data storage
 	save: function(element, set) {
@@ -5891,7 +5891,7 @@ $.widget( "ui.accordion", {
 });
 
 $.extend( $.ui.accordion, {
-	version: "@VERSION",
+	version: "1.8.19",
 	animations: {
 		slide: function( options, additions ) {
 			options = $.extend({
@@ -7005,7 +7005,7 @@ $.widget( "ui.buttonset", {
 
 (function( $, undefined ) {
 
-$.extend($.ui, { datepicker: { version: "@VERSION" } });
+$.extend($.ui, { datepicker: { version: "1.8.19" } });
 
 var PROP_NAME = 'datepicker';
 var dpuuid = new Date().getTime();
@@ -8808,7 +8808,7 @@ $.fn.datepicker = function(options){
 $.datepicker = new Datepicker(); // singleton instance
 $.datepicker.initialized = false;
 $.datepicker.uuid = new Date().getTime();
-$.datepicker.version = "@VERSION";
+$.datepicker.version = "1.8.19";
 
 // Workaround for #4055
 // Add another global to avoid noConflict issues with inline event handlers
@@ -9502,7 +9502,7 @@ $.widget("ui.dialog", {
 });
 
 $.extend($.ui.dialog, {
-	version: "@VERSION",
+	version: "1.8.19",
 
 	uuid: 0,
 	maxZ: 0,
@@ -10059,7 +10059,7 @@ $.widget( "ui.progressbar", {
 });
 
 $.extend( $.ui.progressbar, {
-	version: "@VERSION"
+	version: "1.8.19"
 });
 
 })( jQuery );
@@ -10708,7 +10708,7 @@ $.widget( "ui.slider", $.ui.mouse, {
 });
 
 $.extend( $.ui.slider, {
-	version: "@VERSION"
+	version: "1.8.19"
 });
 
 }(jQuery));
@@ -11400,7 +11400,7 @@ $.widget( "ui.tabs", {
 });
 
 $.extend( $.ui.tabs, {
-	version: "@VERSION"
+	version: "1.8.19"
 });
 
 /*

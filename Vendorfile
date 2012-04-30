@@ -13,7 +13,9 @@ folder "scripts/lib" do
   # Standard jQuery/UI dist
   #
   file "jquery.js",         "http://code.jquery.com/jquery-#{JQUERY_VER}.js"
-  file "jquery-ui.js",      "http://code.jquery.com/ui/#{JQUERY_UI_VER}/jquery-ui.js"
+  file "jquery-ui.js",      "http://code.jquery.com/ui/#{JQUERY_UI_VER}/jquery-ui.js" do |path|
+    rewrite(path) { |js| js.gsub /@VERSION/, JQUERY_UI_VER }
+  end
 
   # jQuery UI components
   #
