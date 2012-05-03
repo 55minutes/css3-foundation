@@ -8,7 +8,6 @@ To use this project, the following must be installed on your computer:
 * [RubyGems](http://rubygems.org/)
 * [Bundler](http://gembundler.com/)
 * [compass gem](https://github.com/chriseppstein/compass)
-* [compass-colors gem](https://github.com/chriseppstein/compass-colors)
 * [sassy-buttons gem](https://github.com/jhardy/Sassy-Buttons)
 
 ## Feature Highlights ##
