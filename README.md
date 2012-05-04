@@ -23,12 +23,7 @@ To use this project, the following must be installed on your computer:
 
 1. Install Ruby, RubyGems and Bundler, or verify that they are already installed.
 2. Change into the <code>css3-foundation/</code> directory in your favorite terminal application and type <code>bundle install</code>.
-3. Once the dependencies have been installed, regenerate the sassy-buttons mixin file:
-
-        bundle exec compass install -r sassy-buttons -f sassy-buttons
-
-    Note that <code>bundle exec</code> ensures that any command you type after it is executed within the context of the bundle; in our case this means that the versions of Compass, etc. that we specifically required are being used.
-4. Steps 1-3 are one-time-only setup requirements. Hereafter, all you need to do is run the following command from <code>css3-foundation/</code>:
+3. Steps 1 and 2 are one-time-only setup requirements. Hereafter, all you need to do is run the following command from <code>css3-foundation/</code>:
 
         bundle exec compass watch
 

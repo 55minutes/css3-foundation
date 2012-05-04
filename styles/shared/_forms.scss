@@ -80,8 +80,9 @@ input[type=checkbox]
 ** for more details.
 */
 $button-border-width: 1px;
-$button-line-height: $secondary-text-size;
-$button-vertical-padding: ($body-text-line-height - $button-line-height - 2 * $button-border-width) / 2;
+$button-line-height: $secondary-text-line-height;
+$button-vertical-padding: 3px;
+$button-text-family: Verdana, Tahoma, $body-text-family;
 
 input[type=submit],
 input[type=button],
@@ -92,7 +93,7 @@ a.button
   $sb-second-color   : false;
   $sb-border-radius  : $button-border-radius;
   $sb-border-width   : $button-border-width;
-  $sb-padding        : $button-vertical-padding + 1px $column-width $button-vertical-padding - 1px;
+  $sb-padding        : $button-vertical-padding $column-width;
   $sb-font-size      : $secondary-text-size;
   $sb-line-height    : $button-line-height;
   $sb-text-color     : $button-text-color;
@@ -102,7 +103,7 @@ a.button
 
   @include sassy-button();
 
-  font-family:  $body-text-family;
+  font-family:  $button-text-family;
   font-weight: bold;
 
   &.destructive
@@ -146,7 +147,7 @@ a.button
   display: inline-block;
   vertical-align: middle;
   font-size: $secondary-text-size;
-  line-height: $body-text-line-height;
+  line-height: $secondary-text-line-height + 2 * ($button-vertical-padding + $button-border-width);
 }
 
 /*----------[ form layout ]-----------------------------------------------------
