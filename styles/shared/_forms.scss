@@ -108,19 +108,15 @@ a.button
 
   &.destructive
   {
-    $sb-base-color: $destructive-button-base-bg;
-    $sb-text-color: $destructive-button-text-color;
-
-    @include sassy-button();
+    @include sassy-button($first-color:$destructive-button-base-bg,
+                          $text-color:$destructive-button-text-color);
   }
 
   &[disabled]
   {
-    $sb-base-color: $disabled-button-base-bg;
-    $sb-text-color: $disabled-button-text-color;
-    $sb-hover: false;
-
-    @include sassy-button();
+    @include sassy-button($first-color:$disabled-button-base-bg,
+                          $text-color:$disabled-button-text-color,
+                          $auto-states: false);
 
     cursor: default !important;
   }
