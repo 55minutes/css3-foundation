@@ -53,8 +53,6 @@ input[type=text].small
 
 /*----------[ buttons and checkboxes]-------------------------------------------
 */
-$button-border-radius: 6px;
-
 input[type=checkbox],
 input[type=radio]
 {
@@ -79,28 +77,11 @@ input[type=checkbox]
 **    https://github.com/jhardy/Sassy-Buttons
 ** for more details.
 */
-$button-border-width: 1px;
-$button-line-height: $secondary-text-line-height;
-$button-vertical-padding: 3px;
-$button-text-family: Verdana, Tahoma, $body-text-family;
-
 input[type=submit],
 input[type=button],
 button,
 a.button
 {
-  $sb-base-color     : $button-base-bg;
-  $sb-second-color   : false;
-  $sb-border-radius  : $button-border-radius;
-  $sb-border-width   : $button-border-width;
-  $sb-padding        : $button-vertical-padding $column-width;
-  $sb-font-size      : $secondary-text-size;
-  $sb-line-height    : $button-line-height;
-  $sb-text-color     : $button-text-color;
-  $sb-text-style     : "normal";
-  $sb-gradient-style : "matte";
-  $sb-hover          : true;
-
   @include sassy-button();
 
   font-family:  $button-text-family;
@@ -108,15 +89,15 @@ a.button
 
   &.destructive
   {
-    @include sassy-button($first-color:$destructive-button-base-bg,
-                          $text-color:$destructive-button-text-color);
+    @include sassy-button($first-color : $destructive-button-base-bg,
+                          $text-color  : $destructive-button-text-color);
   }
 
   &[disabled]
   {
-    @include sassy-button($first-color:$disabled-button-base-bg,
-                          $text-color:$disabled-button-text-color,
-                          $auto-states: false);
+    @include sassy-button($first-color : $disabled-button-base-bg,
+                          $text-color  : $disabled-button-text-color,
+                          $auto-states : false);
 
     cursor: default !important;
   }
