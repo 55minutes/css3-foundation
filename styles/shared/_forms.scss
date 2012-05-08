@@ -23,12 +23,12 @@ select,
 textarea
 {
   margin: 0;
-  border: 0.1rem solid $stroke;
+  border: 1px solid $stroke;
   padding: ($body-text-line-height - $secondary-text-size - 0.2) / 2;
   background-color: white;
   font-family:  $body-text-family;
   font-size: $secondary-text-size;
-  line-height: $secondary-text-size;
+  line-height: 1;
 }
 
 input[type=email][disabled],
@@ -47,14 +47,12 @@ textarea[disabled]
 
 input[type=text].small
 {
-  width: 5rem;
+  width: 50px;
   margin-right: 0.33em;
 }
 
 /*----------[ buttons and checkboxes]-------------------------------------------
 */
-$button-border-radius: 0.6rem;
-
 input[type=checkbox],
 input[type=radio]
 {
@@ -63,7 +61,7 @@ input[type=radio]
 
 input[type=checkbox]
 {
-  border: 0.1rem solid $grey;
+  border: 1px solid $grey;
   background-color: white;
 }
 
@@ -79,58 +77,28 @@ input[type=checkbox]
 **    https://github.com/jhardy/Sassy-Buttons
 ** for more details.
 */
-$button-border-width: 0.1rem;
-$button-line-height: $body-text-line-height - 2 * $button-border-width;
-$button-vertical-padding: ($body-text-line-height - $button-line-height - 2 * $button-border-width) / 2;
-
 input[type=submit],
 input[type=button],
 button,
 a.button
 {
-  $sb-base-color     : $button-base-bg;
-  $sb-second-color   : false;
-  $sb-border-radius  : $button-border-radius;
-  $sb-border-width   : $button-border-width;
-  $sb-padding        : $button-vertical-padding $column-width;
-  $sb-font-size      : $secondary-text-size;
-  $sb-line-height    : $button-line-height;
-  $sb-text-color     : $button-text-color;
-  $sb-text-style     : false;
-  $sb-gradient-style : "matte";
-  $sb-hover          : true;
-
   @include sassy-button();
 
-  // For some reason, the color and line-height I set above get ignored. Set them manually.
-  color: $button-text-color;
-  line-height: $button-line-height;
-  font-family:  $body-text-family;
+  font-family:  $button-text-family;
   font-weight: bold;
 
   &.destructive
   {
-    $sb-base-color: $destructive-button-base-bg;
-    $sb-text-color: $destructive-button-text-color;
-
-    @include sassy-button();
-
-    // For some reason, the color and line-height I set above get ignored. Set them manually.
-    color: $destructive-button-text-color;
-    line-height: $button-line-height;
+    @include sassy-button($first-color : $destructive-button-base-bg,
+                          $text-color  : $destructive-button-text-color);
   }
 
   &[disabled]
   {
-    $sb-base-color: $disabled-button-base-bg;
-    $sb-text-color: $disabled-button-text-color;
-    $sb-hover: false;
+    @include sassy-button($first-color : $disabled-button-base-bg,
+                          $text-color  : $disabled-button-text-color,
+                          $auto-states : false);
 
-    @include sassy-button();
-
-    // For some reason, the color and line-height I set above get ignored. Set them manually.
-    color: $disabled-button-text-color;
-    line-height: $button-line-height;
     cursor: default !important;
   }
 }
@@ -156,10 +124,12 @@ a.button
   display: inline-block;
   vertical-align: middle;
   font-size: $secondary-text-size;
-  line-height: $body-text-line-height;
+  line-height: $secondary-text-line-height + 2 * ($button-vertical-padding + $button-border-width);
 }
 
 /*----------[ form layout ]-----------------------------------------------------
+*/
+/*---------------[ forms in tables ]--------------------------------------------
 */
 table.form
 {
@@ -199,6 +169,8 @@ table.form
   }
 }
 
+/*---------------[ stacked forms ]----------------------------------------------
+*/
 .stacked
 {
   margin-left: -$horizontal-nudge;
@@ -253,9 +225,9 @@ table.form
 
   ul.error-explanation
   {
-    margin: 0;
+    margin: $vertical-nudge;
     margin-left: $column-width;
-    font-size: $secondary-text-size;
+    @include secondary-text;
     color: $error-feedback;
   }
 }

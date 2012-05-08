@@ -14,10 +14,38 @@
 ------------------------------------------------------------------------------*/
 
 @import "cssgrid-1140-ie";
+@import "typography";
+@import "grid";
 
 /*-----[ general ]--------------------------------------------------------------
 */
-.lte7 .group
+.lte7
 {
-  zoom: 1;
+  .group
+  {
+    zoom: 1;
+  }
+
+  input[type=submit],
+  input[type=button],
+  button,
+  a.button
+  {
+    width: 1;
+    overflow: visible;
+  }
+}
+
+.ie8, .ie9
+{
+  input[type=submit],
+  input[type=button],
+  button,
+  a.button
+  {
+    &, &.destructive, &[disabled]
+    {
+      padding: 3px $column-width;
+    }
+  }
 }

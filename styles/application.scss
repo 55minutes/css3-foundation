@@ -15,7 +15,6 @@
 
 // Third-party mixins
 @import "compass/css3";
-@import "sassybuttons";
 @import "cssgrid-1140";
 
 // Basics
@@ -24,9 +23,13 @@
 @import "grid";
 
 // Shared
+@import "sassybuttons";
 @import "mixins";
 @import "foundation";
+@import "page";
 @import "forms";
+@import "alerts";
+@import "pagination";
 @import "header";
 @import "footer";
 

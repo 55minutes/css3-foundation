@@ -6,20 +6,12 @@
 
 /*----------[ table of contents ]-----------------------------------------------
 | tags
-| content
-| unsupported browser warning
-| alerts
-| pagination
+| non-semantic styles
 */
 
 
 /*----------[ tags ]------------------------------------------------------------
 */
-html
-{
-  font-size: 62.5%;
-}
-
 a
 {
   color: $link;
@@ -52,9 +44,18 @@ body
   background-color: $page-bg;
   color: $body-text-color;
   font-family: $body-text-family;
-  font-size: $body-text-size;
-  line-height: $body-text-line-height;
-  text-rendering: optimizeLegibility;
+  @include body-text;
+
+  /*
+  ** Turn off automatic text resizing in MobileSafari for iPhone. This assumes
+  ** that you've been mindful of readability and have already chosen the text
+  ** size you feel is effective at those screen sizes. REMOVE IT if you want
+  ** iPhone to automatically resize the text.
+  */
+  @media (max-width: 500px)
+  {
+    -webkit-text-size-adjust: 100%;
+  }
 }
 
 caption
@@ -74,17 +75,16 @@ dd
 
 h1
 {
-  margin-bottom: $body-text-line-height * 2 - $page-heading-text-size;
+  margin-bottom: $body-text-line-height * 2 - $page-heading-text-line-height;
   padding: 0;
-  font-size: $page-heading-text-size;
-  line-height: $page-heading-text-size;
+  @include heading-text;
 }
 
 h2
 {
   margin: 1.5 * $body-text-line-height 0 $body-text-line-height / 2;
   color: $subheading-text-color;
-  font-size: $subheading-text-size;
+  @include subheading-text;
 }
 
 h3
@@ -92,6 +92,12 @@ h3
   margin: $body-text-line-height 0 0;
   font-weight: normal;
   font-style: italic;
+}
+
+// For large headings, use ligatures if available.
+h1, h2, h3
+{
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3
@@ -112,7 +118,7 @@ hr
   margin: ($body-text-line-height / 2 - 0.1) auto $body-text-line-height / 2;
   border-style: none;
   height: 1px;
-  background-color: #808080;
+  background-color: $stroke;
 }
 
 ol, ul
@@ -146,12 +152,18 @@ pre
 
   padding: $body-text-line-height / 2 $column-width / 2;
   overflow: auto;
-  background-color: #fff8f0;
+  background-color: $accent-bg;
 }
 
 sub, sup
 {
   font-size: 80%;
+  /*
+  ** A non-zero line-height on a sub or sup element will alter the line-height
+  ** of your paragraph text. To keep your vertical rhythm nice and smooth, set
+  ** the line-height on your subs and sups to 0.
+  */
+  line-height: 0;
 }
 
 sub
@@ -171,7 +183,7 @@ table
 
 table, thead th
 {
-  border-bottom: 0.2rem solid $light-stroke;
+  border-bottom: 2px solid $light-stroke;
 }
 
 td, th
@@ -197,7 +209,7 @@ th
 
 tbody th, td
 {
-  border-bottom: 0.1rem solid $light-stroke;
+  border-bottom: 1px solid $light-stroke;
 }
 
 ul
@@ -205,7 +217,8 @@ ul
   list-style-type: disc;
 }
 
-/*----------[ content ]---------------------------------------------------------
+/*----------[ non-semantic styles ]---------------------------------------------
+** Purely presentational styles with non-semantic names.
 */
 .align-center
 {
@@ -220,22 +233,6 @@ ul
 .align-right
 {
   float: right;
-}
-
-.annotation,
-.fine-print,
-.form-help
-{
-  color: $secondary-text-color;
-  font-weight: normal;
-  font-style: italic;
-}
-
-.fine-print, .form-help
-{
-  margin: 0;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
 }
 
 /* Clearfix style from <http://nicolasgallagher.com/micro-clearfix-hack/> */
@@ -261,7 +258,7 @@ span.keep-together
   clear: both;
   margin: 0;
   padding: 0;
-  height: 0.1rem;
+  height: 1px;
   font-size: 0;
 }
 
@@ -272,171 +269,3 @@ span.keep-together
   font-size: 0;
 }
 
-.subtitle
-{
-  font-weight: normal;
-}
-
-.subheading
-{
-  font-weight: bold;
-}
-
-/*----------[ unsupported browser warning ]-------------------------------------
-*/
-#unsupported-browser-warning
-{
-  display: none;
-  margin: $body-text-line-height auto;
-  border: 0.5rem solid darken($error-feedback, 5);
-  @include border-radius(1.5rem);
-  padding: $body-text-line-height $column-width;
-  background-color: white;
-
-  .unsupported-browser &
-  {
-    display: block;
-  }
-
-  h1
-  {
-    color: $error-feedback;
-  }
-
-  a.dismiss
-  {
-    float: right;
-    line-height: $page-heading-text-size;
-  }
-
-  p
-  {
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 768px)
-{
-  #unsupported-browser-warning
-  {
-    max-width: 65rem;
-  }
-}
-
-/*----------[ alerts ]----------------------------------------------------------
-*/
-/*
-** Generate a sprite image by putting all the icons into a subdirectory of
-** images/. Then use the helpers sprite-url and sprite-position to place
-** the icon in the background.
-**
-** See below and the Compass documentation for more details.
-**    <http://compass-style.org/reference/compass/helpers/sprites/>
-*/
-$icons: sprite-map("icon/*.png");
-$icon-size: 1.6rem;
-
-.alerts
-{
-  margin: 0;
-  list-style-type: none;
-
-  .message
-  {
-    position: relative;
-    margin-bottom: $vertical-nudge;
-    padding: $vertical-nudge $column-width / 2;
-    padding-left: 1.5 * $column-width;
-
-    /*
-    ** In order for a sprite to work properly, the element the sprite is set as
-    ** the background of needs to be exactly sized to the sprite's dimensions.
-    **
-    ** But what if you want to use the sprite as a background for a much larger
-    ** element? Like a single icon background to a block of text? That's exactly
-    ** what we want to do here for the alert messages. I want the warning icon
-    ** to be a background image placed in the top left of the message block,
-    ** and so on.
-    **
-    ** So how'd I do it? By using the :after pseudo-element (:before would work
-    ** equally well), sizing it to fit the icon-sprite size (in my case 16px
-    ** square), and positioning it where my background position would have been
-    ** were I using the single icon image as a background.
-    */
-    &:after
-    {
-      position: absolute;
-      top: ($body-text-line-height + 1.5 * $vertical-nudge - $icon-size) / 2;
-      left: $horizontal-nudge;
-      width: $icon-size;
-      height: $icon-size;
-      background-repeat: no-repeat;
-      content: "";
-    }
-
-    &.success
-    {
-      background-color: desaturate(lighten($success-feedback, 55), 20);
-      color: $success-feedback;
-
-      &:after
-      {
-        background-image: sprite-url($icons);
-        background-position: sprite-position($icons, success);
-      }
-    }
-
-    &.warning
-    {
-      background-color: lighten($warning-feedback, 48);
-      color: $warning-feedback;
-
-      &:after
-      {
-        background-image: sprite-url($icons);
-        background-position: sprite-position($icons, warning);
-      }
-    }
-
-    &.error
-    {
-      background-color: lighten($error-feedback, 55);
-      color: $error-feedback;
-
-      &:after
-      {
-        background-image: sprite-url($icons);
-        background-position: sprite-position($icons, error);
-      }
-    }
-  }
-}
-
-
-/*----------[ pagination ]------------------------------------------------------
-*/
-.pagination
-{
-  margin-top: $body-text-line-height - (2 * $vertical-nudge);
-  white-space-collapse: discard;
-
-  .first, .prev, .page, .next, .last
-  {
-    display: inline-block;
-    margin-right: $column-width / 2;
-    @include border-radius(0.6rem);
-    background-color: darken($white-smoke, 3);
-
-    a
-    {
-      display: block;
-      text-decoration: none;
-    }
-
-    a, &.current, &.gap
-    {
-      padding: $vertical-nudge $column-width / 2;
-      background-color: transparent;
-    }
-  }
-}

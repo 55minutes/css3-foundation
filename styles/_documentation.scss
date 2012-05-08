@@ -5,12 +5,12 @@
 .documentation #page
 {
   padding: $body-text-line-height $column-width;
- 
+
   header
   {
     margin-bottom: $body-text-line-height;
   }
-  
+
   p:last-of-type,
   dl:last-of-type,
   ol:last-of-type,
@@ -18,12 +18,12 @@
   {
     margin-bottom: 0;
   }
-  
+
   #about, #resources
   {
     margin-bottom: $section-spacing;
   }
-  
+
   footer
   {
     color: $secondary-text-color;
@@ -31,11 +31,15 @@
   }
 }
 
+/*
+** We've elected to always put media queries inline, so that they're near
+** the original style definition for easy locating later on.
+*/
 @media (min-width: 480px)
 {
   .documentation #page
   {
-    max-width: 60rem;
+    max-width: 600px;
   }
 }
 
@@ -43,9 +47,9 @@
 {
   .documentation #page
   {
-    margin: 5rem auto;
-    border: 0.2rem solid $silver;
-    @include border-radius(1.5rem);
+    margin: 50px auto;
+    border: 2px solid $silver;
+    @include border-radius(15px);
   }
 }
 
@@ -55,26 +59,26 @@
   {
     #page
     {
-      max-width: 90rem;
+      max-width: 900px;
     }
-    
+
     #about, #resources
     {
       float: left;
       margin-bottom: 0;
     }
-    
+
     #about
     {
       margin-right: 3%;
       width: 67%;
     }
-    
+
     #resources
     {
       width: 30%;
     }
-    
+
     footer
     {
       clear: both;

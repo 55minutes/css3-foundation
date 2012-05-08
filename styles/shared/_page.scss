@@ -1,0 +1,30 @@
+/*-----[ page ]-----------------------------------------------------------------
+| Top-level styles for content. Otherwise unqualified styles should go here.
+*/
+#page
+{
+  .annotation,
+  .fine-print,
+  .form-help
+  {
+    color: $secondary-text-color;
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  .fine-print, .form-help
+  {
+    margin: 0;
+    @include small-text;
+  }
+
+  .subtitle
+  {
+    font-weight: normal;
+  }
+
+  .subheading
+  {
+    font-weight: bold;
+  }
+}

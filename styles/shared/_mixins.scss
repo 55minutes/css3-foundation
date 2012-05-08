@@ -40,3 +40,55 @@
     clear: both;
   }
 }
+
+@mixin inline-list
+{
+  display: inline;
+  margin: 0;
+  list-style-type: none;
+
+  li
+  {
+    display: inline;
+    margin-right: 0.33em;
+
+    &:last-of-type
+    {
+      margin-right: 0;
+    }
+  }
+}
+
+/*----------[ typography ]------------------------------------------------------
+| Common font-size/line-height combinations.
+*/
+@mixin heading-text
+{
+  font-size   : $page-heading-text-size;
+  line-height : $page-heading-text-line-height;
+}
+
+@mixin subheading-text
+{
+  font-size   : $subheading-text-size;
+  line-height : $subheading-text-line-height;
+}
+
+@mixin body-text
+{
+  font-size   : $body-text-size;
+  line-height : $body-text-line-height;
+}
+
+@mixin secondary-text
+{
+  font-size   : $secondary-text-size;
+  line-height : $secondary-text-line-height;
+}
+
+@mixin small-text
+{
+  font-size   : $small-text-size;
+  line-height : $small-text-line-height;
+}
+

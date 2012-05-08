@@ -6,14 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <!-- stylesheets -->
-  <!-- for all screen sizes -->
   <link rel="stylesheet" type="text/css" media="all" href="styles-compiled/application.css"/>
-
-  <!-- for progressively larger displays -->
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 480px)" href="styles-compiled/480.css"/>
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" href="styles-compiled/768.css"/>
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1024px)" href="styles-compiled/1024.css"/>
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1200px)" href="styles-compiled/1200.css"/>
 
   <!-- conditional comments -->
   <!--[if IE]>
@@ -24,10 +17,12 @@
   <link rel="stylesheet" type="text/css" media="print" href="styles-compiled/print.css"/>
 
   <!-- external styles -->
-  <!-- <link rel="stylesheet" type="text/css" media="all" href="scripts/lib/jquery-ui/1.8.16/themes/redmond/jquery-ui.redmond.css"/> -->
+  <!-- <link rel="stylesheet" type="text/css" media="all" href="scripts/lib/jquery-ui/1.8.18/themes/redmond/jquery-ui.redmond.css"/> -->
 
   <!-- Favicons and touch icons -->
-  <!-- For iPhone 4 -->
+  <!-- For retina-display iPads -->
+  <link href="images/apple-touch-icon-xlarge.png" rel="apple-touch-icon-precomposed" sizes="144x144" type="image/png"/>
+  <!-- For retina-display iPhones -->
   <link href="images/apple-touch-icon-large.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png"/>
   <!-- For iPad 1 -->
   <link href="images/apple-touch-icon-medium.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png"/>
@@ -36,7 +31,6 @@
   <!-- For Nokia -->
   <link href="images/apple-touch-icon-small.png" rel="shortcut icon"/>
   <!-- For everything else -->
-  <link href="favicon.png" rel="shortcut icon" type="image/png"/>
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 
   <!-- header javascript -->
@@ -46,18 +40,19 @@
 
   <script type="text/javascript">
     document.getElementsByTagName("html")[0].className += fiftyfive.util.getIEClass();
+
+    // scroll to hide iPhone URL bar; from http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/
+    /iphone/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+      if (!pageYOffset) window.scrollTo(0, 1);
+    }, 1000);
   </script>
+
+  <!-- HTML5 and media query polyfill for IE8 and below -->
+  <script src="scripts/lib/shivs-custom.js" type="text/javascript"></script>
 
   <title>CSS3/HTML5 scaffolding style guide</title>
 </head>
 <body id="style-guide">
-  <section id="unsupported-browser-warning">
-    <!-- Use this if you want to allow the user to hide the warning after it's been shown. -->
-    <!-- <a class="dismiss" href="javascript:;">Dismiss</a> -->
-    <h1>Your browser is not supported.</h1>
-    <p>&laquo;Your application name here&raquo; works best with modern browsers like <span class="keep-together">Safari/MobileSafari 3</span>, <span class="keep-together">Chrome 10</span>, <span class="keep-together">Firefox 4</span>, <span class="keep-together">Internet Explorer 8</span> and newer. If you use another browser, please note that you may encounter visual glitches or other problems.
-  </section> <!-- /#unsupported-browser-warning -->
-
   <div id="page">
     <header id="intro">
       <h1>CSS3/HTML5 scaffolding style guide</h1>
@@ -82,56 +77,56 @@
             </thead>
             <tbody>
               <tr>
-                <td class="color-name">Blackberry</td>
-                <td class="swatch blackberry">&nbsp;</td>
+                <td class="color-name">Eggplant purple</td>
+                <td class="swatch eggplant-purple">&nbsp;</td>
                 <td class="hex-code">#4a1a2b</td>
                 <td class="usage">
                   Visited link
                 </td>
               </tr>
               <tr>
-                <td class="color-name">Eucalyptus</td>
-                <td class="swatch eucalyptus">&nbsp;</td>
+                <td class="color-name">Teal</td>
+                <td class="swatch teal">&nbsp;</td>
                 <td class="hex-code">#207861</td>
                 <td class="usage">
                   Subheading
                 </td>
               </tr>
               <tr>
-                <td class="color-name">Citrus</td>
-                <td class="swatch citrus">&nbsp;</td>
+                <td class="color-name">Leaf green</td>
+                <td class="swatch leaf-green">&nbsp;</td>
                 <td class="hex-code">#9fad00</td>
                 <td class="usage">
                   Success feedback
                 </td>
               </tr>
               <tr>
-                <td class="color-name">Supernova</td>
-                <td class="swatch supernova">&nbsp;</td>
+                <td class="color-name">Bright yellow</td>
+                <td class="swatch bright-yellow">&nbsp;</td>
                 <td class="hex-code">#ffcc00</td>
                 <td class="usage">
                   Warning feedback
                 </td>
               </tr>
               <tr>
-                <td class="color-name">Flush orange</td>
-                <td class="swatch flush-orange">&nbsp;</td>
+                <td class="color-name">Orange</td>
+                <td class="swatch orange">&nbsp;</td>
                 <td class="hex-code">#ff8400</td>
                 <td class="usage">
                   Buttons
                 </td>
               </tr>
               <tr>
-                <td class="color-name">Matisse</td>
-                <td class="swatch matisse">&nbsp;</td>
+                <td class="color-name">Blue</td>
+                <td class="swatch blue">&nbsp;</td>
                 <td class="hex-code">#1673a1</td>
                 <td class="usage">
                   Link
                 </td>
               </tr>
               <tr>
-                <td class="color-name">Cinnabar</td>
-                <td class="swatch cinnabar">&nbsp;</td>
+                <td class="color-name">Red</td>
+                <td class="swatch red">&nbsp;</td>
                 <td class="hex-code">#e53b19</td>
                 <td class="usage">
                   Error feedback
@@ -162,8 +157,8 @@
                 </td>
               </tr>
               <tr>
-                <td class="color-name">White smoke</td>
-                <td class="swatch white-smoke">&nbsp;</td>
+                <td class="color-name">Greyish white</td>
+                <td class="swatch greyish-white">&nbsp;</td>
                 <td class="hex-code">#f0f0f0</td>
                 <td class="usage">
                   Accent background
@@ -302,10 +297,10 @@
                 </tr>
                 <tr>
                   <th class="field-label">
-                    <label for="text-input-example">Text input</label>
+                    <label for="text-input-example-1">Text input</label>
                   </th>
                   <td class="field">
-                    <input type="text" name="text-input-example" value="" id="text-input-example" class="large"/>
+                    <input type="text" name="text-input-example" value="" id="text-input-example-1" class="large"/>
                     <p class="form-help">
                       Field help text
                     </p> <!-- /.form-help -->
@@ -313,18 +308,18 @@
                 </tr>
                 <tr>
                   <th class="field-label">
-                    <label for="disabled-text-input-example">Disabled text input</label>
+                    <label for="disabled-text-input-example-1">Disabled text input</label>
                   </th>
                   <td class="field">
-                    <input type="text" disabled="disabled" name="disabled-text-input-example" value="Johannes Brahms" id="disabled-text-input-example"/>
+                    <input type="text" disabled="disabled" name="disabled-text-input-example" value="Johannes Brahms" id="disabled-text-input-example-1"/>
                   </td>
                 </tr>
                 <tr>
                   <th class="field-label">
-                    <label for="select-example">Select</label>
+                    <label for="select-example-1">Select</label>
                   </th>
                   <td class="field">
-                    <select name="select-example" id="select-example">
+                    <select name="select-example" id="select-example-1">
                       <option value="">Choose one</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -336,10 +331,10 @@
                 </tr>
                 <tr class="error">
                   <th class="field-label">
-                    <label for="invalid-text-input-example">Invalid input</label>
+                    <label for="invalid-text-input-example-1">Invalid input</label>
                   </th>
                   <td class="field">
-                    <input type="text" name="invalid-text-input-example" value="" id="invalid-text-input-example"/>
+                    <input type="text" name="invalid-text-input-example" value="" id="invalid-text-input-example-1"/>
                     <span class="form-help">inline help text</span>
                     <ul class="error-explanation">
                       <li>Please enter an email address</li>
@@ -386,10 +381,10 @@
                 </tr>
                 <tr>
                   <th class="field-label">
-                    <label for="textarea-example">Textarea</label>
+                    <label for="textarea-example-1">Textarea</label>
                   </th>
                   <td class="field">
-                    <textarea name="textarea-example" rows="5" cols="40"></textarea>
+                    <textarea name="textarea-example" id="textarea-example-1" rows="5" cols="40"></textarea>
                   </td>
                 </tr>
               </tbody>
@@ -407,18 +402,18 @@
                 Form section heading
               </legend>
               <div class="field">
-                <label for="text-input-example">Text input</label>
+                <label for="text-input-example-2">Text input</label>
                 <input type="text" name="text-input-example" value="" id="text-input-example-2" class="large"/>
                 <p class="form-help">
                   Field help text
                 </p> <!-- /.form-help -->
               </div> <!-- /.field -->
               <div class="field">
-                <label for="disabled-text-input-example">Disabled text input</label>
+                <label for="disabled-text-input-example-2">Disabled text input</label>
                 <input type="text" disabled="disabled" name="disabled-text-input-example" value="Johannes Brahms" id="disabled-text-input-example-2"/>
               </div> <!-- /.field -->
               <div class="field">
-                <label for="select-example">Select</label>
+                <label for="select-example-2">Select</label>
                 <select name="select-example" id="select-example-2">
                   <option value="">Choose one</option>
                   <option value="1">1</option>
@@ -429,7 +424,7 @@
                 </select>
               </div> <!-- /.field -->
               <div class="field error">
-                <label for="invalid-text-input-example">Invalid input</label>
+                <label for="invalid-text-input-example-2">Invalid input</label>
                 <input type="text" name="invalid-text-input-example" value="" id="invalid-text-input-example-2"/>
                 <span class="form-help">inline help text</span>
                 <ul class="error-explanation">
@@ -467,8 +462,8 @@
                 </label>
               </div> <!-- /.field -->
               <div class="field">
-                <label for="textarea-example">Textarea</label>
-                <textarea name="textarea-example" rows="5" cols="40"></textarea>
+                <label for="textarea-example-2">Textarea</label>
+                <textarea name="textarea-example" id="textarea-example-2" rows="5" cols="40"></textarea>
               </div> <!-- /.field -->
               <div class="button-bar group">
                 <input type="submit" class="save" value="Save"/>

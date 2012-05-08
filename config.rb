@@ -1,5 +1,4 @@
 # Require any additional compass plugins here.
-require 'compass-colors'
 require 'sassy-buttons'
 
 # Set this to the root of your project when deployed:
@@ -14,5 +13,4 @@ javascripts_dir = "scripts"
 
 relative_assets = true
 
-output_style = :expanded
 line_comments = false

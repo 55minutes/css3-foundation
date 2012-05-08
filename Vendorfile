@@ -1,8 +1,8 @@
 # Vendorfile for use with vendorer command. https://github.com/grosser/vendorer
 # Run `vendorer` to install jQuery and jQuery UI dependencies into scripts/lib.
 
-JQUERY_VER = "1.7.1"
-JQUERY_UI_VER = "1.8.18"
+JQUERY_VER = "1.7.2"
+JQUERY_UI_VER = "1.8.20"
 
 folder "scripts/lib" do
 
@@ -13,11 +13,9 @@ folder "scripts/lib" do
   # Standard jQuery/UI dist
   #
   file "jquery.js",         "http://code.jquery.com/jquery-#{JQUERY_VER}.js"
-  file "jquery-ui.js",      "http://code.jquery.com/ui/#{JQUERY_UI_VER}/jquery-ui.js"
+  file "jquery-ui.js",      "http://jquery-ui.googlecode.com/svn/tags/#{JQUERY_UI_VER}/ui/jquery-ui.js"
 
   # jQuery UI components
   #
-  file "jquery-ui.widget.js", "https://raw.github.com/jquery/jquery-ui/#{JQUERY_UI_VER}/ui/jquery.ui.widget.js" do |path|
-    rewrite(path) { |js| js.gsub /@VERSION/, JQUERY_UI_VER }
-  end
+  file "jquery-ui.widget.js", "http://jquery-ui.googlecode.com/svn/tags/#{JQUERY_UI_VER}/ui/jquery.ui.widget.js"
 end

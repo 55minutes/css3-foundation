@@ -6,14 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <!-- stylesheets -->
-  <!-- for all screen sizes -->
   <link rel="stylesheet" type="text/css" media="all" href="styles-compiled/application.css"/>
-
-  <!-- for progressively larger displays -->
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 480px)" href="styles-compiled/480.css"/>
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" href="styles-compiled/768.css"/>
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1024px)" href="styles-compiled/1024.css"/>
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1200px)" href="styles-compiled/1200.css"/>
 
   <!-- conditional comments -->
   <!--[if IE]>
@@ -24,10 +17,12 @@
   <link rel="stylesheet" type="text/css" media="print" href="styles-compiled/print.css"/>
 
   <!-- external styles -->
-  <!-- <link rel="stylesheet" type="text/css" media="all" href="scripts/lib/jquery-ui/1.8.16/themes/redmond/jquery-ui.redmond.css"/> -->
+  <!-- <link rel="stylesheet" type="text/css" media="all" href="scripts/lib/jquery-ui/1.8.18/themes/redmond/jquery-ui.redmond.css"/> -->
 
   <!-- Favicons and touch icons -->
-  <!-- For iPhone 4 -->
+  <!-- For retina-display iPads -->
+  <link href="images/apple-touch-icon-xlarge.png" rel="apple-touch-icon-precomposed" sizes="144x144" type="image/png"/>
+  <!-- For retina-display iPhones -->
   <link href="images/apple-touch-icon-large.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png"/>
   <!-- For iPad 1 -->
   <link href="images/apple-touch-icon-medium.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png"/>
@@ -36,7 +31,6 @@
   <!-- For Nokia -->
   <link href="images/apple-touch-icon-small.png" rel="shortcut icon"/>
   <!-- For everything else -->
-  <link href="favicon.png" rel="shortcut icon" type="image/png"/>
   <link href="favicon.ico" rel="shortcut icon"/>
 
   <!-- header javascript -->
@@ -46,18 +40,19 @@
 
   <script type="text/javascript">
     document.getElementsByTagName("html")[0].className += fiftyfive.util.getIEClass();
+
+    // scroll to hide iPhone URL bar; from http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/
+    /iphone/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+      if (!pageYOffset) window.scrollTo(0, 1);
+    }, 1000);
   </script>
+
+  <!-- HTML5 and media query polyfill for IE8 and below -->
+  <script src="scripts/lib/shivs-custom.js" type="text/javascript"></script>
 
   <title>Please log in</title>
 </head>
 <body id="login">
-  <section id="unsupported-browser-warning">
-    <!-- Use this if you want to allow the user to hide the warning after it's been shown. -->
-    <!-- <a class="dismiss" href="javascript:;">Dismiss</a> -->
-    <h1>Your browser is not supported.</h1>
-    <p>&laquo;Your application name here&raquo; works best with modern browsers like <span class="keep-together">Safari/MobileSafari 3</span>, <span class="keep-together">Chrome 10</span>, <span class="keep-together">Firefox 4</span>, <span class="keep-together">Internet Explorer 8</span> and newer. If you use another browser, please note that you may encounter visual glitches or other problems.
-  </section> <!-- /#unsupported-browser-warning -->
-
   <div id="page" class="group">
     <h1>Please log in</h1>
 

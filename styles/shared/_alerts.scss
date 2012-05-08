@@ -1,0 +1,89 @@
+/*----------[ alerts ]----------------------------------------------------------
+*/
+/*
+** Generate a sprite image by putting all the icons into a subdirectory of
+** images/. Then use the helpers sprite-url and sprite-position to place
+** the icon in the background.
+**
+** See below and the Compass documentation for more details.
+**    <http://compass-style.org/reference/compass/helpers/sprites/>
+*/
+$icons: sprite-map("icon/*.png");
+$icon-size: 16px;
+
+.alerts
+{
+  margin: 0;
+  list-style-type: none;
+
+  .message
+  {
+    position: relative;
+    margin-bottom: $vertical-nudge;
+    padding: $vertical-nudge $column-width / 2;
+    padding-left: 1.5 * $column-width;
+
+    /*
+    ** In order for a sprite to work properly, the element the sprite is set as
+    ** the background of needs to be exactly sized to the sprite's dimensions.
+    **
+    ** But what if you want to use the sprite as a background for a much larger
+    ** element? Like a single icon background to a block of text? That's exactly
+    ** what we want to do here for the alert messages. I want the warning icon
+    ** to be a background image placed in the top left of the message block,
+    ** and so on.
+    **
+    ** So how'd I do it? By using the :after pseudo-element (:before would work
+    ** equally well), sizing it to fit the icon-sprite size (in my case 16px
+    ** square), and positioning it where my background position would have been
+    ** were I using the single icon image as a background.
+    */
+    &:after
+    {
+      position: absolute;
+      top: ($body-text-line-height + 1.5 * $vertical-nudge - $icon-size) / 2;
+      left: $horizontal-nudge;
+      width: $icon-size;
+      height: $icon-size;
+      background-repeat: no-repeat;
+      content: "";
+    }
+
+    &.success
+    {
+      background-color: desaturate(lighten($success-feedback, 55), 20);
+      color: $success-feedback;
+
+      &:after
+      {
+        background-image: sprite-url($icons);
+        background-position: sprite-position($icons, success);
+      }
+    }
+
+    &.warning
+    {
+      background-color: lighten($warning-feedback, 48);
+      color: $warning-feedback;
+
+      &:after
+      {
+        background-image: sprite-url($icons);
+        background-position: sprite-position($icons, warning);
+      }
+    }
+
+    &.error
+    {
+      background-color: lighten($error-feedback, 55);
+      color: $error-feedback;
+
+      &:after
+      {
+        background-image: sprite-url($icons);
+        background-position: sprite-position($icons, error);
+      }
+    }
+  }
+}
+

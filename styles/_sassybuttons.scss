@@ -4,15 +4,24 @@
 //   These are the base defaults for the buttons, if you are going to use similar buttons on an entire site,
 //   overriding these can save you some time by calling the sassy button mixin with less arguments.
 
-$sb-base-color: rgba(11, 153, 194, 1);
-$sb-second-color: false;
-$sb-border-radius: 10px;
-$sb-padding: 0.3em 1.5em;
-$sb-font-size: 16px;
-$sb-text-color: white;
-$sb-text-style: "inset";
-$sb-gradient-style: "simple";
-$sb-pseudo-states: true;
+$button-border-width     : 1px;
+$button-line-height      : $secondary-text-line-height;
+$button-vertical-padding : 3px;
+$button-text-family      : Verdana, Tahoma, $body-text-family;
+$button-border-radius    : 6px;
+
+$sb-base-color     : $button-base-bg;
+$sb-second-color   : false;
+$sb-border-radius  : $button-border-radius;
+$sb-border-width   : $button-border-width;
+$sb-padding        : $button-vertical-padding $column-width;
+$sb-font-size      : $secondary-text-size;
+$sb-line-height    : $button-line-height;
+$sb-text-color     : $button-text-color;
+$sb-text-style     : "normal";
+$sb-gradient-style : "matte";
+$sb-pseudo-states  : true;
+$sb-ie-support     : false;
 
 //  Mixin that gets included when calling the sassy-button-structure if you need any
 //  styles applied to all your sassy buttons, add it here.
@@ -21,10 +30,10 @@ $sb-pseudo-states: true;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
-  line-height: 1.5; }
+  line-height: $sb-line-height; }
 
 //  *    Mixin reference
 //  *   -----------------------------------------
-//  *   @include sassy-button(gradient-style, border-radius, font-size, first-color, second-color, text-color, text-style, auto-states);
+//  *   @include sassy-button(gradient-style, border-radius, font-size, first-color, second-color, text-color, text-style, auto-states, ie-support);
 //  *   @include sassy-button-structure(-border-radius, font-size, padding);
-//  *   @include sassy-button-gradient(gradient-style, first-color, second-color, text-color, text-style, auto-states);
+//  *   @include sassy-button-gradient(gradient-style, first-color, second-color, text-color, text-style, auto-states, ie-support);
