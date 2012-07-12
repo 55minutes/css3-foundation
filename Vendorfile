@@ -2,7 +2,7 @@
 # Run `vendorer` to install jQuery and jQuery UI dependencies into scripts/lib.
 
 JQUERY_VER = "1.7.2"
-JQUERY_UI_VER = "1.8.20"
+JQUERY_UI_VER = "1.8.21"
 
 folder "scripts/lib" do
 
