@@ -1,3 +1,5 @@
+**NOTICE: The official repository for this project has moved to [ravasthi/css3-foundation](https://github.com/ravasthi/css3-foundation).** Please go there for the latest version.
+
 # 55 Minutes CSS3/HTML5 Foundation #
 
 This project is a [Compass](http://compass-style.org/ "Compass Home | Compass Documentation")-based CSS3/HTML5 template for crafting modern web applications. We're particularly focused on establishing patterns that work well with server-side frameworks like Rails, Django and Wicket.
